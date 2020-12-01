@@ -1,0 +1,61 @@
+AR03BRIGCH BRIGHT CHILDREN DAYCARE   A/R  (305) 362-6689
+
+                  12/30/81  Prior Balance                                     0.00
+
+                   8/16/18  Invoice    310635                   9/15/18      12.83                                           12.83
+
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                   12.83                                           12.83
+
+
+
+
+AR04ROSEMO ROSEMONT ACADEMY ELEMENTARY
+
+                  12/30/81  Prior Balance                                     0.00
+
+                   8/24/18  Invoice    300292-91  TX Pack 8/24  9/23/18      60.93                                           60.93
+
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                   60.93                                           60.93
+
+
+
+
+AR04TRUECL TRUE NORTH CLASICAL ACADEMY
+
+                  12/30/81  Prior Balance                                     0.00
+
+                   9/24/18  Deposit    301921-81                             59.88                                           59.88
+
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                   59.88                                           59.88
+
+
+
+Run Date 11/03/20                               A / R   T R I A L   B A L A N C E                                       Page   13
+Run Time 11:52 AM                                     IBILEY SCHOOL UNIFORMS                                            User  JOSHUA
+
+
+
+
+
+
+                    Tran    Tran         Invoice    Reference    Due
+                    Date    Descr        Number     Number       Date      Balance     Current     Over 30     Over 60     Over 90
+                    ----    -----        -------    ---------    ----      -------     -------     -  ------   -------     -------
+
+
+
+AR07AIRBAS AIR BASE K - 8                 (305) 258-3676
+
+
+                  12/30/81  Prior Balance                                     0.00
+
+                  11/28/18  Credit Inv 302053-81  Return/Excha 12/28/18                                                      18.17-
+                   8/22/18  Credit Inv 302053-91  FL 91 AIR BA  9/21/18                                                       4.27-
+                  10/15/18  Invoice    302053-92  fl pack 10/1 11/14/18       4.27-                                          18.17
+
+
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                    4.27-                                           4.27-
