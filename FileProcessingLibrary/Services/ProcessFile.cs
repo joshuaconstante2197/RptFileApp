@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FileProcessingLibrary.Services;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -190,27 +191,30 @@ namespace FileProcessingLibrary
             {
                 if(!char.IsWhiteSpace(line[0]))
                 {
-                    account = new Account();
-                    if(account != null)
+                    if(account.AccountHeader != null)
                     {
-                        listOfAccounts.Add(account);
+                        var newAccount = new SaveToDb();
+                        newAccount.SaveAccountHeader(account);
                     }
+                    
+                    account = new Account();
+                    
                 }
                 SetAccount(line, account);
                 //run method to save on database
             }
-            foreach (var ac in listOfAccounts)
-            {
-                if(ac.AccountHeader != null)
-                {
-                    Console.WriteLine(ac.AccountHeader.ArCode);
-                    foreach (var acInfo in ac.AccountInfo)
-                    {
-                        Console.WriteLine(acInfo.InvoiceNumber);
-                    }
-                }
+            //foreach (var ac in listOfAccounts)
+            //{
+            //    if(ac.AccountHeader != null)
+            //    {
+            //        Console.WriteLine(ac.AccountHeader.ArCode);
+            //        foreach (var acInfo in ac.AccountInfo)
+            //        {
+            //            Console.WriteLine(acInfo.InvoiceNumber);
+            //        }
+            //    }
                 
-            }
+            //}
         }
     }
 }

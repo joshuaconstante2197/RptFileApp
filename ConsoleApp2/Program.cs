@@ -18,6 +18,7 @@ namespace ConsoleApp2
             string pathToTempFile = System.IO.Path.GetTempPath() + Guid.NewGuid().ToString() + ".txt";
             ProcessFile.Process(pathToRptFile, pathToTempFile);
             Console.WriteLine(pathToTempFile);
+
             //SaveAccountToDb.Save(new Account());
             //string line;
             //ProcessFile.DeleteEmptiesAndNonArs(pathToRptFile, pathToTempFile);
