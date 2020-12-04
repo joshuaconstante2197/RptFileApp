@@ -78,12 +78,11 @@ namespace FileProcessingLibrary
         public static AccountHeader SetAccountHeader(string header)
         {
             var accountHeader = new AccountHeader();
-            //string[] strArr = header.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
-
-            //accountHeader.ArCode = strArr[0];
             var accountN = string.Empty;
+
             for (int i = 0; i < header.Length; i++)
             {
+                //ARcode will allways be the first word on the account header
                 if(i <  header.IndexOf(' '))
                 {
                     accountHeader.ArCode += string.Concat(header[i]);
@@ -91,6 +90,7 @@ namespace FileProcessingLibrary
                 }
                 else
                 {
+                    //a header line may have an opening parenthesis with a word or may not contain an opening parenthesis at all which would mean that line doesn't have a phone number
                     if (i < header.LastIndexOf('(') || !header.Contains('('))
                     {
                         accountN += string.Concat(header[i]);
@@ -99,25 +99,12 @@ namespace FileProcessingLibrary
                     accountHeader.AccountPhoneNumber += string.Concat(header[i]);
                 }
             }
+            //clean the account name before setting the object since it may have extra spaces
             string[] strArr = accountN.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
             for (int i = 0; i < strArr.Length; i++)
             {
                 accountHeader.AccountName += string.Concat(strArr[i], ' ');
             }
-            //for (int i = 1; i < strArr.Length; i++)
-            //{
-            //    if(strArr[i][0] == '(' || strArr[i].Any(char.IsDigit))
-            //    {
-            //        if(strArr[i].Length > 1 &&  !char.IsLetter(strArr[i][1]))
-            //        {
-            //            accountHeader.AccountPhoneNumber += string.Concat(strArr[i]);
-
-            //            continue;
-            //        }
-            //    }
-            //    accountHeader.AccountName += string.Concat(strArr[i], " ");
-
-            //}
 
             return accountHeader;
         }
