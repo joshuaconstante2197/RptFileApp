@@ -16,7 +16,7 @@ namespace FileProcessingLibrary
             string line;
             bool count = false;
             bool wordToEx = true;
-            string[] wordsToExclude = { "T R I A L", "Tran    Tran", "Date    Descr", "----    -----", "Time", "---------" };
+            string[] wordsToExclude = { "T R I A L", "Tran    Tran", "Date    Descr", "----    -----", "Time", "---------","***" };
             StreamReader rptFile = new StreamReader(pathToRptFile);
 
             int k;
@@ -78,20 +78,46 @@ namespace FileProcessingLibrary
         public static AccountHeader SetAccountHeader(string header)
         {
             var accountHeader = new AccountHeader();
-            string[] strArr = header.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
+            //string[] strArr = header.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
 
-            accountHeader.ArCode = strArr[0];
-
-            for (int i = 1; i < strArr.Length; i++)
+            //accountHeader.ArCode = strArr[0];
+            var accountN = string.Empty;
+            for (int i = 0; i < header.Length; i++)
             {
-                if (!char.IsDigit(strArr[i][0]) && strArr[i][0] != '(')
+                if(i <  header.IndexOf(' '))
                 {
-                    accountHeader.AccountName += string.Concat(strArr[i], " ");
+                    accountHeader.ArCode += string.Concat(header[i]);
                     continue;
                 }
-
-                accountHeader.AccountPhoneNumber += string.Concat(strArr[i]);
+                else
+                {
+                    if (i < header.LastIndexOf('(') || !header.Contains('('))
+                    {
+                        accountN += string.Concat(header[i]);
+                        continue;
+                    }
+                    accountHeader.AccountPhoneNumber += string.Concat(header[i]);
+                }
             }
+            string[] strArr = accountN.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
+            for (int i = 0; i < strArr.Length; i++)
+            {
+                accountHeader.AccountName += string.Concat(strArr[i], ' ');
+            }
+            //for (int i = 1; i < strArr.Length; i++)
+            //{
+            //    if(strArr[i][0] == '(' || strArr[i].Any(char.IsDigit))
+            //    {
+            //        if(strArr[i].Length > 1 &&  !char.IsLetter(strArr[i][1]))
+            //        {
+            //            accountHeader.AccountPhoneNumber += string.Concat(strArr[i]);
+
+            //            continue;
+            //        }
+            //    }
+            //    accountHeader.AccountName += string.Concat(strArr[i], " ");
+
+            //}
 
             return accountHeader;
         }

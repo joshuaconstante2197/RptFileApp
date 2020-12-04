@@ -1,0 +1,312 @@
+12/4/2020 3:33:27 PM ==> Error inserting account header System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near 'S'.
+Unclosed quotation mark after the character string ',')'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at FileProcessingLibrary.Services.SaveToDb.SaveAccountHeader(Account account) in C:\Users\Ibiley Uniforms\source\repos\ConsoleApp2\FileProcessingLibrary\Services\SaveToDb.cs:line 52
+ClientConnectionId:d6961c9d-99eb-4e81-ae31-88da36f07d32
+Error Number:102,State:1,Class:15
+12/4/2020 3:33:27 PM ==> Error inserting account header System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near 'S'.
+Unclosed quotation mark after the character string ',')'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at FileProcessingLibrary.Services.SaveToDb.SaveAccountHeader(Account account) in C:\Users\Ibiley Uniforms\source\repos\ConsoleApp2\FileProcessingLibrary\Services\SaveToDb.cs:line 52
+ClientConnectionId:d6961c9d-99eb-4e81-ae31-88da36f07d32
+Error Number:102,State:1,Class:15
+12/4/2020 3:54:30 PM ==> Error inserting account header System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near 'S'.
+Unclosed quotation mark after the character string ')'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at FileProcessingLibrary.Services.SaveToDb.SaveAccountHeader(Account account) in C:\Users\Ibiley Uniforms\source\repos\ConsoleApp2\FileProcessingLibrary\Services\SaveToDb.cs:line 52
+ClientConnectionId:0647976c-3a19-4ee3-bee8-5ec275565ab6
+Error Number:102,State:1,Class:15
+12/4/2020 3:54:31 PM ==> Error inserting account header System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near 'S'.
+Unclosed quotation mark after the character string ')'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at FileProcessingLibrary.Services.SaveToDb.SaveAccountHeader(Account account) in C:\Users\Ibiley Uniforms\source\repos\ConsoleApp2\FileProcessingLibrary\Services\SaveToDb.cs:line 52
+ClientConnectionId:0647976c-3a19-4ee3-bee8-5ec275565ab6
+Error Number:102,State:1,Class:15
+12/4/2020 3:55:35 PM ==> Error inserting account header System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near 'S'.
+Unclosed quotation mark after the character string ')'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at FileProcessingLibrary.Services.SaveToDb.SaveAccountHeader(Account account) in C:\Users\Ibiley Uniforms\source\repos\ConsoleApp2\FileProcessingLibrary\Services\SaveToDb.cs:line 52
+ClientConnectionId:aacea103-b36f-4730-8a42-aab838b0559b
+Error Number:102,State:1,Class:15
+12/4/2020 3:55:35 PM ==> Error inserting account header System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near 'S'.
+Unclosed quotation mark after the character string ')'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at FileProcessingLibrary.Services.SaveToDb.SaveAccountHeader(Account account) in C:\Users\Ibiley Uniforms\source\repos\ConsoleApp2\FileProcessingLibrary\Services\SaveToDb.cs:line 52
+ClientConnectionId:aacea103-b36f-4730-8a42-aab838b0559b
+Error Number:102,State:1,Class:15
+12/4/2020 4:09:17 PM ==> Error inserting account header System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near 'S'.
+Unclosed quotation mark after the character string ')'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at FileProcessingLibrary.Services.SaveToDb.SaveAccountHeader(Account account) in C:\Users\Ibiley Uniforms\source\repos\ConsoleApp2\FileProcessingLibrary\Services\SaveToDb.cs:line 52
+ClientConnectionId:a113dfdf-ff1f-46c7-b81e-02b73fd478b0
+Error Number:102,State:1,Class:15
+12/4/2020 4:09:17 PM ==> Error inserting account header System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near 'S'.
+Unclosed quotation mark after the character string ')'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at FileProcessingLibrary.Services.SaveToDb.SaveAccountHeader(Account account) in C:\Users\Ibiley Uniforms\source\repos\ConsoleApp2\FileProcessingLibrary\Services\SaveToDb.cs:line 52
+ClientConnectionId:a113dfdf-ff1f-46c7-b81e-02b73fd478b0
+Error Number:102,State:1,Class:15
+12/4/2020 4:11:00 PM ==> Error inserting account header System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near 'S'.
+Unclosed quotation mark after the character string ')'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at FileProcessingLibrary.Services.SaveToDb.SaveAccountHeader(Account account) in C:\Users\Ibiley Uniforms\source\repos\ConsoleApp2\FileProcessingLibrary\Services\SaveToDb.cs:line 52
+ClientConnectionId:d7d5b17d-6111-401d-8275-d9a14dcf2f01
+Error Number:102,State:1,Class:15
+12/4/2020 4:11:00 PM ==> Error inserting account header System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near 'S'.
+Unclosed quotation mark after the character string ')'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at FileProcessingLibrary.Services.SaveToDb.SaveAccountHeader(Account account) in C:\Users\Ibiley Uniforms\source\repos\ConsoleApp2\FileProcessingLibrary\Services\SaveToDb.cs:line 52
+ClientConnectionId:d7d5b17d-6111-401d-8275-d9a14dcf2f01
+Error Number:102,State:1,Class:15
+12/4/2020 4:13:34 PM ==> Error inserting account header System.Data.SqlClient.SqlException (0x80131904): String or binary data would be truncated in table 'RptFileApp.dbo.AccountHeader', column 'ArCode'. Truncated value: 'AR04ROSEMO R'.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at FileProcessingLibrary.Services.SaveToDb.SaveAccountHeader(Account account) in C:\Users\Ibiley Uniforms\source\repos\ConsoleApp2\FileProcessingLibrary\Services\SaveToDb.cs:line 52
+ClientConnectionId:d4537114-1338-4d40-8794-e6bf8e7883a7
+Error Number:2628,State:1,Class:16
+12/4/2020 4:13:34 PM ==> Error inserting account header System.Data.SqlClient.SqlException (0x80131904): String or binary data would be truncated in table 'RptFileApp.dbo.AccountHeader', column 'ArCode'. Truncated value: 'AR04TRUECL T'.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at FileProcessingLibrary.Services.SaveToDb.SaveAccountHeader(Account account) in C:\Users\Ibiley Uniforms\source\repos\ConsoleApp2\FileProcessingLibrary\Services\SaveToDb.cs:line 52
+ClientConnectionId:d4537114-1338-4d40-8794-e6bf8e7883a7
+Error Number:2628,State:1,Class:16
+12/4/2020 4:13:34 PM ==> Error inserting account header System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near 'S'.
+Unclosed quotation mark after the character string ')'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at FileProcessingLibrary.Services.SaveToDb.SaveAccountHeader(Account account) in C:\Users\Ibiley Uniforms\source\repos\ConsoleApp2\FileProcessingLibrary\Services\SaveToDb.cs:line 52
+ClientConnectionId:d4537114-1338-4d40-8794-e6bf8e7883a7
+Error Number:102,State:1,Class:15
+12/4/2020 4:13:34 PM ==> Error inserting account header System.Data.SqlClient.SqlException (0x80131904): String or binary data would be truncated in table 'RptFileApp.dbo.AccountHeader', column 'ArCode'. Truncated value: 'STAF-4441  H'.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at FileProcessingLibrary.Services.SaveToDb.SaveAccountHeader(Account account) in C:\Users\Ibiley Uniforms\source\repos\ConsoleApp2\FileProcessingLibrary\Services\SaveToDb.cs:line 52
+ClientConnectionId:d4537114-1338-4d40-8794-e6bf8e7883a7
+Error Number:2628,State:1,Class:16
+12/4/2020 4:13:34 PM ==> Error inserting account header System.Data.SqlClient.SqlException (0x80131904): String or binary data would be truncated in table 'RptFileApp.dbo.AccountHeader', column 'ArCode'. Truncated value: 'STAFF-BPBR B'.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at FileProcessingLibrary.Services.SaveToDb.SaveAccountHeader(Account account) in C:\Users\Ibiley Uniforms\source\repos\ConsoleApp2\FileProcessingLibrary\Services\SaveToDb.cs:line 52
+ClientConnectionId:d4537114-1338-4d40-8794-e6bf8e7883a7
+Error Number:2628,State:1,Class:16
+12/4/2020 4:13:34 PM ==> Error inserting account header System.Data.SqlClient.SqlException (0x80131904): String or binary data would be truncated in table 'RptFileApp.dbo.AccountHeader', column 'ArCode'. Truncated value: 'STAFF-NEWH N'.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at FileProcessingLibrary.Services.SaveToDb.SaveAccountHeader(Account account) in C:\Users\Ibiley Uniforms\source\repos\ConsoleApp2\FileProcessingLibrary\Services\SaveToDb.cs:line 52
+ClientConnectionId:d4537114-1338-4d40-8794-e6bf8e7883a7
+Error Number:2628,State:1,Class:16
+12/4/2020 4:13:34 PM ==> Error inserting account header System.Data.SqlClient.SqlException (0x80131904): String or binary data would be truncated in table 'RptFileApp.dbo.AccountHeader', column 'ArCode'. Truncated value: 'STAFF-NEWH N'.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at FileProcessingLibrary.Services.SaveToDb.SaveAccountHeader(Account account) in C:\Users\Ibiley Uniforms\source\repos\ConsoleApp2\FileProcessingLibrary\Services\SaveToDb.cs:line 52
+ClientConnectionId:d4537114-1338-4d40-8794-e6bf8e7883a7
+Error Number:2628,State:1,Class:16
+12/4/2020 4:13:34 PM ==> Error inserting account header System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near 'S'.
+Unclosed quotation mark after the character string ')'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at FileProcessingLibrary.Services.SaveToDb.SaveAccountHeader(Account account) in C:\Users\Ibiley Uniforms\source\repos\ConsoleApp2\FileProcessingLibrary\Services\SaveToDb.cs:line 52
+ClientConnectionId:d4537114-1338-4d40-8794-e6bf8e7883a7
+Error Number:102,State:1,Class:15
+12/4/2020 4:13:34 PM ==> Error inserting account header System.Data.SqlClient.SqlException (0x80131904): String or binary data would be truncated in table 'RptFileApp.dbo.AccountHeader', column 'ArCode'. Truncated value: 'STAFF-POIN C'.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at FileProcessingLibrary.Services.SaveToDb.SaveAccountHeader(Account account) in C:\Users\Ibiley Uniforms\source\repos\ConsoleApp2\FileProcessingLibrary\Services\SaveToDb.cs:line 52
+ClientConnectionId:d4537114-1338-4d40-8794-e6bf8e7883a7
+Error Number:2628,State:1,Class:16
+12/4/2020 4:13:34 PM ==> Error inserting account header System.Data.SqlClient.SqlException (0x80131904): String or binary data would be truncated in table 'RptFileApp.dbo.AccountHeader', column 'ArCode'. Truncated value: 'STAFF-TPAB T'.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at FileProcessingLibrary.Services.SaveToDb.SaveAccountHeader(Account account) in C:\Users\Ibiley Uniforms\source\repos\ConsoleApp2\FileProcessingLibrary\Services\SaveToDb.cs:line 52
+ClientConnectionId:d4537114-1338-4d40-8794-e6bf8e7883a7
+Error Number:2628,State:1,Class:16
+12/4/2020 4:20:19 PM ==> Error inserting account header System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near 'S'.
+Unclosed quotation mark after the character string ')'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at FileProcessingLibrary.Services.SaveToDb.SaveAccountHeader(Account account) in C:\Users\Ibiley Uniforms\source\repos\ConsoleApp2\FileProcessingLibrary\Services\SaveToDb.cs:line 52
+ClientConnectionId:386bbb8c-d425-4166-9299-79917bbb2616
+Error Number:102,State:1,Class:15
+12/4/2020 4:20:19 PM ==> Error inserting account header System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near 'S'.
+Unclosed quotation mark after the character string ')'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at FileProcessingLibrary.Services.SaveToDb.SaveAccountHeader(Account account) in C:\Users\Ibiley Uniforms\source\repos\ConsoleApp2\FileProcessingLibrary\Services\SaveToDb.cs:line 52
+ClientConnectionId:386bbb8c-d425-4166-9299-79917bbb2616
+Error Number:102,State:1,Class:15
+12/4/2020 4:24:07 PM ==> Error inserting account header System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near 'S'.
+Unclosed quotation mark after the character string ')'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at FileProcessingLibrary.Services.SaveToDb.SaveAccountHeader(Account account) in C:\Users\Ibiley Uniforms\source\repos\ConsoleApp2\FileProcessingLibrary\Services\SaveToDb.cs:line 52
+ClientConnectionId:ca591c1f-6f01-4ab8-ae93-c7576671631c
+Error Number:102,State:1,Class:15
+12/4/2020 4:24:07 PM ==> Error inserting account header System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near 'S'.
+Unclosed quotation mark after the character string ')'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at FileProcessingLibrary.Services.SaveToDb.SaveAccountHeader(Account account) in C:\Users\Ibiley Uniforms\source\repos\ConsoleApp2\FileProcessingLibrary\Services\SaveToDb.cs:line 52
+ClientConnectionId:ca591c1f-6f01-4ab8-ae93-c7576671631c
+Error Number:102,State:1,Class:15
+12/4/2020 4:25:11 PM ==> Error inserting account header System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near 'S'.
+Unclosed quotation mark after the character string ')'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at FileProcessingLibrary.Services.SaveToDb.SaveAccountHeader(Account account) in C:\Users\Ibiley Uniforms\source\repos\ConsoleApp2\FileProcessingLibrary\Services\SaveToDb.cs:line 52
+ClientConnectionId:4e5c2b83-869e-4acd-872e-b053ba0c75ee
+Error Number:102,State:1,Class:15
+12/4/2020 4:25:11 PM ==> Error inserting account header System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near 'S'.
+Unclosed quotation mark after the character string ')'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at FileProcessingLibrary.Services.SaveToDb.SaveAccountHeader(Account account) in C:\Users\Ibiley Uniforms\source\repos\ConsoleApp2\FileProcessingLibrary\Services\SaveToDb.cs:line 52
+ClientConnectionId:4e5c2b83-869e-4acd-872e-b053ba0c75ee
+Error Number:102,State:1,Class:15

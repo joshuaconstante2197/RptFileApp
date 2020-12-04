@@ -1,0 +1,24 @@
+12/2/2020 5:38:32 PM ==> Error inserting account header System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near 'S'.
+Unclosed quotation mark after the character string ')'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at FileProcessingLibrary.Services.SaveToDb.SaveAccountHeader(Account account) in C:\Users\Ibiley Uniforms\source\repos\ConsoleApp2\FileProcessingLibrary\Services\SaveToDb.cs:line 52
+ClientConnectionId:a10f59ec-64e7-4043-a8e9-44df55a53f72
+Error Number:102,State:1,Class:15
+12/2/2020 5:38:34 PM ==> Error inserting account header System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near 'S'.
+Unclosed quotation mark after the character string ')'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at FileProcessingLibrary.Services.SaveToDb.SaveAccountHeader(Account account) in C:\Users\Ibiley Uniforms\source\repos\ConsoleApp2\FileProcessingLibrary\Services\SaveToDb.cs:line 52
+ClientConnectionId:a10f59ec-64e7-4043-a8e9-44df55a53f72
+Error Number:102,State:1,Class:15
