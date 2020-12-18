@@ -8,7 +8,7 @@ namespace FileProcessingLibrary.Services
 {
     public class SaveAccountToDb
     {
-        public static void Save(Account account)
+        public static void SaveAccountHeader(Account account)
         {
             SqlCommand cmd;
             var sql = string.Empty;

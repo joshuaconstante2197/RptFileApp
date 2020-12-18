@@ -197,6 +197,8 @@ namespace FileProcessingLibrary
             var listOfAccounts = new List<Account>();
 
             Account account = new Account();
+            var newAccount = new SaveToDb();
+
             DeleteEmptiesAndNonArs(pathToRptFile, pathToTempFile);
 
             StreamReader cleanFile = new StreamReader(pathToTempFile);
@@ -206,12 +208,14 @@ namespace FileProcessingLibrary
                 {
                     if(account.AccountHeader != null)
                     {
-                        var newAccount = new SaveToDb();
+                        newAccount = new SaveToDb();
                         newAccount.SaveAccountHeader(account);
+                        if (account.AccountInfo.Count > 0)
+                        {
+                            newAccount.SaveAccountInfo(account);
+                        }
                     }
-                    
                     account = new Account();
-                    
                 }
                 SetAccount(line, account);
                 //run method to save on database

@@ -1,25 +1,17 @@
+use [master]
+GO
+IF DB_ID('RptFileApp') IS NOT NULL
+BEGIN
+	ALTER DATABASE RptFileApp SET OFFLINE WITH ROLLBACK IMMEDIATE;
+	ALTER DATABASE RptFileApp SET ONLINE;
+	DROP DATABASE RptFileApp;
+
+END
+
 IF DB_ID('RptFileApp') IS NULL
-	BEGIN
-		CREATE Database RptFileApp
-	END
-ELSE
-	BEGIN
-		USE RptFileApp
-			IF OBJECT_ID('dbo.AccountHeader','U') IS NOT NULL
-				BEGIN
-					DROP TABLE dbo.AccountHeader;
-				END
-
-			IF OBJECT_ID('dbo.AccountInfo','U') IS NOT NULL
-				BEGIN
-					DROP TABLE dbo.AccountInfo;
-				END
-
-			IF OBJECT_ID('dbo.InvoiceBalances','U') IS NOT NULL
-				BEGIN
-					DROP TABLE dob.InvoiceBalances;
-				END
-	END
+BEGIN
+	CREATE DATABASE RptFileApp
+END
 
 USE RptFileApp
 GO
@@ -33,18 +25,19 @@ CREATE TABLE dbo.AccountInfo (ArCode varchar(12),
 	TranDate date,
 	TranDetail varchar(50),
 	DueDate date,
-	InvoiceNumber varchar(10),
+	InvoiceNumber varchar(10) UNIQUE,
 	ReferenceNumber varchar(20)
-	PRIMARY KEY(ArCode),
-	FOREIGN KEY(ArCode) REFERENCES dbo.AccountHeader(ArCode)
+	PRIMARY KEY(InvoiceNumber),
+	FOREIGN KEY(ArCode) REFERENCES dbo.AccountHeader(ArCode) ON DELETE CASCADE
 )
 
-Create TABLE dbo.InvoiceBalance(ArCode varchar(12),
+Create TABLE dbo.InvoiceBalance(ArCode varchar(12) FOREIGN KEY(ArCode) REFERENCES dbo.AccountHeader(ArCode) ON DELETE CASCADE,
 	Balance money,
 	Curr money,
 	Over30 money,
 	Over60 money,
 	Over90 money,
+	InvoiceNumber varchar (10),
 	PRIMARY KEY(InvoiceNumber),
 	FOREIGN KEY(InvoiceNumber) REFERENCES dbo.AccountInfo(InvoiceNumber)
 )

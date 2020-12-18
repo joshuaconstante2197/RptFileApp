@@ -7,7 +7,7 @@ namespace FileProcessingLibrary.Services
 {
     public class SaveToDb
     {
-        public bool CheckIfAccountExists(Account account)
+        public bool CheckIfAccountHeaderExists(Account account)
         {
             var sql = $"SELECT 1 FROM AccountHeader WHERE ArCode  = ('{account.AccountHeader.ArCode}')";
             using (SqlConnection sqlCon = new SqlConnection(Config.ConnString))
@@ -33,7 +33,7 @@ namespace FileProcessingLibrary.Services
             var sql = String.Empty;
             
             
-            if (account != null && !CheckIfAccountExists(account))
+            if (account != null && !CheckIfAccountHeaderExists(account))
             {
                 sql = $"INSERT INTO AccountHeader(ArCode, AccountName, AccountPhoneNumber) VALUES ('{account.AccountHeader.ArCode}','{account.AccountHeader.AccountName}','{account.AccountHeader.AccountPhoneNumber}')";
             }
@@ -66,8 +66,8 @@ namespace FileProcessingLibrary.Services
         {
             foreach (var accountInfo in account.AccountInfo)
             {
-                var sql = $"INSERT INTO AccountInfo(ArCode, TranDate, TranDetail, DueDate, InvoiceNumber, ReferenceNumber)  VALUES('{account.AccountHeader.ArCode}',{accountInfo.TranDate},'{accountInfo.TranDetail}'," +
-                          $"{accountInfo.DueDate},'{accountInfo.InvoiceNumber}','{accountInfo.ReferenceNumber}'";
+                var sql = $"INSERT INTO AccountInfo(ArCode, TranDate, TranDetail, DueDate, InvoiceNumber, ReferenceNumber)  VALUES('{account.AccountHeader.ArCode}','{accountInfo.TranDate}','{accountInfo.TranDetail}'," +
+                          $"'{accountInfo.DueDate}','{accountInfo.InvoiceNumber}','{accountInfo.ReferenceNumber}')";
                 using (SqlConnection sqlCon = new SqlConnection(Config.ConnString))
                 {
                     sqlCon.Open();

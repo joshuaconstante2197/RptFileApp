@@ -14,7 +14,7 @@ namespace ConsoleApp2
     {
         static void Main(string[] args)
         {
-            string pathToRptFile = @"C:\Users\Ibiley Uniforms\Documents\ARs\2020\december\120120.rpt";
+            string pathToRptFile = @"C:\Users\Ibiley Uniforms\Documents\ARs\2020\december\121520.rpt";
             string pathToTempFile = System.IO.Path.GetTempPath() + Guid.NewGuid().ToString() + ".txt";
             ProcessFile.Process(pathToRptFile, pathToTempFile);
             Console.WriteLine(pathToTempFile);
