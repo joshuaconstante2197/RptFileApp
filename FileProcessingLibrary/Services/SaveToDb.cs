@@ -35,7 +35,7 @@ namespace FileProcessingLibrary.Services
             
             if (account != null && !CheckIfAccountHeaderExists(account))
             {
-                sql = $"INSERT INTO AccountHeader(ArCode, AccountName, AccountPhoneNumber) VALUES ('{account.AccountHeader.ArCode}','{account.AccountHeader.AccountName}','{account.AccountHeader.AccountPhoneNumber}')";
+                sql = $"INSERT INTO AccountHeader(ArCode, AccountName, AccountPhoneNumber) VALUES ('{account.AccountHeader.ArCode}','{account.AccountHeader.AccountName}','{account.AccountHeader.AccountPhoneNumber}') ";
             }
             else
             {
@@ -55,7 +55,7 @@ namespace FileProcessingLibrary.Services
                     catch (Exception ex)
                     {
                         var err = new CreateLogFiles();
-                        err.ErrorLog(Config.DataPath + "err.log ", "Error inserting account header " + ex);
+                        err.ErrorLog(Config.DataPath + "err.log ", "Error inserting account header " + "Error on this command" + sql + ex );
                         return false;
                         throw;
                     }

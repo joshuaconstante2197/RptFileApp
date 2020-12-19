@@ -27,19 +27,17 @@ CREATE TABLE dbo.AccountInfo (ArCode varchar(12),
 	DueDate date,
 	InvoiceNumber varchar(10) UNIQUE,
 	ReferenceNumber varchar(20)
-	PRIMARY KEY(InvoiceNumber),
 	FOREIGN KEY(ArCode) REFERENCES dbo.AccountHeader(ArCode) ON DELETE CASCADE
 )
 
-Create TABLE dbo.InvoiceBalance(ArCode varchar(12) FOREIGN KEY(ArCode) REFERENCES dbo.AccountHeader(ArCode) ON DELETE CASCADE,
+Create TABLE dbo.InvoiceBalance(ArCode varchar(12) ,
 	Balance money,
 	Curr money,
 	Over30 money,
 	Over60 money,
 	Over90 money,
 	InvoiceNumber varchar (10),
-	PRIMARY KEY(InvoiceNumber),
-	FOREIGN KEY(InvoiceNumber) REFERENCES dbo.AccountInfo(InvoiceNumber)
+	FOREIGN KEY(ArCode) REFERENCES dbo.AccountHeader(ArCode) ON DELETE CASCADE
 )
 
 	

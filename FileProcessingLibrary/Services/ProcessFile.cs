@@ -103,9 +103,13 @@ namespace FileProcessingLibrary
             string[] strArr = accountN.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
             for (int i = 0; i < strArr.Length; i++)
             {
+                //remove single quotes from account name before returning
+                if (strArr[i].Contains('\''))
+                {
+                    strArr[i] = strArr[i].Replace("\'","");
+                }
                 accountHeader.AccountName += string.Concat(strArr[i], ' ');
             }
-
             return accountHeader;
         }
 
