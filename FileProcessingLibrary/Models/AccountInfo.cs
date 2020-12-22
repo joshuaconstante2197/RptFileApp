@@ -5,6 +5,7 @@ namespace FileProcessingLibrary
 {
     public class AccountInfo
     {
+        public int TransactionId { get; set; }
         public DateTime TranDate { get; set; }
         public string TranDetail { get; set; }
         public DateTime DueDate { get; set; }
