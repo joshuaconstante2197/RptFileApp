@@ -20,11 +20,15 @@ namespace FileProcessingLibrary
             StreamReader rptFile = new StreamReader(pathToRptFile);
 
             int k;
+            //making sure I haven't reached the end of the line
             while ((rptFile.Peek()) >= 0)
             {
+                //read the charater
                 k = rptFile.Read();
+                //if reachead end of the line check if next character is 
                 if (k == 10)
                 {
+                    //every AR starts with an A 
                     if (rptFile.Peek() == 65)
                     {
                         break;
@@ -41,10 +45,16 @@ namespace FileProcessingLibrary
                     {
                         foreach (var word in wordsToExclude)
                         {
+                            //making sure the line I'm processing does not contain the characters to exclude
                             if (line.Contains(word))
                             {
                                 wordToEx = false;
                                 break;
+                            }
+                            //also making sure the line does not have single quotes since that will mess up inserting into db
+                            else if(line.Contains("\'"))
+                            {
+                               line = line.Replace("\'", " ");
                             }
                             wordToEx = true;
                         }
@@ -53,6 +63,7 @@ namespace FileProcessingLibrary
                             if (!char.IsDigit(line[0]) && !char.IsWhiteSpace(line[0]) && line[0] != 'E')
                             {
                                 streamWriter.WriteLine(line);
+                                //count is set to true so if a line starts with an E (not an AR account) the streamwriter will ignore it
                                 count = true;
                             }
                             else if (char.IsWhiteSpace(line[0]) && count)
@@ -103,11 +114,6 @@ namespace FileProcessingLibrary
             string[] strArr = accountN.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
             for (int i = 0; i < strArr.Length; i++)
             {
-                //remove single quotes from account name before returning
-                if (strArr[i].Contains('\''))
-                {
-                    strArr[i] = strArr[i].Replace("\'","");
-                }
                 accountHeader.AccountName += string.Concat(strArr[i], ' ');
             }
             return accountHeader;
@@ -123,6 +129,7 @@ namespace FileProcessingLibrary
                 {
                     accountInfo.TranDate = Convert.ToDateTime(line.Substring(18, 9));
                 }
+                
                 if (!string.IsNullOrWhiteSpace(line.Substring(28, 13)))
                 {
                     if (char.IsDigit(line[42]))
@@ -144,7 +151,7 @@ namespace FileProcessingLibrary
                 {
                     accountInfo.ReferenceNumber = line.Substring(49, 13).TrimStart();
                 }
-                if (!string.IsNullOrWhiteSpace(line.Substring(64, 7)))
+                if (!string.IsNullOrWhiteSpace(line.Substring(64, 7)) && line.Substring(64,7).Contains('/'))
                 {
                     accountInfo.DueDate = Convert.ToDateTime(line.Substring(63, 8).TrimStart());
                 }

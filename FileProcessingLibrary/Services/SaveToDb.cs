@@ -66,6 +66,8 @@ namespace FileProcessingLibrary.Services
         {
             foreach (var accountInfo in account.AccountInfo)
             {
+                
+
                 var sql = $"INSERT INTO AccountInfo(ArCode, TranDate, TranDetail, DueDate, InvoiceNumber, ReferenceNumber)  VALUES('{account.AccountHeader.ArCode}','{accountInfo.TranDate}','{accountInfo.TranDetail}'," +
                           $"'{accountInfo.DueDate}','{accountInfo.InvoiceNumber}','{accountInfo.ReferenceNumber}')";
                 using (SqlConnection sqlCon = new SqlConnection(Config.ConnString))

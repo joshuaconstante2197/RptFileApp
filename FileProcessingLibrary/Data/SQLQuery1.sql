@@ -22,11 +22,11 @@ CREATE TABLE dbo.AccountHeader (ArCode varchar(12) PRIMARY KEY,
 ) 
 
 CREATE TABLE dbo.AccountInfo (ArCode varchar(12),
-	TranDate date,
+	TranDate date DEFAULT NULL,
 	TranDetail varchar(50),
-	DueDate date,
-	InvoiceNumber varchar(10) UNIQUE,
-	ReferenceNumber varchar(20)
+	DueDate date DEFAULT NULL,
+	InvoiceNumber varchar(10),
+	ReferenceNumber varchar(20),
 	FOREIGN KEY(ArCode) REFERENCES dbo.AccountHeader(ArCode) ON DELETE CASCADE
 )
 
