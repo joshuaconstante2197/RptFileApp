@@ -16,7 +16,7 @@ namespace FileProcessingLibrary
             string line;
             bool count = false;
             bool wordToEx = true;
-            string[] wordsToExclude = { "T R I A L", "Tran    Tran", "Date    Descr", "----    -----", "Time", "---------", "*** End of Report ***", "E" };
+            string[] wordsToExclude = { "T R I A L", "Tran    Tran", "Date    Descr", "----    -----", "Time", "---------", "E", "TOTAL A/R" };
             StreamReader rptFile = new StreamReader(pathToRptFile);
 
             int k;
@@ -228,7 +228,7 @@ namespace FileProcessingLibrary
                 transactionId += 1;
                 if(!char.IsWhiteSpace(line[0]))
                 {
-                    if(account.AccountHeader != null && !line.Substring(0,line.IndexOf(' ')).Equals(account.AccountHeader.ArCode))
+                    if((account.AccountHeader != null && !line.Substring(0,line.IndexOf(' ')).Equals(account.AccountHeader.ArCode)) || line.Equals("*** End of Report ***"))
                     {
                         newAccount = new SaveToDb();
                         newAccount.SaveAccountHeader(account);
