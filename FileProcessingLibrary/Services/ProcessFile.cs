@@ -16,11 +16,12 @@ namespace FileProcessingLibrary
             string line;
             bool count = false;
             bool wordToEx = true;
-            string[] wordsToExclude = { "T R I A L", "Tran    Tran", "Date    Descr", "----    -----", "Time", "---------","***" };
+            string[] wordsToExclude = { "T R I A L", "Tran    Tran", "Date    Descr", "----    -----", "Time", "---------", "E", "TOTAL A/R" };
             StreamReader rptFile = new StreamReader(pathToRptFile);
 
             int k;
             //making sure I haven't reached the end of the line
+            
             while ((rptFile.Peek()) >= 0)
             {
                 //read the charater
@@ -119,9 +120,11 @@ namespace FileProcessingLibrary
             return accountHeader;
         }
 
-        public static AccountInfo SetAccountInfo(string line)
+        public static AccountInfo SetAccountInfo(string line, int transactionId)
         {
             var accountInfo = new AccountInfo();
+
+            accountInfo.TransactionId = transactionId;
 
             if (!line.Contains("TOTAL"))
             {
@@ -160,9 +163,11 @@ namespace FileProcessingLibrary
             {
                 accountInfo.TranDetail = "Total Customer";
             }
+
+
             return accountInfo;
         }
-        public static InvoiceBalance SetInvoiceBalance(string line)
+        public static InvoiceBalance SetInvoiceBalance(string line,string arCode, int transactionId)
         {
             var invoiceBalances = new InvoiceBalance();
             var vs = new List<string>();
@@ -181,10 +186,14 @@ namespace FileProcessingLibrary
                     properties[i].SetValue(invoiceBalances, 0.0m);
                 }
             }
+
+            invoiceBalances.ArCode = arCode;
+            invoiceBalances.TransactionId = transactionId;
+
             return invoiceBalances;
         }
 
-        public static Account SetAccount(string line, Account account)
+        public static Account SetAccount(string line, Account account, int transactionId)
         {
             if (!char.IsWhiteSpace(line[0]))
             {
@@ -192,10 +201,10 @@ namespace FileProcessingLibrary
             }
             else 
             {
-                account.AccountInfo.Add(SetAccountInfo(line));
+                account.AccountInfo.Add(SetAccountInfo(line, transactionId));
                 if (line.Substring(74, line.Length - 74).Any(char.IsDigit))
                 {
-                    account.Balances.Add(SetInvoiceBalance(line));
+                    account.Balances.Add(SetInvoiceBalance(line,account.AccountHeader.ArCode, transactionId));
                 }
             }
 
@@ -205,6 +214,7 @@ namespace FileProcessingLibrary
         public static void Process(string pathToRptFile, string pathToTempFile)
         {
             string line;
+            var transactionId = 0;
             var listOfAccounts = new List<Account>();
 
             Account account = new Account();
@@ -215,21 +225,24 @@ namespace FileProcessingLibrary
             StreamReader cleanFile = new StreamReader(pathToTempFile);
             while ((line = cleanFile.ReadLine()) != null)
             {
+                transactionId += 1;
                 if(!char.IsWhiteSpace(line[0]))
                 {
-                    if(account.AccountHeader != null)
+                    if((account.AccountHeader != null && !line.Substring(0,line.IndexOf(' ')).Equals(account.AccountHeader.ArCode)) || line.Equals("*** End of Report ***"))
                     {
                         newAccount = new SaveToDb();
                         newAccount.SaveAccountHeader(account);
+                        
                         if (account.AccountInfo.Count > 0)
                         {
                             newAccount.SaveAccountInfo(account);
+                            newAccount.SaveAccountBalances(account);
+                            transactionId = 0;
                         }
+                        account = new Account();
                     }
-                    account = new Account();
                 }
-                SetAccount(line, account);
-                //run method to save on database
+                SetAccount(line, account, transactionId);
             }
             //foreach (var ac in listOfAccounts)
             //{

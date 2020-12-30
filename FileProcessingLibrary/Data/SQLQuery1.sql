@@ -22,22 +22,24 @@ CREATE TABLE dbo.AccountHeader (ArCode varchar(12) PRIMARY KEY,
 ) 
 
 CREATE TABLE dbo.AccountInfo (ArCode varchar(12),
+	TransactionId int,
 	TranDate date DEFAULT NULL,
 	TranDetail varchar(50),
 	DueDate date DEFAULT NULL,
 	InvoiceNumber varchar(10),
 	ReferenceNumber varchar(20),
-	FOREIGN KEY(ArCode) REFERENCES dbo.AccountHeader(ArCode) ON DELETE CASCADE
+	FOREIGN KEY(ArCode) REFERENCES dbo.AccountHeader(ArCode) ON DELETE CASCADE,
+	PRIMARY KEY(ArCode,TransactionId)
 )
-
-Create TABLE dbo.InvoiceBalance(ArCode varchar(12) ,
+Create TABLE dbo.InvoiceBalance(ArCode varchar(12),
+	TransactionId int,
+	InvoiceNumber varchar (10),
 	Balance money,
 	Curr money,
 	Over30 money,
 	Over60 money,
 	Over90 money,
-	InvoiceNumber varchar (10),
-	FOREIGN KEY(ArCode) REFERENCES dbo.AccountHeader(ArCode) ON DELETE CASCADE
+	FOREIGN KEY(ArCode, TransactionId) REFERENCES dbo.AccountInfo(ArCode, TransactionId) ON DELETE CASCADE
 )
 
 	
