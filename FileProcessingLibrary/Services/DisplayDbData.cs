@@ -44,11 +44,55 @@ namespace FileProcessingLibrary.Services
             catch (Exception ex)
             {
                 var err = new CreateLogFiles();
-                err.ErrorLog(Config.DataPath + "err.log",":" + ex);
+                err.ErrorLog(Config.WebDataPath + "err.log", ex.Message);
                 throw;
             }
             
             return accounts;
         }
+        public List<AccountInfo> DisplayAccountInfo(string arCode)
+        {
+            var accounts = new List<AccountInfo>();
+            try
+            {
+                using (SqlConnection sqlCon = new SqlConnection(Config.ConnString))
+                {
+                    sqlCon.Open();
+                    var sql = $"SELECT * FROM AccountInfo WHERE ArCode = '{arCode}'";
+                    using (SqlCommand cmd = new SqlCommand(sql, sqlCon))
+                    {
+                        using (SqlDataReader reader = cmd.ExecuteReader())
+                        {
+                            while (reader.Read())
+                            {
+                                var accountInfo = new AccountInfo();
+
+                                for (int i = 0; i < reader.FieldCount; i++)
+                                {
+                                    var fieldName = reader.GetName(i);
+                                    var property = accountInfo.GetType().GetProperty(fieldName);
+
+                                    if (property != null && !reader.IsDBNull(i))
+                                    {
+                                        property.SetValue(accountInfo, reader.GetValue(i), null);
+                                    }
+                                }
+                                accounts.Add(accountInfo);
+                            }
+                        }
+                    }
+                }
+
+            }
+            catch (Exception ex)
+            {
+                var Err = new CreateLogFiles();
+                Err.ErrorLog(Config.WebDataPath + "err.log", ex.Message);
+                throw;
+            }
+
+            return accounts;
+        }
+
     }
 }

@@ -1,4 +1,31 @@
-﻿@page
-@model Collections.Pages.AccountModel
+﻿@page 
+@model AccountModel
 @{
+    ViewData["Tile"] = "Account";
 }
+<h1>Account </h1>
+<div class="text-center">
+    <table class="table-bordered">
+        <thead>
+            <tr>
+                <th>Transaction Id</th>
+                <th>Due Date</th>
+                <th>Invoice Number</th>
+                <th>Reference Number</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var account in Model.accountInfos)
+            {
+            <tr>
+                @*<td><a asp-page="/Account" asp-route-id="@account.ar">@account.ArCode</a></td>*@
+                <td>@account.TransactionId</td>
+                <td>@account.DueDate</td>
+                <td>@account.InvoiceNumber</td>
+                <td>@account.ReferenceNumber</td>
+
+            </tr>
+            }
+        </tbody>
+    </table>
+</div>

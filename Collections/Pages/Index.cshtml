@@ -3,7 +3,6 @@
 @{
     ViewData["Title"] = "Home page";
 }
-
 <div class="text-center">
     <table class="table-bordered">
         <thead>
@@ -16,11 +15,11 @@
         <tbody>
             @foreach (var account in Model.Accounts)
             {
-            <tr>
-                <td>@account.ArCode</td>
-                <td>@account.AccountName</td>
-                <td>@account.AccountPhoneNumber</td>
-            </tr>
+                <tr>
+                    <td><a asp-page="/Account" asp-route-id="@account.ArCode" >@account.ArCode</a></td>
+                    <td>@account.AccountName</td>
+                    <td>@account.AccountPhoneNumber</td>
+                </tr>
             }
         </tbody>
     </table>

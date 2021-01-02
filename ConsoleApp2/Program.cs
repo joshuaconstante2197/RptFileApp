@@ -14,10 +14,11 @@ namespace ConsoleApp2
     {
         static void Main(string[] args)
         {
-            
-            string pathToTempFile = System.IO.Path.GetTempPath() + Guid.NewGuid().ToString() + ".txt";
-            ProcessFile.Process(Config.pathToRptFile, pathToTempFile);
-            Console.WriteLine(pathToTempFile);
+
+            //string pathToTempFile = System.IO.Path.GetTempPath() + Guid.NewGuid().ToString() + ".txt";
+            //ProcessFile.Process(Config.pathToRptFile, pathToTempFile);
+            //Console.WriteLine(pathToTempFile);
+            Console.WriteLine(Path.GetFullPath(Config.DataPath));
         //C: \Users\joshu\Source\Repos\RptFileApp\FileProcessingLibrary\Data\110320.txt
 
             //SaveAccountToDb.Save(new Account());

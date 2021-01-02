@@ -7,6 +7,7 @@ using FileProcessingLibrary.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
+using System.IO;
 
 namespace Collections.Pages
 {
@@ -17,12 +18,6 @@ namespace Collections.Pages
         public DisplayDbData GetDbData = new DisplayDbData();
         public List<AccountHeader> Accounts;
         
-        //public IndexModel(DisplayDbData getDbData)
-        //{
-        //    this.GetDbData = getDbData;
-        //}
-
-
         public IndexModel(ILogger<IndexModel> logger)
         {
             _logger = logger;
@@ -32,7 +27,6 @@ namespace Collections.Pages
         public void OnGet()
         {
             Accounts = GetDbData.DisplayAllAccounts();
-
         }
     }
 }
