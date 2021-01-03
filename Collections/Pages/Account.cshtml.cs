@@ -13,9 +13,12 @@ namespace Collections.Pages
     {
         DisplayDbData getData = new DisplayDbData();
         public List<AccountInfo> accountInfos = new List<AccountInfo>();
+        public AccountHeader accountHeader;
+        
         public void OnGet(string id)
         {
-            accountInfos = getData.DisplayAccountInfo(id); 
+            accountInfos = getData.DisplayAccountInfo(id);
+            accountHeader = getData.GetAccountHeaderByArCode(id);
         }
         
     }

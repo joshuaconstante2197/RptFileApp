@@ -1,14 +1,16 @@
-﻿@page 
+﻿@page "{id}"
 @model AccountModel
 @{
     ViewData["Tile"] = "Account";
 }
-<h1>Account </h1>
+<h1>@Model.accountHeader.AccountName</h1>
 <div class="text-center">
     <table class="table-bordered">
         <thead>
             <tr>
                 <th>Transaction Id</th>
+                <th>Transaction Date</th>
+                <th>Transaction Detail</th>
                 <th>Due Date</th>
                 <th>Invoice Number</th>
                 <th>Reference Number</th>
@@ -17,14 +19,22 @@
         <tbody>
             @foreach (var account in Model.accountInfos)
             {
-            <tr>
-                @*<td><a asp-page="/Account" asp-route-id="@account.ar">@account.ArCode</a></td>*@
-                <td>@account.TransactionId</td>
-                <td>@account.DueDate</td>
-                <td>@account.InvoiceNumber</td>
-                <td>@account.ReferenceNumber</td>
+                <tr>
+                @{
+                    var d = new Dictionary<string, string>
+                    {
+                        { "arCode", $"{Model.accountHeader.ArCode}" },
+                        { "transactionId", $"{account.TransactionId}" }
 
-            </tr>
+                    };
+                }
+                    <td><a asp-page="/Transaction" asp-all-route-data="d">@account.TransactionId</a> </td>
+                    <td>@account.TranDate</td>
+                    <td>@account.TranDetail</td>
+                    <td>@account.DueDate</td>
+                    <td>@account.InvoiceNumber</td>
+                    <td>@account.ReferenceNumber</td>
+                </tr>
             }
         </tbody>
     </table>

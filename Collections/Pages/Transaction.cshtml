@@ -1,0 +1,11 @@
+﻿@page "{arCode}/{transactionId}"
+@model TransactionModel
+@{
+    ViewData["Title"] = "Transaction";
+}
+
+<h1>Transaction</h1>
+<p>@Model.invoiceBalance.ArCode </p>
+
+<p>@Model.invoiceBalance.Over90 </p>
+
