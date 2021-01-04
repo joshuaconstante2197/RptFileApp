@@ -17,7 +17,6 @@ namespace Collections.Pages
 
         public DisplayDbData GetDbData = new DisplayDbData();
         public List<AccountHeader> Accounts;
-        
         public IndexModel(ILogger<IndexModel> logger)
         {
             _logger = logger;
@@ -27,6 +26,10 @@ namespace Collections.Pages
         public void OnGet()
         {
             Accounts = GetDbData.DisplayAllAccounts();
+            foreach (var account in Accounts)
+            {
+                account.TotalBalance = GetDbData.GetTotalBalance(account.ArCode);
+            }
         }
     }
 }

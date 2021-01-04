@@ -5,7 +5,27 @@
 }
 
 <h1>Transaction</h1>
-<p>@Model.invoiceBalance.ArCode </p>
-
-<p>@Model.invoiceBalance.Over90 </p>
-
+<div class="text-left">
+    <table class="table table-bordered table-striped" id="dataTable">
+        <thead>
+            <tr>
+                <th>Invoice Number</th>
+                <th>Balance</th>
+                <th>Current</th>
+                <th>Over 30</th>
+                <th>Over 60</th>
+                <th>Over 90</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>@Model.invoiceBalance.InvoiceNumber</td>
+                <td>@string.Format("{0:0.00}",Model.invoiceBalance.Balance)</td>
+                <td>@string.Format("{0:0.00}", @Model.invoiceBalance.Current)</td>
+                <td>@string.Format("{0:0.00}", @Model.invoiceBalance.Over30)</td>
+                <td>@string.Format("{0:0.00}", @Model.invoiceBalance.Over60)</td>
+                <td>@string.Format("{0:0.00}", @Model.invoiceBalance.Over90)</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

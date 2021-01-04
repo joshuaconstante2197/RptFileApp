@@ -10,12 +10,14 @@ namespace FileProcessingLibrary.Services
         public List<AccountHeader> DisplayAllAccounts()
         {
             var accounts = new List<AccountHeader>();
+            string sql = string.Empty;
+
             try
             {
                 using (SqlConnection sqlCon = new SqlConnection(Config.ConnString))
                 {
                     sqlCon.Open();
-                    var sql = "SELECT * FROM AccountHeader";
+                    sql = "SELECT * FROM AccountHeader";
                     using (SqlCommand cmd = new SqlCommand(sql, sqlCon))
                     {
                         using (SqlDataReader reader = cmd.ExecuteReader())
@@ -44,21 +46,23 @@ namespace FileProcessingLibrary.Services
             catch (Exception ex)
             {
                 var err = new CreateLogFiles();
-                err.ErrorLog(Config.WebDataPath + "err.log", ex.Message);
+                err.ErrorLog(Config.WebDataPath + "err.log", ex.Message + "Error on this query" + sql);
                 throw;
             }
-            
+
             return accounts;
         }
         public List<AccountInfo> DisplayAccountInfo(string arCode)
         {
             var accounts = new List<AccountInfo>();
+            string sql = string.Empty;
+
             try
             {
                 using (SqlConnection sqlCon = new SqlConnection(Config.ConnString))
                 {
                     sqlCon.Open();
-                    var sql = $"SELECT * FROM AccountInfo WHERE ArCode = '{arCode}'";
+                    sql = $"SELECT * FROM AccountInfo WHERE ArCode = '{arCode}'";
                     using (SqlCommand cmd = new SqlCommand(sql, sqlCon))
                     {
                         using (SqlDataReader reader = cmd.ExecuteReader())
@@ -87,7 +91,7 @@ namespace FileProcessingLibrary.Services
             catch (Exception ex)
             {
                 var Err = new CreateLogFiles();
-                Err.ErrorLog(Config.WebDataPath + "err.log","Error on Displaying account info" + ex.Message);
+                Err.ErrorLog(Config.WebDataPath + "err.log", "Error on Displaying account info" + ex.Message + "Error on this query" + sql);
                 throw;
             }
 
@@ -96,12 +100,14 @@ namespace FileProcessingLibrary.Services
         public AccountHeader GetAccountHeaderByArCode(string arCode)
         {
             var accountHeader = new AccountHeader();
+            string sql = string.Empty;
+
             try
             {
                 using (SqlConnection sqlCon = new SqlConnection(Config.ConnString))
                 {
                     sqlCon.Open();
-                    var sql = $"SELECT * FROM AccountHeader WHERE ArCode = '{arCode}'";
+                    sql = $"SELECT * FROM AccountHeader WHERE ArCode = '{arCode}'";
                     using (SqlCommand cmd = new SqlCommand(sql, sqlCon))
                     {
                         using (SqlDataReader reader = cmd.ExecuteReader())
@@ -127,7 +133,7 @@ namespace FileProcessingLibrary.Services
             catch (Exception ex)
             {
                 var Err = new CreateLogFiles();
-                Err.ErrorLog(Config.WebDataPath + "err.log", "Error on GetAccountHeaderByArCode" + ex.Message );
+                Err.ErrorLog(Config.WebDataPath + "err.log", "Error on GetAccountHeaderByArCode" + ex.Message + "Error on this query" + sql);
                 throw;
             }
             return accountHeader;
@@ -135,12 +141,14 @@ namespace FileProcessingLibrary.Services
         public InvoiceBalance GetInvoiceBalance(string arCode, string transactionId)
         {
             var invoiceBalance = new InvoiceBalance();
+            string sql = string.Empty;
+
             try
             {
                 using (SqlConnection sqlCon = new SqlConnection(Config.ConnString))
                 {
                     sqlCon.Open();
-                    var sql = $"SELECT DISTINCT * FROM InvoiceBalance WHERE ArCode = '{arCode}' AND TransactionId = {transactionId}";
+                    sql = $"SELECT DISTINCT * FROM InvoiceBalance WHERE ArCode = '{arCode}' AND TransactionId = {transactionId}";
                     using (SqlCommand cmd = new SqlCommand(sql, sqlCon))
                     {
                         using (SqlDataReader reader = cmd.ExecuteReader())
@@ -166,10 +174,44 @@ namespace FileProcessingLibrary.Services
             catch (Exception ex)
             {
                 var Err = new CreateLogFiles();
-                Err.ErrorLog(Config.WebDataPath + "err.log", "Error on GetInvoiceBalance" + ex.Message);
+                Err.ErrorLog(Config.WebDataPath + "err.log", "Error on GetInvoiceBalance" + ex.Message + "Error on this query" + sql);
                 throw;
             }
             return invoiceBalance;
+        }
+        public decimal GetTotalBalance(string ArCode)
+        {
+            var balance = new decimal();
+            string sql = string.Empty; 
+            try
+            {
+                using (SqlConnection sqlCon = new SqlConnection(Config.ConnString))
+                {
+                    sqlCon.Open();
+                    sql = $"SELECT DISTINCT Balance FROM InvoiceBalance WHERE ArCode = '{ArCode}' AND TransactionId = (SELECT TransactionId From AccountInfo WHERE ArCode = '{ArCode}' AND TranDetail = 'Total Customer')";
+                    using (SqlCommand cmd = new SqlCommand(sql, sqlCon))
+                    {
+                        using (SqlDataReader reader = cmd.ExecuteReader())
+                        {
+                            while (reader.Read())
+                            {
+                                if (reader.FieldCount == 1 && !reader.IsDBNull(0))
+                                {
+                                    balance = Convert.ToDecimal(reader.GetValue(0));
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
+            catch (Exception ex)
+            {
+                var Err = new CreateLogFiles();
+                Err.ErrorLog(Config.WebDataPath + "err.log", "Error on GetTotalBalance" + ex.Message + "Error on this query" + sql);
+                throw;
+            }
+            return balance;
         }
     }
 }

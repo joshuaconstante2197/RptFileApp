@@ -5,7 +5,7 @@
 }
 <h1>@Model.accountHeader.AccountName</h1>
 <div class="text-center">
-    <table class="table-bordered">
+    <table class="table table-bordered table-striped" id="dataTable">
         <thead>
             <tr>
                 <th>Transaction Id</th>
@@ -29,9 +29,9 @@
                     };
                 }
                     <td><a asp-page="/Transaction" asp-all-route-data="d">@account.TransactionId</a> </td>
-                    <td>@account.TranDate</td>
+                    <td>@account.TranDate.ToShortDateString()</td>
                     <td>@account.TranDetail</td>
-                    <td>@account.DueDate</td>
+                    <td>@account.DueDate.ToShortDateString()</td>
                     <td>@account.InvoiceNumber</td>
                     <td>@account.ReferenceNumber</td>
                 </tr>

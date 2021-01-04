@@ -3,13 +3,14 @@
 @{
     ViewData["Title"] = "Home page";
 }
-<div class="text-center">
-    <table class="table-bordered">
+<div class="text-left">
+    <table class="table table-bordered table-striped" id="dataTable">
         <thead>
             <tr>
                 <th>ArCode</th>
                 <th>Account Name</th>
                 <th>Account Phone Number</th>
+                <th>Total Outstanding</th>
             </tr>
         </thead>
         <tbody>
@@ -19,6 +20,7 @@
                     <td><a asp-page="/Account" asp-route-id="@account.ArCode" >@account.ArCode</a></td>
                     <td>@account.AccountName</td>
                     <td>@account.AccountPhoneNumber</td>
+                    <td>@string.Format("{0:0.00}",account.TotalBalance)</td>
                 </tr>
             }
         </tbody>
