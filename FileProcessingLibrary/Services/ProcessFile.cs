@@ -8,7 +8,7 @@ using System.Text;
 
 namespace FileProcessingLibrary
 {
-    public static class ProcessFile
+    public class ProcessFile
     {
         public static void DeleteEmptiesAndNonArs(string pathToRptFile, string pathToTempFile)
         {

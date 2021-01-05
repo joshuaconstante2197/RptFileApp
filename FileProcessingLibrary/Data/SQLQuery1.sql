@@ -41,5 +41,12 @@ Create TABLE dbo.InvoiceBalance(ArCode varchar(12),
 	Over90 money,
 	FOREIGN KEY(ArCode, TransactionId) REFERENCES dbo.AccountInfo(ArCode, TransactionId) ON DELETE CASCADE
 )
+Create Table dbo.Comment(ArCode varchar(12),
+	TransactionId int,
+	Commnent varchar(max),
+	CommentDate date,
+	FOREIGN KEY(ArCode, TransactionId) REFERENCES dbo.AccountInfo(ArCode, TransactionId) ON DELETE CASCADE
+)
+
 
 	

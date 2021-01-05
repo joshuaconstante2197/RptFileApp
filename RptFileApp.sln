@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30503.244
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp2", "ConsoleApp2\ConsoleApp2.csproj", "{12ED4623-19BB-4241-88B4-1F3DE7D7AEE8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp", "ConsoleApp2\ConsoleApp.csproj", "{12ED4623-19BB-4241-88B4-1F3DE7D7AEE8}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FileProcessingLibrary", "FileProcessingLibrary\FileProcessingLibrary.csproj", "{DB3723E5-5EB5-4AD8-8DE8-E136C440E278}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Collections", "Collections\Collections.csproj", "{042A1218-EAAD-437E-A509-A1BF621A7DF4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CollectionsWebLayer", "Collections\CollectionsWebLayer.csproj", "{042A1218-EAAD-437E-A509-A1BF621A7DF4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

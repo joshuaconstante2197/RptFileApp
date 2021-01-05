@@ -1,0 +1,17 @@
+﻿@page
+@model CollectionsWebLayer.Pages.UploadModel
+@{
+    ViewData["Title"] = "Upload new prism Report";
+}
+<form method="post" enctype="multipart/form-data">
+    <div class="input-group w-50 mb-2">
+        <div class="custom-file">
+            <label for="file" class="custom-file-label" id="fileLabel">Upload File:</label>
+            <input type="file" asp-for="Upload" class="custom-file-input" />
+        </div>
+        <div class="input-group-append">
+            <input type="submit" value="Upload" class="input-group-text" />
+        </div>
+
+    </div>
+</form >
