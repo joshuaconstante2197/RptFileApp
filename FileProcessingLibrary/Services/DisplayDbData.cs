@@ -213,5 +213,39 @@ namespace FileProcessingLibrary.Services
             }
             return balance;
         }
+        public decimal GetTranBalance(string ArCode, int TranId)
+        {
+            var balance = new decimal();
+            string sql = string.Empty;
+            try
+            {
+                using (SqlConnection sqlCon = new SqlConnection(Config.ConnString))
+                {
+                    sqlCon.Open();
+                    sql = $"SELECT DISTINCT Balance FROM InvoiceBalance WHERE ArCode = '{ArCode}' AND TransactionId = {TranId}";
+                    using (SqlCommand cmd = new SqlCommand(sql, sqlCon))
+                    {
+                        using (SqlDataReader reader = cmd.ExecuteReader())
+                        {
+                            while (reader.Read())
+                            {
+                                if (reader.FieldCount == 1 && !reader.IsDBNull(0))
+                                {
+                                    balance = Convert.ToDecimal(reader.GetValue(0));
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
+            catch (Exception ex)
+            {
+                var Err = new CreateLogFiles();
+                Err.ErrorLog(Config.WebDataPath + "err.log", "Error on GetTranBalance" + ex.Message + "Error on this query" + sql);
+                throw;
+            }
+            return balance;
+        }
     }
 }

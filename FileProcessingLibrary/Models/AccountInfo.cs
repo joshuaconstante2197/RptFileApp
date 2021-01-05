@@ -13,5 +13,7 @@ namespace FileProcessingLibrary
         public InvoiceBalance InvoiceBalances { get; set; }
         public string ReferenceNumber { get; set; }
 
+        public decimal TranBalance { get; set; }
+
     }
 }

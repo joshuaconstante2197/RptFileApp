@@ -19,6 +19,10 @@ namespace Collections.Pages
         {
             accountInfos = getData.DisplayAccountInfo(id);
             accountHeader = getData.GetAccountHeaderByArCode(id);
+            foreach (var account in accountInfos)
+            {
+                account.TranBalance = getData.GetTranBalance(accountHeader.ArCode, account.TransactionId);
+            }
         }
         
     }

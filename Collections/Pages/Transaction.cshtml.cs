@@ -13,9 +13,11 @@ namespace Collections.Pages
     {
         public DisplayDbData getData = new DisplayDbData();
         public InvoiceBalance invoiceBalance;
+        public AccountHeader accountHeader;
         public void OnGet(string arCode, string transactionId)
         {
             invoiceBalance = getData.GetInvoiceBalance(arCode, transactionId);
+            accountHeader = getData.GetAccountHeaderByArCode(arCode);
         }
     }
 }
