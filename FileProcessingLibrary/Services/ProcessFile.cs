@@ -244,6 +244,7 @@ namespace FileProcessingLibrary
                 }
                 SetAccount(line, account, transactionId);
             }
+            newAccount.SaveFileToDb(pathToTempFile);
             //foreach (var ac in listOfAccounts)
             //{
             //    if(ac.AccountHeader != null)

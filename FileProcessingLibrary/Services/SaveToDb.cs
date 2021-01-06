@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
+using System.IO;
 using System.Text;
 
 namespace FileProcessingLibrary.Services
@@ -111,6 +113,63 @@ namespace FileProcessingLibrary.Services
                             return false;
                             throw;
                         }
+                    }
+                }
+            }
+            return true;
+        }
+        private static Byte[] ConvertFileToBytes(string pathToTempFile)
+        {
+
+            Byte[] bytes;
+            using (FileStream fs = new FileStream(pathToTempFile, FileMode.Open, FileAccess.Read))
+            {
+                using (BinaryReader br = new BinaryReader(fs))
+                {
+                    try
+                    {
+                        bytes = br.ReadBytes((Int32)fs.Length);
+
+                    }
+                    catch (Exception ex)
+                    {
+                        var err = new CreateLogFiles();
+                        err.ErrorLog(Config.DataPath + "err.log", ex + "Error file to DB");
+                        throw;
+                    }
+                }
+            }
+            return bytes;
+        }
+
+        public bool SaveFileToDb(string pathToTempFile)
+        {
+            Byte[] bytes = ConvertFileToBytes(pathToTempFile);
+            string fileName = Path.GetFileName(pathToTempFile);
+            string fileExtension = Path.GetExtension(pathToTempFile);
+            DateTime dateTime = DateTime.Now;
+
+            using (SqlConnection sqlCon = new SqlConnection(Config.ConnString))
+            {
+                sqlCon.Open();
+                string sql = $"INSERT INTO Files(FileName,FileType,DataFile,CreatedOn) VALUES(@FileName, @FileType,@DataFile,@CreatedOn)";
+                using (SqlCommand cmd = new SqlCommand(sql, sqlCon))
+                {
+                    try
+                    {
+                        cmd.Parameters.Add("@FileName", SqlDbType.VarChar).Value = fileName;
+                        cmd.Parameters.Add("@FileType", SqlDbType.VarChar).Value = fileExtension;
+                        cmd.Parameters.Add("@DataFile", SqlDbType.Binary).Value = bytes;
+                        cmd.Parameters.Add("@CreatedOn", SqlDbType.Date).Value = dateTime;
+
+                        cmd.ExecuteNonQuery();
+                    }
+                    catch (Exception ex)
+                    {
+                        var err = new CreateLogFiles();
+                        err.ErrorLog(Config.DataPath + "err.log", ex + "Error saving file to DB: " + sql);
+                        return false;
+                        throw;
                     }
                 }
             }

@@ -1,0 +1,13 @@
+1/6/2021 1:43:40 PM ==> System.Data.SqlClient.SqlException (0x80131904): An object or column name is missing or empty. For SELECT INTO statements, verify each column has a name. For other statements, look for empty alias names. Aliases defined as "" or [] are not allowed. Change the alias to a valid name.
+Incorrect syntax near ''.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at FileProcessingLibrary.Services.SaveToDb.SaveFileToDb(String pathToTempFile) in C:\Users\Ibiley Uniforms\source\repos\ConsoleApp2\FileProcessingLibrary\Services\SaveToDb.cs:line 159
+ClientConnectionId:981f0b6f-a70a-41b4-9cb6-b58f78b79426
+Error Number:1038,State:4,Class:15Error saving file to DB: INSERT INTO Files(FileName,FileType,DataFile,CreatedOn) VALUES('4b30da56-58fb-4074-87d4-bc0c0d2df302.txt','.txt',System.Byte[],'1/6/2021 1:43:40 PM')
+1/6/2021 2:00:22 PM ==> Object reference not set to an instance of an object.Error uploading file

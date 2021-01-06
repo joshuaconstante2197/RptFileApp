@@ -39,13 +39,22 @@ Create TABLE dbo.InvoiceBalance(ArCode varchar(12),
 	Over30 money,
 	Over60 money,
 	Over90 money,
-	FOREIGN KEY(ArCode, TransactionId) REFERENCES dbo.AccountInfo(ArCode, TransactionId) ON DELETE CASCADE
+	FOREIGN KEY(ArCode, TransactionId) REFERENCES dbo.AccountInfo(ArCode, TransactionId) ON DELETE CASCADE,
+	PRIMARY KEY(ArCode,TransactionId)
 )
-Create Table dbo.Comment(ArCode varchar(12),
+Create TABLE dbo.Comment(ArCode varchar(12),
 	TransactionId int,
 	Commnent varchar(max),
 	CommentDate date,
-	FOREIGN KEY(ArCode, TransactionId) REFERENCES dbo.AccountInfo(ArCode, TransactionId) ON DELETE CASCADE
+	FOREIGN KEY(ArCode, TransactionId) REFERENCES dbo.AccountInfo(ArCode, TransactionId) ON DELETE CASCADE,
+	PRIMARY KEY(ArCode,TransactionId)
+)
+Create TABLE dbo.Files(DocumentId int IDENTITY (1,1),
+	FileName varchar(100),
+	FileType varchar(10),
+	DataFile varbinary(MAX),
+	CreatedOn datetime,
+	PRIMARY KEY(DocumentId)
 )
 
 
