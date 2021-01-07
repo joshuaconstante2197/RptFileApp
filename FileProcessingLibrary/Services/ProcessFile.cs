@@ -218,9 +218,11 @@ namespace FileProcessingLibrary
             var listOfAccounts = new List<Account>();
 
             Account account = new Account();
+            var getPreviousFile = new DisplayDbData();
             var newAccount = new SaveToDb();
 
             DeleteEmptiesAndNonArs(pathToRptFile, pathToTempFile);
+            //getPreviousFile.DownloadPreviousFile()
 
             StreamReader cleanFile = new StreamReader(pathToTempFile);
             while ((line = cleanFile.ReadLine()) != null)
