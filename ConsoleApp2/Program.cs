@@ -12,13 +12,18 @@ namespace ConsoleApp2
 {
     partial class Program
     {
-        static void Main(string[] args)
+        static  void Main(string[] args)
         {
 
             string pathToTempFile = System.IO.Path.GetTempPath() + Guid.NewGuid().ToString() + ".txt";
-            ProcessFile.Process(Config.pathToRptFile, pathToTempFile);
-
+            ProcessFile.DeleteEmptiesAndNonArs(Config.pathToRptNewFile, pathToTempFile);
+            //var outputFile =  CompareFiles.Compare(Config.pathToRptNewFile, Config.pathToRptFile);
+            //using (StreamReader reader = new StreamReader(outputFile))
+            //{
+            //    Console.WriteLine(reader.ReadLine());
+            //}
             Console.WriteLine(pathToTempFile);
+            Console.WriteLine("********** END OF OUTPUT **********");
 
             //SaveAccountToDb.Save(new Account());
             //string line;
