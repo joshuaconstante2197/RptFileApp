@@ -1,6 +1,4 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc.RazorPages;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
@@ -251,7 +249,7 @@ namespace FileProcessingLibrary.Services
             }
             return balance;
         }
-        private DataTable PutPreviosFileOnDataTable(string pathToData)
+        public void DownloadPreviousFile(string pathToData)
         {
             //the index number to write bytes to  
             long CurrentIndex = 0;
@@ -264,39 +262,50 @@ namespace FileProcessingLibrary.Services
 
             //A byte array to hold the buffer  
             byte[] Blob = new byte[BufferSize];
-            using (SqlConnection sqlCon = new SqlConnection(Config.ConnString))
+            try
             {
-                sqlCon.Open();
-                var sql = "SELECT TOP 1 * FROM Files ORDER BY ID DESC";
-                using (SqlCommand cmd = new SqlCommand(sql, sqlCon))
+                using (SqlConnection sqlCon = new SqlConnection(Config.ConnString))
                 {
-                    using (SqlDataReader reader = cmd.ExecuteReader())
+                    sqlCon.Open();
+                    var sql = "SELECT TOP 1 * FROM Files ORDER BY DocumentId DESC";
+                    using (SqlCommand cmd = new SqlCommand(sql, sqlCon))
                     {
-                        while (reader.Read())
+                        using (SqlDataReader reader = cmd.ExecuteReader(CommandBehavior.SequentialAccess))
                         {
-                            FileStream fs = new FileStream(pathToData + "\\" + reader["BlobFileName"].ToString(), FileMode.OpenOrCreate, FileAccess.Write );
-                            BinaryWriter writer = new BinaryWriter(fs);
-
-                            //reset the index to the beginning of the file  
-                            CurrentIndex = 0;
-                            //the BlobsTable column indexCurrentIndex, 
-                            // the current index of the field from which to begin the read operationBlob, 
-                            // Array name to write tha buffer to0, 
-                            // the start index of the array to start the write operationBufferSize 
-                            // the maximum length to copy into the buffer);   
-                            while (BytesReturned == BufferSize)
+                            while (reader.Read())
                             {
-                                writer.Write(Blob);
-                                writer.Flush();
-                                CurrentIndex += BufferSize;
-                                BytesReturned = reader.GetBytes(1, CurrentIndex, Blob, 0, BufferSize);
+                                FileStream fs = new FileStream(pathToData + "\\" + reader["FileName"].ToString(), FileMode.OpenOrCreate, FileAccess.Write);
+                                BinaryWriter writer = new BinaryWriter(fs);
+
+                                //reset the index to the beginning of the file  
+                                CurrentIndex = 0;
+                                //the BlobsTable column indexCurrentIndex, 
+                                // the current index of the field from which to begin the read operationBlob, 
+                                // Array name to write tha buffer to0, 
+                                // the start index of the array to start the write operationBufferSize 
+                                // the maximum length to copy into the buffer);   
+                                BytesReturned = reader.GetBytes(3, CurrentIndex, Blob, 0, BufferSize);
+                                while (BytesReturned == BufferSize)
+                                {
+                                    writer.Write(Blob);
+                                    writer.Flush();
+                                    CurrentIndex += BufferSize;
+                                    BytesReturned = reader.GetBytes(3, CurrentIndex, Blob, 0, BufferSize);
+                                }
+                                writer.Write(Blob, 0, (int)BytesReturned); writer.Flush(); writer.Close(); fs.Close();
                             }
-                            writer.Write(Blob, 0, (int)BytesReturned); writer.Flush(); writer.Close(); fs.Close();
                         }
                     }
-                    }
                 }
+
             }
+            catch (Exception ex)
+            {
+                var Err = new CreateLogFiles();
+                Err.ErrorLog(Config.WebDataPath + "err.log", "Error on Downloding previos file" + ex.Message);
+                throw;
+            }
+            
         }
         
     }

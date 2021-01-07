@@ -11,3 +11,7 @@ Incorrect syntax near ''.
 ClientConnectionId:981f0b6f-a70a-41b4-9cb6-b58f78b79426
 Error Number:1038,State:4,Class:15Error saving file to DB: INSERT INTO Files(FileName,FileType,DataFile,CreatedOn) VALUES('4b30da56-58fb-4074-87d4-bc0c0d2df302.txt','.txt',System.Byte[],'1/6/2021 1:43:40 PM')
 1/6/2021 2:00:22 PM ==> Object reference not set to an instance of an object.Error uploading file
+1/6/2021 8:34:39 PM ==> Could not find a part of the path 'C:\Users\joshu\AppData\Local\Temp\1\6\2021.txt'.Error uploading file
+1/6/2021 8:39:27 PM ==> Invalid column name 'ID'.Error uploading file
+1/6/2021 8:41:17 PM ==> BlobFileNameError uploading file
+1/6/2021 8:42:45 PM ==> Invalid attempt to read from column ordinal '1'.  With CommandBehavior.SequentialAccess, you may only read from column ordinal '2' or greater.Error uploading file

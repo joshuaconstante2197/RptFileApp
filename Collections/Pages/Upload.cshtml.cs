@@ -14,14 +14,22 @@ namespace CollectionsWebLayer.Pages
 {
     public class UploadModel : PageModel
     {
+        private readonly IWebHostEnvironment _hostingEnvironment;
+
+        public UploadModel(IWebHostEnvironment hostingEnvironment)
+        {
+            _hostingEnvironment = hostingEnvironment;
+        }
         [BindProperty]
         public IFormFile Upload { get; set; }
+        public DisplayDbData getData = new DisplayDbData();
         public void OnGet()
         {
         }
         public async Task<ActionResult> OnPost()
         {
             //if (file != null && file.Length > 0)
+                
                 try
                 {
                     var rptFileUpload = Path.GetTempPath() + Guid.NewGuid().ToString() + ".txt";
@@ -31,8 +39,10 @@ namespace CollectionsWebLayer.Pages
                     {
                         await Upload.CopyToAsync(fileStream);
                     }
+
                     ProcessFile.Process(rptFileUpload, tempFile);
-                    return new RedirectToPageResult("Index");
+                    getData.DownloadPreviousFile(_hostingEnvironment.ContentRootPath + "\\Data");
+                return new RedirectToPageResult("Index");
                 }
                 catch (Exception ex)
                 {
