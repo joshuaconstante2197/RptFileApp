@@ -211,18 +211,18 @@ namespace FileProcessingLibrary
             return account;
         }
 
-        public static void Process(string pathToRptFile, string pathToTempFile)
+        public static void Process(string pathToRptFile, string pathToTempFile, string pathToPreviousFile)
         {
             string line;
             var transactionId = 0;
             var listOfAccounts = new List<Account>();
 
             Account account = new Account();
-            var getPreviousFile = new DisplayDbData();
+            var getData = new DisplayDbData();
             var newAccount = new SaveToDb();
 
             DeleteEmptiesAndNonArs(pathToRptFile, pathToTempFile);
-            //getPreviousFile.DownloadPreviousFile()
+            getData.DownloadPreviousFile(pathToPreviousFile);
 
             StreamReader cleanFile = new StreamReader(pathToTempFile);
             while ((line = cleanFile.ReadLine()) != null)
@@ -247,6 +247,7 @@ namespace FileProcessingLibrary
                 SetAccount(line, account, transactionId);
             }
             newAccount.SaveFileToDb(pathToTempFile);
+            cleanFile.Close();
             //foreach (var ac in listOfAccounts)
             //{
             //    if(ac.AccountHeader != null)

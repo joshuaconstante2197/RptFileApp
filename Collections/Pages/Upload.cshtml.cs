@@ -40,7 +40,7 @@ namespace CollectionsWebLayer.Pages
                         await Upload.CopyToAsync(fileStream);
                     }
 
-                    ProcessFile.Process(rptFileUpload, tempFile);
+                    ProcessFile.Process(rptFileUpload, tempFile, _hostingEnvironment.ContentRootPath + "\\Data");
                     getData.DownloadPreviousFile(_hostingEnvironment.ContentRootPath + "\\Data");
                 return new RedirectToPageResult("Index");
                 }
