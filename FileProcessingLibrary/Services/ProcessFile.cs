@@ -14,29 +14,12 @@ namespace FileProcessingLibrary
         {
             File.WriteAllText(pathToTempFile, string.Empty);
             string line;
+            string previousArLine = string.Empty;
             bool count = false;
             bool wordToEx = true;
-            string[] wordsToExclude = { "T R I A L", "Tran    Tran", "Date    Descr", "----    -----", "Time", "---------", "E", "TOTAL A/R" };
+            string[] wordsToExclude = { "T R I A L", "Tran    Tran", "Date    Descr", "----    -----", "Time", "---------", "E", "TOTAL A/R", "*** End of Report ***" };
             StreamReader rptFile = new StreamReader(pathToRptFile);
 
-            int k;
-            //making sure I haven't reached the end of the line
-            
-            while ((rptFile.Peek()) >= 0)
-            {
-                //read the charater
-                k = rptFile.Read();
-                //if reachead end of the line check if next character is 
-                if (k == 10)
-                {
-                    //every AR starts with an A 
-                    if (rptFile.Peek() == 65)
-                    {
-                        break;
-                    }
-                }
-
-            }
 
             using (StreamWriter streamWriter = new StreamWriter(pathToTempFile))
             {
@@ -61,26 +44,35 @@ namespace FileProcessingLibrary
                         }
                         if (wordToEx)
                         {
-                            if (!char.IsDigit(line[0]) && !char.IsWhiteSpace(line[0]) && line[0] != 'E')
+                            if (!string.Equals(line, previousArLine) || string.IsNullOrEmpty(previousArLine))
                             {
-                                streamWriter.WriteLine(line);
-                                //count is set to true so if a line starts with an E (not an AR account) the streamwriter will ignore it
-                                count = true;
+                                if (!char.IsDigit(line[0]) && !char.IsWhiteSpace(line[0]) && line[0] != 'E')
+                                {
+                                    streamWriter.WriteLine(line);
+                                    previousArLine = line;
+                                    //count is set to true so if a line starts with an E (not an AR account) the streamwriter will ignore it
+                                    count = true;
+                                }
+                                else if (char.IsWhiteSpace(line[0]) && count)
+                                {
+                                    streamWriter.WriteLine(line);
+                                }
+                                else if (char.IsDigit(line[0]) || line[0] == 'E')
+                                {
+                                    count = false;
+                                }
+                                else
+                                {
+                                    continue;
+                                }
                             }
-                            else if (char.IsWhiteSpace(line[0]) && count)
+                            else
                             {
-                                streamWriter.WriteLine(line);
-                            }
-                            else if (char.IsDigit(line[0]) || line[0] == 'E')
-                            {
-                                count = false;
+                                continue;
                             }
 
                         }
-                        else
-                        {
-                            continue;
-                        }
+                        
                     }
 
                 }

@@ -26,19 +26,18 @@ AR99OURKLC OUR KIDS - LC                  (305) 455-2578
                   12/30/81  Prior Balance                                     0.00
                    8/03/18  Invoice    305398                   9/02/18     315.96                                          315.96
                                            TOTAL Customer:                  315.96                                          315.96
-ARE1KIDORA KID'S COMMUNITY COLLEGE-ORANGE (407) 982-2421
+ARE1KIDORA KID S COMMUNITY COLLEGE-ORANGE (407) 982-2421
                   12/30/81  Prior Balance                                     0.00
                    9/25/18  Invoice    304009-91               10/25/18                                                      25.66
                   10/02/18  Invoice    304009-92  FL EMB 10/01 11/01/18      59.88                                           34.22
-                   9/12/18  Credit Inv 304016-81  RREC/KID'S C 10/12/18                                                      18.18-
+                   9/12/18  Credit Inv 304016-81  RREC/KID S C 10/12/18                                                      18.18-
                   11/13/18  Credit Inv 304016-82  6-Return/exc 12/13/18                                                      18.18-
                   10/19/18  Invoice    304016-91  SEE NOTES    11/18/18      18.18-                                          18.18
                   10/18/18  Invoice    304026-91               11/17/18      21.38                                           21.38
                   10/04/18  Invoice    308433-91  see notes    11/03/18      10.58                                           10.58
-ARE1KIDORA KID'S COMMUNITY COLLEGE-ORANGE (407) 982-2421
                    1/17/19  Invoice    317888-91  TOCHARGEEMBR  2/16/19       4.27                                            4.27
                                            TOTAL Customer:                   77.93                                           77.93
-ARE1KIDVPK KID'S COMM COLLEGE-ORANGE VPK  (407) 982-2421
+ARE1KIDVPK KID S COMM COLLEGE-ORANGE VPK  (407) 982-2421
                   12/30/81  Prior Balance                                     0.00
                    5/16/18  Credit Inv 291875-80  Credit        6/15/18      21.99-                                          21.99-
                                            TOTAL Customer:                   21.99-                                          21.99-
@@ -127,7 +126,6 @@ PTA-7101   CORAL REEF SHS                 (305) 333- 164
                    9/10/19  Credit Inv 334913-80  RETURN 9/9    3/08/20    1140.00                                          610.00-
                    8/14/19  Invoice    335402     PATCHES       2/10/20      50.00                                           50.00
                    8/15/19  Invoice    335683     CONSIGNMENT   2/11/20     780.00                                          780.00
-PTA-7101   CORAL REEF SHS                 (305) 333- 164
                    9/09/19  Invoice    338084     CONSIGNMENT   3/07/20     142.00                                          142.00
                    9/20/19  Credit Inv 338587     318799 CONSG  3/18/20    1045.00-                                        1045.00-
                    9/20/19  Credit Inv 338588     320684 CONSG  3/18/20    8185.00-                                        8185.00-
@@ -172,7 +170,6 @@ S40013     CLAUDE PEPPER ELEM-STAFF       (305) 386-5244
                                            TOTAL Customer:                  248.40-                                         248.40-
 S40029     JACK D.GORDON ELEM-STAFF       (305) 234-4805
                   12/30/81  Prior Balance                                     0.00
-S40029     JACK D.GORDON ELEM-STAFF       (305) 234-4805
                    8/23/19  Payment      On Acct         1094                                                                93.04-
                    8/23/19  Payment      On Acct          123                                                                26.26-
                    8/23/19  Payment      On Acct         1352                                                                55.60-
@@ -270,7 +267,6 @@ STAFF-ACAD ACADEMIR CHARTER MS   STAFF    (305) 967-8492
 STAFF-ALPH ALPHA CHARTER OF EXCELLE STAFF (954) 809-4790
                   12/30/81  Prior Balance                                     0.00
                    7/13/20  Payment      On Acct     44553730                                                                 8.33-
-STAFF-ALPH ALPHA CHARTER OF EXCELLE STAFF (954) 809-4790
                   10/28/20  Payment      On Acct     47649404               613.80-     605.47-
                                            TOTAL Customer:                  613.80-     605.47-                               8.33-
 STAFF-ANDR ANDREA CASTILLO PREP ACADEMY
@@ -295,7 +291,6 @@ STAFF-BPAR BRIDGEPREP ACADEMY RIVERVIEW S (813) 370-1910
                                            TOTAL Customer:                  456.35                  108.85                  347.50
 STAFF-BPAT BRIDGEPREP SOUTH TAMPA   STAFF (813) 258-2652
                   12/30/81  Prior Balance                                     0.00
-STAFF-BPAT BRIDGEPREP SOUTH TAMPA   STAFF (813) 258-2652
                   12/18/18  Invoice    317339     STAFFORDER    1/17/19      77.18                                           77.18
                                            TOTAL Customer:                   77.18                                           77.18
 STAFF-BPBR BRIDGEPREP AC. OF BROWARD K-8
@@ -319,7 +314,6 @@ STAFF-CENT CENTRAL BAPTIST CHRISTIAN      (813) 689-6133
                                            TOTAL Customer:                  122.46                  129.70                    7.24-
 STAFF-CLAR CLARK COUNTY SCHOOL DISTRICT S (702) 799-5225
                   12/30/81  Prior Balance                                     0.00
-STAFF-CLAR CLARK COUNTY SCHOOL DISTRICT S (702) 799-5225
                   10/21/20  Invoice    356011     CLARK-DROP S 11/20/20   90000.00    90000.00
                                            TOTAL Customer:                90000.00    90000.00
 STAFF-COVE COVENANT CHRISTIAN ACADEMY STA (956) 686-7866
@@ -343,7 +337,6 @@ STAFF-HIMI HIALEAH-MIAMI LAKES SHS  STAFF
                                            TOTAL Customer:                  114.95      114.95
 STAFF-HOLY HOLY CROSS LUTHERAN SCHOOL STA (305) 625-8050
                   12/30/81  Prior Balance                                     0.00
-STAFF-HOLY HOLY CROSS LUTHERAN SCHOOL STA (305) 625-8050
                   10/15/18  Payment      On Acct         8637               281.42-                                         281.42-
                                            TOTAL Customer:                  281.42-                                         281.42-
 STAFF-IMAT IMATER ELEMENTARY        STAFF (305) 884-6320
@@ -370,7 +363,6 @@ STAFF-JANM JAN MANN EDUCATIONAL CENTER ST (305) 625- 855
                                            TOTAL Customer:                  218.91                                          218.91
 STAFF-LAKE MIAMI LAKES EDUCATIONAL C.STAF (305) 557-1100
                   12/30/81  Prior Balance                                     0.00
-STAFF-LAKE MIAMI LAKES EDUCATIONAL C.STAF (305) 557-1100
                    5/05/20  Invoice    342168                   6/04/20      90.94                                           90.94
                                            TOTAL Customer:                   90.94                                           90.94
 STAFF-LEGA LEGACY PREPARATORY ACADEMY     (813) 253-  53
@@ -390,7 +382,7 @@ STAFF-NEWH NEW HOPE PRESCHOOL       STAFF
                    9/25/19  Invoice    337393     5 BIN JEN    10/25/19      45.98                                           45.98
                    9/24/19  Invoice    338450     NEW HOPE-POL 10/24/19      81.96                                           81.96
                                            TOTAL Customer:                  127.94                                          127.94
-STAFF-NOAH NOAH'S ARK ACADEMY PRESCHOOL S (561) 641-2890
+STAFF-NOAH NOAH S ARK ACADEMY PRESCHOOL S (561) 641-2890
                   12/30/81  Prior Balance                                     0.00
                    7/07/20  Invoice    342902     In Store 5    8/06/20     719.60                                          719.60
                    8/24/20  Invoice    347723     SILKSCREEN -  9/23/20     960.00                              960.00
@@ -413,7 +405,6 @@ STAFF-RAIN RAINBOW CHRISTIAN        STAFF (305) 338- 657
                    8/25/20  Invoice    349854                   9/24/20     500.00                              500.00
                    9/04/20  Invoice    351870                  10/04/20     500.00                  500.00
                    9/11/20  Invoice    352425                  10/11/20     250.00                  250.00
-STAFF-RAIN RAINBOW CHRISTIAN        STAFF (305) 338- 657
                    9/23/20  Invoice    353383                  10/23/20     250.00                  250.00
                   10/21/20  Invoice    356031                  11/20/20     250.00      250.00
                                            TOTAL Customer:                 3370.00      250.00     1000.00     2120.00
@@ -484,4 +475,3 @@ WS-MATER   MATER ACADEMY      (WHOLESALE) (305) 828-1886
                   11/12/19  Invoice    318550-01  BO-MATER AC- 12/12/19    8565.87                                        10991.04
                                            TOTAL Customer:                 4970.67     3595.20-                            8565.87
                                                                           =========   =========   =========   =========   =========
-                                           TOTAL A/R:                    133882.62    91476.39     7648.43    19279.49    15478.31

@@ -36,24 +36,29 @@ namespace FileProcessingLibrary.Services
                                 {
                                     break;
                                 }
-                                arInfo.Add(oldLine);
+                                arInfo.Add(oldLine.Substring(0,60));
                             }
-                           
-                            while ((newFileLine = newFile.ReadLine()) != null )
+                            while (newFile.Peek() != -1 && !char.IsLetterOrDigit(Convert.ToChar(newFile.Peek())))
                             {
-                                if (!char.IsWhiteSpace(newFileLine[0]))
+                                var nextChar = Convert.ToChar(newFile.Peek());
+                                try
                                 {
-                                    break;
+                                    newFileLine = (newFile.ReadLine()).Substring(0, 60);
+
+                                }
+                                catch (Exception)
+                                {
+                                    throw new Exception($"Error on this line {newFileLine}");
                                 }
                                 bool checkIfInfoExists = false;
                                 foreach (var info in arInfo)
                                 {
-                                    if (!string.Equals(info,newFileLine))
+                                    if (string.Equals(info,newFileLine))
                                     {
                                         checkIfInfoExists = true;
                                     }
                                 }
-                                if (checkIfInfoExists)
+                                if (!checkIfInfoExists)
                                 {
                                     outputFile.WriteLine(newFileLine);
                                 }
