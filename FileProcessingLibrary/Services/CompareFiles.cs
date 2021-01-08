@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Reflection;
 using System.Text;
 
 namespace FileProcessingLibrary.Services
 {
+    
     public class CompareFiles
     {
         public static string Compare(string pathToNewFile, string pathToOldFile)
@@ -14,7 +16,7 @@ namespace FileProcessingLibrary.Services
             StreamWriter outputFile = new StreamWriter(outputFilePath);
             string newFileLine = string.Empty;
             long arCounter;
-            string oldLine;
+            string oldLine = string.Empty;
             List<string> arInfo = new List<string>();
 
             while ((newFileLine = newFile.ReadLine()) != null)
@@ -26,7 +28,7 @@ namespace FileProcessingLibrary.Services
                         outputFile.WriteLine(newFileLine);
                         using (StreamReader oldFile = new StreamReader(pathToOldFile))
                         {
-                            oldFile.BaseStream.Seek(arCounter, SeekOrigin.Begin);
+                            oldFile.SetPosition(arCounter);
                             while ((oldLine = oldFile.ReadLine()) != null)
                             {
                                 if (!char.IsWhiteSpace(oldLine[0]))
@@ -72,7 +74,6 @@ namespace FileProcessingLibrary.Services
         private static long CheckIfArExistsOnOldFile(string newFileLine, string pathToOldFile)
         {
             string oldFileLine = string.Empty;
-
             using (StreamReader oldFile = new StreamReader(pathToOldFile))
             {
                 while ((oldFileLine = oldFile.ReadLine()) != null)
@@ -85,14 +86,47 @@ namespace FileProcessingLibrary.Services
                         {
                             if (string.Equals(newAr, oldAr))
                             {
-                                return oldFile.BaseStream.Position;
+                                return oldFile.GetPosition();
                             }
                         }
                     }
                 }
-            } 
-            
+            }
             return 0;
+        }
+        
+    }
+    public static class StreamReaderExtensions
+    {
+        readonly static FieldInfo charPosField = typeof(StreamReader).GetField("_charPos", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly);
+        readonly static FieldInfo byteLenField = typeof(StreamReader).GetField("_byteLen", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly) ;
+        readonly static FieldInfo charBufferField = typeof(StreamReader).GetField("_charBuffer", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly);
+        
+        public static long GetPosition(this StreamReader reader)
+        {
+            // shift position back from BaseStream.Position by the number of bytes read
+            // into internal buffer.
+            var byteLen = (int)byteLenField.GetValue(reader);
+            var position = reader.BaseStream.Position - byteLen;
+
+            // if we have consumed chars from the buffer we need to calculate how many
+            // bytes they represent in the current encoding and add that to the position.
+            int charPos = (int)charPosField.GetValue(reader);
+            if (charPos > 0)
+            {
+                var charBuffer = (char[])charBufferField.GetValue(reader);
+                var encoding = reader.CurrentEncoding;
+                var bytesConsumed = encoding.GetBytes(charBuffer, 0, charPos).Length;
+                position += bytesConsumed;
+            }
+
+            return position;
+        }
+
+        public static void SetPosition(this StreamReader reader, long position)
+        {
+            reader.DiscardBufferedData();
+            reader.BaseStream.Seek(position, SeekOrigin.Begin);
         }
     }
 }
