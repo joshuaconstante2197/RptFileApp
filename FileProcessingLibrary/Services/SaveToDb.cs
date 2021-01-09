@@ -30,6 +30,34 @@ namespace FileProcessingLibrary.Services
             }
 
         }
+        public void DeletePaidAccounts(Account account)
+        {
+            foreach (var accountInfo in account.AccountInfo)
+            {
+                var sql = $"SELECT * FROM AccountInfo WHERE ArCode  = ('{account.AccountHeader.ArCode}') AND TranDate = ('{accountInfo.TranDate}') AND TranDetail = ('{accountInfo.TranDetail}')";
+                using (SqlConnection sqlCon = new SqlConnection(Config.ConnString))
+                {
+                    sqlCon.Open();
+                    using (SqlCommand cmd = new SqlCommand(sql, sqlCon))
+                    {
+                        var reader = cmd.ExecuteReader();
+                        if (!reader.Read())
+                        {
+                            sql = $"DELETE FROM AccountInfo WHERE ArCode  = ('{account.AccountHeader.ArCode}') AND TranDate = ('{accountInfo.TranDate}') AND TranDetail = ('{accountInfo.TranDetail}')";
+                            using (SqlCommand cmd1 = new SqlCommand(sql,sqlCon))
+                            {
+                                cmd1.ExecuteNonQuery();
+                            }
+                        }
+                        else
+                        {
+                            continue;
+                        }
+                    }
+                }
+            }
+        }
+
         public bool SaveAccountHeader(Account account)
         {
             var sql = String.Empty;
