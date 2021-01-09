@@ -215,14 +215,18 @@ namespace FileProcessingLibrary
 
             DeleteEmptiesAndNonArs(pathToRptFile, pathToTempFile);
             getData.DownloadPreviousFile(pathToPreviousFile);
+            
+            var fileWithNewData = CompareFiles.Compare(pathToTempFile, pathToPreviousFile);
+            var fileWithRemovedData = CompareFiles.Compare(pathToPreviousFile, pathToTempFile);
 
-            StreamReader cleanFile = new StreamReader(pathToTempFile);
+
+            StreamReader cleanFile = new StreamReader(fileWithNewData);
             while ((line = cleanFile.ReadLine()) != null)
             {
                 transactionId += 1;
                 if(!char.IsWhiteSpace(line[0]))
                 {
-                    if((account.AccountHeader != null && !line.Substring(0,line.IndexOf(' ')).Equals(account.AccountHeader.ArCode)) || line.Equals("*** End of Report ***"))
+                    if(account.AccountHeader != null)
                     {
                         newAccount = new SaveToDb();
                         newAccount.SaveAccountHeader(account);
