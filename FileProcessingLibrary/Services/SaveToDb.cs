@@ -34,24 +34,30 @@ namespace FileProcessingLibrary.Services
         {
             foreach (var accountInfo in account.AccountInfo)
             {
-                var sql = $"SELECT * FROM AccountInfo WHERE ArCode  = ('{account.AccountHeader.ArCode}') AND TranDate = ('{accountInfo.TranDate}') AND TranDetail = ('{accountInfo.TranDetail}')";
+                var sql = "IF EXISTS " +
+                            $"(SELECT * FROM AccountInfo WHERE ArCode  = ('{account.AccountHeader.ArCode}') AND TranDate = ('{accountInfo.TranDate}') AND TranDetail = ('{accountInfo.TranDetail}') AND InvoiceNumber = ('{accountInfo.InvoiceNumber}')) " +
+                          "BEGIN " +
+                            $"DELETE FROM AccountInfo WHERE ArCode  = ('{account.AccountHeader.ArCode}') AND TranDate = ('{accountInfo.TranDate}') AND TranDetail = ('{accountInfo.TranDetail}') AND InvoiceNumber = ('{accountInfo.InvoiceNumber}') " +
+                          "END";
                 using (SqlConnection sqlCon = new SqlConnection(Config.ConnString))
                 {
                     sqlCon.Open();
                     using (SqlCommand cmd = new SqlCommand(sql, sqlCon))
                     {
-                        var reader = cmd.ExecuteReader();
-                        if (!reader.Read())
+                        try
                         {
-                            sql = $"DELETE FROM AccountInfo WHERE ArCode  = ('{account.AccountHeader.ArCode}') AND TranDate = ('{accountInfo.TranDate}') AND TranDetail = ('{accountInfo.TranDetail}')";
-                            using (SqlCommand cmd1 = new SqlCommand(sql,sqlCon))
+                            var i = cmd.ExecuteNonQuery();
+                             i += 0;
+                            if (i > 1)
                             {
-                                cmd1.ExecuteNonQuery();
+                                i += 0;
                             }
                         }
-                        else
+                        catch (Exception ex)
                         {
-                            continue;
+                            var err = new CreateLogFiles();
+                            err.ErrorLog(Config.DataPath, "Error deleting this record:" + sql + "Error message:" + ex);
+                            throw;
                         }
                     }
                 }
@@ -170,7 +176,7 @@ namespace FileProcessingLibrary.Services
             return bytes;
         }
 
-        public bool SaveFileToDb(string pathToTempFile)
+        public bool SaveFileToDb(string pathToTempFile, ProcessFile.typeOfFile typeOfFile)
         {
             Byte[] bytes = ConvertFileToBytes(pathToTempFile);
             string fileName = Path.GetFileName(pathToTempFile);
@@ -180,15 +186,16 @@ namespace FileProcessingLibrary.Services
             using (SqlConnection sqlCon = new SqlConnection(Config.ConnString))
             {
                 sqlCon.Open();
-                string sql = $"INSERT INTO Files(FileName,FileType,DataFile,CreatedOn) VALUES(@FileName, @FileType,@DataFile,@CreatedOn)";
+                string sql = $"INSERT INTO Files(FileName,FileExtension,DataFile,CreatedOn,TypeOfFile) VALUES(@FileName, @FileExtension,@DataFile,@CreatedOn,@TypeOfFile)";
                 using (SqlCommand cmd = new SqlCommand(sql, sqlCon))
                 {
                     try
                     {
                         cmd.Parameters.Add("@FileName", SqlDbType.VarChar).Value = fileName;
-                        cmd.Parameters.Add("@FileType", SqlDbType.VarChar).Value = fileExtension;
+                        cmd.Parameters.Add("@FileExtension", SqlDbType.VarChar).Value = fileExtension;
                         cmd.Parameters.Add("@DataFile", SqlDbType.Binary).Value = bytes;
                         cmd.Parameters.Add("@CreatedOn", SqlDbType.Date).Value = dateTime;
+                        cmd.Parameters.Add("@TypeOfFile", SqlDbType.VarChar).Value = typeOfFile;
 
                         cmd.ExecuteNonQuery();
                     }

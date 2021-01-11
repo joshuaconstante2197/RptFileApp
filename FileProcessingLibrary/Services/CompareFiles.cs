@@ -9,74 +9,10 @@ namespace FileProcessingLibrary.Services
     
     public class CompareFiles
     {
-        public static string Compare(string pathToNewFile, string pathToOldFile)
-        {
-            StreamReader newFile = new StreamReader(pathToNewFile);
-            string outputFilePath = Path.GetTempPath() + Guid.NewGuid().ToString() + ".txt";
-            StreamWriter outputFile = new StreamWriter(outputFilePath);
-            string newFileLine = string.Empty;
-            long arCounter;
-            string oldLine = string.Empty;
-            List<string> arInfo = new List<string>();
-
-            while ((newFileLine = newFile.ReadLine()) != null)
-            {
-                if (!char.IsWhiteSpace(newFileLine[0]))
-                {
-                    arInfo = new List<string>();
-                    if ((arCounter = CheckIfArExistsOnOldFile(newFileLine,pathToOldFile)) > 0)
-                    {
-                        outputFile.WriteLine(newFileLine);
-                        using (StreamReader oldFile = new StreamReader(pathToOldFile))
-                        {
-                            oldFile.SetPosition(arCounter);
-                            while ((oldLine = oldFile.ReadLine()) != null)
-                            {
-                                if (!char.IsWhiteSpace(oldLine[0]))
-                                {
-                                    break;
-                                }
-                                arInfo.Add(oldLine.Substring(0,60));
-                            }
-                            while (newFile.Peek() != -1 && !char.IsLetterOrDigit(Convert.ToChar(newFile.Peek())))
-                            {
-                                var nextChar = Convert.ToChar(newFile.Peek());
-                                try
-                                {
-                                    newFileLine = (newFile.ReadLine()).Substring(0, 60);
-
-                                }
-                                catch (Exception)
-                                {
-                                    throw new Exception($"Error on this line {newFileLine}");
-                                }
-                                bool checkIfInfoExists = false;
-                                foreach (var info in arInfo)
-                                {
-                                    if (string.Equals(info,newFileLine))
-                                    {
-                                        checkIfInfoExists = true;
-                                    }
-                                }
-                                if (!checkIfInfoExists)
-                                {
-                                    outputFile.WriteLine(newFileLine);
-                                }
-                            }
-                        }
-                    }
-                    else
-                    {
-                        outputFile.WriteLine(newFileLine);
-                    }
-                }
-            }
-            outputFile.Close();
-            return outputFilePath;
-        }
         private static long CheckIfArExistsOnOldFile(string newFileLine, string pathToOldFile)
         {
             string oldFileLine = string.Empty;
+            long position;
             using (StreamReader oldFile = new StreamReader(pathToOldFile))
             {
                 while ((oldFileLine = oldFile.ReadLine()) != null)
@@ -89,7 +25,9 @@ namespace FileProcessingLibrary.Services
                         {
                             if (string.Equals(newAr, oldAr))
                             {
-                                return oldFile.GetPosition();
+                                position = oldFile.GetPosition();
+                                oldFile.Close();
+                                return position;
                             }
                         }
                     }
@@ -97,6 +35,95 @@ namespace FileProcessingLibrary.Services
             }
             return 0;
         }
+
+        public static string Compare(string pathToNewFile, string pathToOldFile)
+        {
+            string outputFilePath = Path.GetTempPath() + Guid.NewGuid().ToString() + ".txt";
+
+            StreamReader newFile = new StreamReader(pathToNewFile);
+            StreamWriter outputFile = new StreamWriter(outputFilePath);
+
+            string newFileLine;
+            string newAr;
+            string oldLine;
+
+            long arCounter;
+
+            List<string> arInfo;
+            List<string> newArInfo;
+
+            while ((newFileLine = newFile.ReadLine()) != null)
+            {
+                if (!char.IsWhiteSpace(newFileLine[0]))
+                {
+                    arInfo = new List<string>();
+
+                    if ((arCounter = CheckIfArExistsOnOldFile(newFileLine, pathToOldFile)) > 0)
+                    {
+                        newAr = newFileLine;
+                        newArInfo = new List<string>();
+
+                        using (StreamReader oldFile = new StreamReader(pathToOldFile))
+                        {
+                            oldFile.SetPosition(arCounter);
+                            while ((oldLine = oldFile.ReadLine()) != null)
+                            {
+                                if (!char.IsWhiteSpace(oldLine[0]))
+                                {
+                                    break;
+                                }
+                                arInfo.Add(oldLine.Substring(0, 60));
+                            }
+                        }
+                        //making sure that I'm not encountering the next AR
+                        while (newFile.Peek() != -1 && !char.IsLetterOrDigit(Convert.ToChar(newFile.Peek())))
+                        {
+
+                            newFileLine = (newFile.ReadLine());
+
+                            string newFileLineSub = newFileLine.Substring(0, 60);
+
+                            bool checkIfInfoExists = false;
+
+                            foreach (var info in arInfo)
+                            {
+                                if (string.Equals(info, newFileLineSub))
+                                {
+                                    checkIfInfoExists = true;
+                                }
+                            }
+                            if (!checkIfInfoExists)
+                            {
+                                newArInfo.Add(newFileLine);
+                            }
+                        }
+
+                        if (newArInfo.Count > 0)
+                        {
+                            outputFile.WriteLine(newAr);
+
+                            foreach (var newInfo in newArInfo)
+                            {
+                                outputFile.WriteLine(newInfo);
+                            }
+                        }
+
+                    }
+                    else
+                    {
+                        outputFile.WriteLine(newFileLine);
+                        while (newFile.Peek() != -1 && !char.IsLetterOrDigit(Convert.ToChar(newFile.Peek())))
+                        {
+                            newFileLine = newFile.ReadLine();
+                            outputFile.WriteLine(newFileLine);
+                        }
+                    }
+                }
+            }
+            outputFile.Close();
+            return outputFilePath;
+        }
+        
         
     }
     

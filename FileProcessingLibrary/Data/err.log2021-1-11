@@ -1,0 +1,15 @@
+1/11/2021 4:22:39 PM ==> Invalid column name 'InvoiceNumber'.Error uploading file
+1/11/2021 4:24:53 PM ==> Incorrect syntax near ')'.Error uploading file
+1/11/2021 4:28:25 PM ==> Incorrect syntax near the keyword 'BEGIN'.Error uploading file
+1/11/2021 4:38:29 PM ==> System.Data.SqlClient.SqlException (0x80131904): Violation of PRIMARY KEY constraint 'PK__AccountI__84069A5DCFAFA49F'. Cannot insert duplicate key in object 'dbo.AccountInfo'. The duplicate key value is (WS-MATER, 0).
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at FileProcessingLibrary.Services.SaveToDb.SaveAccountInfo(Account account) in C:\Users\joshu\Source\Repos\RptFileApp\FileProcessingLibrary\Services\SaveToDb.cs:line 114
+ClientConnectionId:be7fa42d-b7ef-4467-bfa8-75763a839455
+Error Number:2627,State:1,Class:14Error with this line: INSERT INTO AccountInfo(TransactionId, ArCode, TranDate, TranDetail, DueDate, InvoiceNumber, ReferenceNumber)  VALUES(0,'WS-MATER','1/1/0001 12:00:00 AM','','1/1/0001 12:00:00 AM','  ========','=   =========')

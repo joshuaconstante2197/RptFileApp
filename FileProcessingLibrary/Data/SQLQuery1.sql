@@ -51,9 +51,10 @@ Create TABLE dbo.Comment(ArCode varchar(12),
 )
 Create TABLE dbo.Files(DocumentId int IDENTITY (1,1),
 	FileName varchar(100),
-	FileType varchar(10),
+	FileExtension varchar(10),
 	DataFile varbinary(MAX),
 	CreatedOn datetime,
+	TypeOfFile varchar(20),
 	PRIMARY KEY(DocumentId)
 )
 

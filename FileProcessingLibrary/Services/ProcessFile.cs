@@ -10,6 +10,11 @@ namespace FileProcessingLibrary
 {
     public class ProcessFile
     {
+        public enum typeOfFile
+        {
+            newData,
+            removedData
+        }
         public static void DeleteEmptiesAndNonArs(string pathToRptFile, string pathToTempFile)
         {
             File.WriteAllText(pathToTempFile, string.Empty);
@@ -185,7 +190,7 @@ namespace FileProcessingLibrary
             return invoiceBalances;
         }
 
-        public static Account SetAccount(string line, Account account, int transactionId)
+        public static Account SetAccount(Account account, string line, int transactionId)
         {
             if (!char.IsWhiteSpace(line[0]))
             {
@@ -202,60 +207,90 @@ namespace FileProcessingLibrary
 
             return account;
         }
-
-        public static void Process(string pathToRptFile, string pathToTempFile, string pathToPreviousFile)
+        private static void DeleteClearedData(string fileWithRemovedData)
         {
+
+        }
+
+        public static void Process(string pathToRptFile, string pathToTempFile, string pathToDataFolder)
+        {
+            string fileWithNewData = string.Empty;
+            string fileWithRemovedData = string.Empty;
             string line;
+            
             var transactionId = 0;
             var listOfAccounts = new List<Account>();
 
             Account account = new Account();
             var getData = new DisplayDbData();
-            var newAccount = new SaveToDb();
+            var manageData = new SaveToDb();
 
             DeleteEmptiesAndNonArs(pathToRptFile, pathToTempFile);
-            getData.DownloadPreviousFile(pathToPreviousFile);
-            
-            var fileWithNewData = CompareFiles.Compare(pathToTempFile, pathToPreviousFile);
-            var fileWithRemovedData = CompareFiles.Compare(pathToPreviousFile, pathToTempFile);
+            var pathToPreviousFile = getData.DownloadPreviousFile(pathToDataFolder);
 
-
-            StreamReader cleanFile = new StreamReader(fileWithNewData);
-            while ((line = cleanFile.ReadLine()) != null)
+            if (!string.IsNullOrEmpty(pathToPreviousFile))
             {
-                transactionId += 1;
-                if(!char.IsWhiteSpace(line[0]))
+                fileWithNewData = CompareFiles.Compare(pathToTempFile, pathToPreviousFile);
+                fileWithRemovedData = CompareFiles.Compare(pathToPreviousFile, pathToTempFile);
+            }
+
+
+            if (!string.IsNullOrEmpty(fileWithRemovedData))
+            {
+                using (StreamReader removedData = new StreamReader(fileWithRemovedData))
                 {
-                    if(account.AccountHeader != null)
+                    while ((line = removedData.ReadLine()) != null)
                     {
-                        newAccount = new SaveToDb();
-                        newAccount.SaveAccountHeader(account);
-                        
-                        if (account.AccountInfo.Count > 0)
+                        if (!char.IsWhiteSpace(line[0]))
                         {
-                            newAccount.SaveAccountInfo(account);
-                            newAccount.SaveAccountBalances(account);
-                            transactionId = 0;
+                            if (account.AccountHeader != null)
+                            {
+                                manageData = new SaveToDb();
+
+                                if (account.AccountInfo.Count > 0)
+                                {
+                                    manageData.DeletePaidAccounts(account);
+                                }
+                                account = new Account();
+                            }
                         }
-                        account = new Account();
+                        SetAccount(account, line, transactionId);
                     }
                 }
-                SetAccount(line, account, transactionId);
+                manageData.SaveFileToDb(fileWithRemovedData, typeOfFile.removedData);
+
             }
-            newAccount.SaveFileToDb(pathToTempFile);
-            cleanFile.Close();
-            //foreach (var ac in listOfAccounts)
-            //{
-            //    if(ac.AccountHeader != null)
-            //    {
-            //        Console.WriteLine(ac.AccountHeader.ArCode);
-            //        foreach (var acInfo in ac.AccountInfo)
-            //        {
-            //            Console.WriteLine(acInfo.InvoiceNumber);
-            //        }
-            //    }
-                
-            //}
+
+            if (string.IsNullOrEmpty(fileWithNewData))
+            {
+                fileWithNewData = pathToTempFile;
+            }
+            using (StreamReader cleanFile = new StreamReader(fileWithNewData))
+            {
+                while ((line = cleanFile.ReadLine()) != null)
+                {
+                    transactionId += 1;
+                    if (!char.IsWhiteSpace(line[0]))
+                    {
+                        if (account.AccountHeader != null)
+                        {
+                            manageData = new SaveToDb();
+                            manageData.SaveAccountHeader(account);
+
+                            if (account.AccountInfo.Count > 0)
+                            {
+                                manageData.SaveAccountInfo(account);
+                                manageData.SaveAccountBalances(account);
+                                transactionId = 0;
+                            }
+                            account = new Account();
+                        }
+                    }
+                    SetAccount(account, line, transactionId);
+                }
+            }
+            manageData.SaveFileToDb(fileWithNewData, typeOfFile.newData);
+
         }
     }
 }
