@@ -226,7 +226,7 @@ namespace FileProcessingLibrary
             var manageData = new SaveToDb();
 
             DeleteEmptiesAndNonArs(pathToRptFile, pathToTempFile);
-            var pathToPreviousFile = getData.DownloadPreviousFile(pathToDataFolder);
+            var pathToPreviousFile = getData.DownloadFileToProjectFolder(pathToDataFolder);
 
             if (!string.IsNullOrEmpty(pathToPreviousFile))
             {

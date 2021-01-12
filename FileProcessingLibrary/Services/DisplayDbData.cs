@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FileProcessingLibrary.Models;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
@@ -249,7 +250,7 @@ namespace FileProcessingLibrary.Services
             }
             return balance;
         }
-        public string DownloadPreviousFile(string pathToData)
+        public string DownloadFileToProjectFolder(string pathToData)
         {
             //the index number to write bytes to  
             long CurrentIndex = 0;
@@ -311,6 +312,101 @@ namespace FileProcessingLibrary.Services
                 throw;
             }
             
+        }
+        public FileStream DownloadFileToProjectFolder(string pathToData, int id)
+        {
+            //the index number to write bytes to  
+            long CurrentIndex = 0;
+
+            //the number of bytes to store in the array  
+            int BufferSize = 100;
+
+            //The Number of bytes returned from GetBytes() method  
+            long BytesReturned;
+
+            //A byte array to hold the buffer  
+            byte[] Blob = new byte[BufferSize];
+            try
+            {
+                using (SqlConnection sqlCon = new SqlConnection(Config.ConnString))
+                {
+                    sqlCon.Open();
+                    var sql = $"SELECT * FROM Files WHERE DocumentId = {id}";
+                    using (SqlCommand cmd = new SqlCommand(sql, sqlCon))
+                    {
+                        using (SqlDataReader reader = cmd.ExecuteReader(CommandBehavior.SequentialAccess))
+                        {
+                            while (reader.Read())
+                            {
+                                FileStream fs = new FileStream(pathToData + "\\" + reader["FileName"].ToString(), FileMode.OpenOrCreate, FileAccess.Write);
+                                BinaryWriter writer = new BinaryWriter(fs);
+
+                                //reset the index to the beginning of the file  
+                                CurrentIndex = 0;
+                                //the BlobsTable column indexCurrentIndex, 
+                                // the current index of the field from which to begin the read operationBlob, 
+                                // Array name to write tha buffer to0, 
+                                // the start index of the array to start the write operationBufferSize 
+                                // the maximum length to copy into the buffer);
+
+                                do
+                                {
+                                    BytesReturned = reader.GetBytes(3, CurrentIndex, Blob, 0, BufferSize);
+                                    writer.Write(Blob);
+                                    writer.Flush();
+                                    CurrentIndex += BufferSize;
+                                } while (BytesReturned == BufferSize);
+                                var fileName = fs.Name;
+                                writer.Write(Blob, 0, (int)BytesReturned); writer.Flush(); writer.Close(); fs.Close();
+                                var file = File.OpenRead(fileName);
+                                return file;
+                            }
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                var Err = new CreateLogFiles();
+                Err.ErrorLog(Config.WebDataPath + "err.log", "Error on Downloding previos file" + ex.Message);
+                return null;
+                throw;
+            }
+            return null;
+
+        }
+        public List<Files> GetAllFiles()
+        {
+            var files = new List<Files>();
+            using (SqlConnection sqlCon = new SqlConnection(Config.ConnString))
+            {
+                sqlCon.Open();
+                var sql = "SELECT * FROM Files";
+                using (SqlCommand cmd = new SqlCommand(sql,sqlCon))
+                {
+                    using (SqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            var file = new Files();
+
+                            for (int i = 0; i < reader.FieldCount; i++)
+                            {
+                                var fieldName = reader.GetName(i);
+                                var property = file.GetType().GetProperty(fieldName);
+
+                                if (property != null && !reader.IsDBNull(i))
+                                {
+                                    property.SetValue(file, reader.GetValue(i), null);
+                                }
+                            }
+                            files.Add(file);
+                        }
+
+                    }
+                }
+            }
+            return files;
         }
         
     }

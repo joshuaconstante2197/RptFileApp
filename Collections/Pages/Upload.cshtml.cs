@@ -28,7 +28,6 @@ namespace CollectionsWebLayer.Pages
         }
         public async Task<ActionResult> OnPost()
         {
-            //if (file != null && file.Length > 0)
                 
                 try
                 {
@@ -41,7 +40,7 @@ namespace CollectionsWebLayer.Pages
                     }
 
                     ProcessFile.Process(rptFileUpload, tempFile, _hostingEnvironment.ContentRootPath + "\\Data");
-                    getData.DownloadPreviousFile(_hostingEnvironment.ContentRootPath + "\\Data");
+                    getData.DownloadFileToProjectFolder(_hostingEnvironment.ContentRootPath + "\\Data");
                 return new RedirectToPageResult("Index");
                 }
                 catch (Exception ex)
@@ -50,10 +49,7 @@ namespace CollectionsWebLayer.Pages
                     Err.ErrorLog(Config.WebDataPath + "err.log", ex.Message + "Error uploading file");
                     throw;
                 }
-            //else
-            //{
-            //    return new RedirectToPageResult("Error");
-            //}
+            
 
         }
     }

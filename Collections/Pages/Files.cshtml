@@ -1,0 +1,34 @@
+﻿@page
+@model CollectionsWebLayer.Pages.FilesModel
+@{
+    ViewData["Title"] = "Collection Files";
+}
+<h2>Files</h2>
+<table class="table table-bordered table-striped" id="dataTable">
+    <thead>
+        <tr>
+            <th>File Name</th>
+            <th>Created On</th>
+            <th>Type of File</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var file in Model.files)
+	    {
+        <tr>
+            <td><a asp-page-handler="Download" asp-route-id="@file.DocumentId">@file.FileName</a></td>
+            <td>@file.CreatedOn.ToShortDateString()</td>
+            @if (string.Equals(file.TypeOfFile, "newData"))
+            {
+                <td>New Data </td>
+            }
+            else
+            {
+                <td>Removed Data</td>
+            }
+        </tr>
+		 
+	    }
+        
+    </tbody>
+</table>

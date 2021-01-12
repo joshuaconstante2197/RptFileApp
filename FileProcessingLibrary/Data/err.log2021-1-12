@@ -1,0 +1,21 @@
+1/12/2021 5:14:14 PM ==> Error on Downloding previos fileFileName
+1/12/2021 5:24:48 PM ==> Error on Downloding previos fileFileName
+1/12/2021 5:25:36 PM ==> Error on Downloding previos fileFileName
+1/12/2021 5:28:42 PM ==> Error on Downloding previos fileFileName
+1/12/2021 5:31:31 PM ==> Error on Downloding previos fileFileName
+1/12/2021 5:33:08 PM ==> Error on Downloding previos fileFileName
+1/12/2021 5:36:35 PM ==> Error on Downloding previos fileFileName
+1/12/2021 5:39:21 PM ==> Error on Downloding previos fileInvalid GetBytes attempt at dataIndex '0'.  With CommandBehavior.SequentialAccess, you may only read from dataIndex '100' or greater.
+1/12/2021 5:41:06 PM ==> Error on Downloding previos fileInvalid GetBytes attempt at dataIndex '0'.  With CommandBehavior.SequentialAccess, you may only read from dataIndex '100' or greater.
+1/12/2021 5:43:31 PM ==> System.Data.SqlClient.SqlException (0x80131904): Violation of PRIMARY KEY constraint 'PK__AccountI__84069A5DD43463A9'. Cannot insert duplicate key in object 'dbo.AccountInfo'. The duplicate key value is (WS-MATER, 0).
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at FileProcessingLibrary.Services.SaveToDb.SaveAccountInfo(Account account) in C:\Users\Ibiley Uniforms\source\repos\ConsoleApp2\FileProcessingLibrary\Services\SaveToDb.cs:line 114
+ClientConnectionId:d1b833e3-2846-49d2-957d-0730d761e77b
+Error Number:2627,State:1,Class:14Error with this line: INSERT INTO AccountInfo(TransactionId, ArCode, TranDate, TranDetail, DueDate, InvoiceNumber, ReferenceNumber)  VALUES(0,'WS-MATER','1/1/0001 12:00:00 AM','','1/1/0001 12:00:00 AM','  ========','=   =========')
