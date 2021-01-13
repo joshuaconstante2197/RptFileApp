@@ -22,7 +22,7 @@ CREATE TABLE dbo.AccountHeader (ArCode varchar(12) PRIMARY KEY,
 ) 
 
 CREATE TABLE dbo.AccountInfo (ArCode varchar(12),
-	TransactionId int,
+	TransactionId int IDENTITY (1,1),
 	TranDate date DEFAULT NULL,
 	TranDetail varchar(50),
 	DueDate date DEFAULT NULL,

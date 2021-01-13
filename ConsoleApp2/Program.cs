@@ -16,15 +16,15 @@ namespace ConsoleApp2
         {
 
             string pathToTempFile = System.IO.Path.GetTempPath() + Guid.NewGuid().ToString() + ".txt";
-            //ProcessFile.DeleteEmptiesAndNonArs(Config.pathToRptFile, pathToTempFile);
-            var outputFile = CompareFiles.Compare(@"C:\Users\joshu\Source\Repos\RptFileApp\FileProcessingLibrary\Data\110320.txt", Config.pathToRptNewFile );
-            using (StreamReader reader = new StreamReader(outputFile))
-            {
-                string line;
-                while ((line = reader.ReadLine()) != null)
-                    Console.WriteLine(line);
-            }
-            Console.WriteLine(outputFile);
+            ProcessFile.DeleteEmptiesAndNonArs(Config.pathToRptFile, pathToTempFile);
+            //var outputFile = CompareFiles.Compare(@"C:\Users\joshu\Source\Repos\RptFileApp\FileProcessingLibrary\Data\110320.txt", Config.pathToRptNewFile );
+            //using (StreamReader reader = new StreamReader(outputFile))
+            //{
+            //    string line;
+            //    while ((line = reader.ReadLine()) != null)
+            //        Console.WriteLine(line);
+            //}
+            Console.WriteLine(pathToTempFile);
             Console.WriteLine("********** END OF OUTPUT **********");
 
             //SaveAccountToDb.Save(new Account());

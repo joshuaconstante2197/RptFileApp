@@ -10,7 +10,7 @@ namespace FileProcessingLibrary
 {
     public class ProcessFile
     {
-        public enum typeOfFile
+        public enum TypeOfFile
         {
             newData,
             removedData
@@ -117,11 +117,9 @@ namespace FileProcessingLibrary
             return accountHeader;
         }
 
-        public static AccountInfo SetAccountInfo(string line, int transactionId)
+        public static AccountInfo SetAccountInfo(string line)
         {
             var accountInfo = new AccountInfo();
-
-            accountInfo.TransactionId = transactionId;
 
             if (!line.Contains("TOTAL"))
             {
@@ -164,7 +162,7 @@ namespace FileProcessingLibrary
 
             return accountInfo;
         }
-        public static InvoiceBalance SetInvoiceBalance(string line,string arCode, int transactionId)
+        public static InvoiceBalance SetInvoiceBalance(string line,string arCode)
         {
             var invoiceBalances = new InvoiceBalance();
             var vs = new List<string>();
@@ -185,12 +183,11 @@ namespace FileProcessingLibrary
             }
 
             invoiceBalances.ArCode = arCode;
-            invoiceBalances.TransactionId = transactionId;
 
             return invoiceBalances;
         }
 
-        public static Account SetAccount(Account account, string line, int transactionId)
+        public static Account SetAccount(Account account, string line)
         {
             if (!char.IsWhiteSpace(line[0]))
             {
@@ -198,18 +195,14 @@ namespace FileProcessingLibrary
             }
             else 
             {
-                account.AccountInfo.Add(SetAccountInfo(line, transactionId));
+                account.AccountInfo.Add(SetAccountInfo(line));
                 if (line.Substring(74, line.Length - 74).Any(char.IsDigit))
                 {
-                    account.Balances.Add(SetInvoiceBalance(line,account.AccountHeader.ArCode, transactionId));
+                    account.Balances.Add(SetInvoiceBalance(line,account.AccountHeader.ArCode));
                 }
             }
 
             return account;
-        }
-        private static void DeleteClearedData(string fileWithRemovedData)
-        {
-
         }
 
         public static void Process(string pathToRptFile, string pathToTempFile, string pathToDataFolder)
@@ -218,7 +211,6 @@ namespace FileProcessingLibrary
             string fileWithRemovedData = string.Empty;
             string line;
             
-            var transactionId = 0;
             var listOfAccounts = new List<Account>();
 
             Account account = new Account();
@@ -254,10 +246,10 @@ namespace FileProcessingLibrary
                                 account = new Account();
                             }
                         }
-                        SetAccount(account, line, transactionId);
+                        SetAccount(account, line);
                     }
                 }
-                manageData.SaveFileToDb(fileWithRemovedData, typeOfFile.removedData);
+                manageData.SaveFileToDb(fileWithRemovedData, TypeOfFile.removedData);
 
             }
 
@@ -269,7 +261,6 @@ namespace FileProcessingLibrary
             {
                 while ((line = cleanFile.ReadLine()) != null)
                 {
-                    transactionId += 1;
                     if (!char.IsWhiteSpace(line[0]))
                     {
                         if (account.AccountHeader != null)
@@ -281,15 +272,14 @@ namespace FileProcessingLibrary
                             {
                                 manageData.SaveAccountInfo(account);
                                 manageData.SaveAccountBalances(account);
-                                transactionId = 0;
                             }
                             account = new Account();
                         }
                     }
-                    SetAccount(account, line, transactionId);
+                    SetAccount(account, line);
                 }
             }
-            manageData.SaveFileToDb(fileWithNewData, typeOfFile.newData);
+            manageData.SaveFileToDb(fileWithNewData, TypeOfFile.newData);
 
         }
     }

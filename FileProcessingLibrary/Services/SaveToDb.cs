@@ -66,9 +66,7 @@ namespace FileProcessingLibrary.Services
 
         public bool SaveAccountHeader(Account account)
         {
-            var sql = String.Empty;
-            
-            
+            string sql;
             if (account != null && !CheckIfAccountHeaderExists(account))
             {
                 sql = $"INSERT INTO AccountHeader(ArCode, AccountName, AccountPhoneNumber) VALUES ('{account.AccountHeader.ArCode}','{account.AccountHeader.AccountName}','{account.AccountHeader.AccountPhoneNumber}') ";
@@ -102,7 +100,7 @@ namespace FileProcessingLibrary.Services
         {
             foreach (var accountInfo in account.AccountInfo)
             {
-                var sql = $"INSERT INTO AccountInfo(TransactionId, ArCode, TranDate, TranDetail, DueDate, InvoiceNumber, ReferenceNumber)  VALUES({accountInfo.TransactionId},'{account.AccountHeader.ArCode}','{accountInfo.TranDate}','{accountInfo.TranDetail}'," +
+                var sql = $"INSERT INTO AccountInfo(ArCode, TranDate, TranDetail, DueDate, InvoiceNumber, ReferenceNumber)  VALUES('{account.AccountHeader.ArCode}','{accountInfo.TranDate}','{accountInfo.TranDetail}'," +
                           $"'{accountInfo.DueDate}','{accountInfo.InvoiceNumber}','{accountInfo.ReferenceNumber}')";
                 using (SqlConnection sqlCon = new SqlConnection(Config.ConnString))
                 {
@@ -127,9 +125,12 @@ namespace FileProcessingLibrary.Services
         }
         public bool SaveAccountBalances(Account account)
         {
+            
+            var transactionId = GetTransactionIds(account.AccountHeader.ArCode);
+            int i = 0;
             foreach (var accountBalance in account.Balances)
             {
-                var sql = $"INSERT INTO InvoiceBalance(ArCode,TransactionId,Balance,Curr,Over30,Over60,Over90) VALUES('{accountBalance.ArCode}',{accountBalance.TransactionId},{accountBalance.Balance},{accountBalance.Current}," +
+                var sql = $"INSERT INTO InvoiceBalance(ArCode,TransactionId, Balance,Curr,Over30,Over60,Over90) VALUES('{accountBalance.ArCode}',{transactionId[i]},{accountBalance.Balance},{accountBalance.Current}," +
                           $"{accountBalance.Over30},{accountBalance.Over60},{accountBalance.Over90})";
                 using (SqlConnection sqlCon = new SqlConnection(Config.ConnString))
                 {
@@ -149,8 +150,36 @@ namespace FileProcessingLibrary.Services
                         }
                     }
                 }
+                i++;
+
             }
             return true;
+        }
+        private List<int> GetTransactionIds(string ArCode)
+        {
+            int id;
+            List<int> ids = new List<int>();
+            using (SqlConnection sqlCon = new SqlConnection(Config.ConnString))
+            {
+                sqlCon.Open();
+                var sql = $"SELECT TransactionId FROM AccountInfo WHERE ArCode = '{ArCode}' ";
+                using (SqlCommand cmd = new SqlCommand(sql,sqlCon))
+                {
+                    using (SqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            id = 0;
+                            for (int i = 0; i < reader.FieldCount; i++)
+                            {
+                                id = Convert.ToInt32(reader.GetValue(i));
+                            }
+                            ids.Add(id);
+                        }
+                    }
+                }
+            }
+            return ids;
         }
         private static Byte[] ConvertFileToBytes(string pathToTempFile)
         {
@@ -176,7 +205,7 @@ namespace FileProcessingLibrary.Services
             return bytes;
         }
 
-        public bool SaveFileToDb(string pathToTempFile, ProcessFile.typeOfFile typeOfFile)
+        public bool SaveFileToDb(string pathToTempFile, ProcessFile.TypeOfFile typeOfFile)
         {
             Byte[] bytes = ConvertFileToBytes(pathToTempFile);
             string fileName = Path.GetFileName(pathToTempFile);
