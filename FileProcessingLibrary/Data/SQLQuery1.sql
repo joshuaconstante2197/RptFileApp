@@ -15,11 +15,10 @@ END
 
 USE RptFileApp
 GO
-
 CREATE TABLE dbo.AccountHeader (ArCode varchar(12) PRIMARY KEY,
 	AccountName varchar(50),
 	AccountPhoneNumber varchar(50)
-) 
+);
 
 CREATE TABLE dbo.AccountInfo (ArCode varchar(12),
 	TransactionId int IDENTITY (1,1),
@@ -30,7 +29,7 @@ CREATE TABLE dbo.AccountInfo (ArCode varchar(12),
 	ReferenceNumber varchar(20),
 	FOREIGN KEY(ArCode) REFERENCES dbo.AccountHeader(ArCode) ON DELETE CASCADE,
 	PRIMARY KEY(ArCode,TransactionId)
-)
+);
 Create TABLE dbo.InvoiceBalance(ArCode varchar(12),
 	TransactionId int,
 	InvoiceNumber varchar (10),
@@ -41,14 +40,14 @@ Create TABLE dbo.InvoiceBalance(ArCode varchar(12),
 	Over90 money,
 	FOREIGN KEY(ArCode, TransactionId) REFERENCES dbo.AccountInfo(ArCode, TransactionId) ON DELETE CASCADE,
 	PRIMARY KEY(ArCode,TransactionId)
-)
+);
 Create TABLE dbo.Comment(ArCode varchar(12),
 	TransactionId int,
 	Commnent varchar(max),
 	CommentDate date,
 	FOREIGN KEY(ArCode, TransactionId) REFERENCES dbo.AccountInfo(ArCode, TransactionId) ON DELETE CASCADE,
 	PRIMARY KEY(ArCode,TransactionId)
-)
+);
 Create TABLE dbo.Files(DocumentId int IDENTITY (1,1),
 	FileName varchar(100),
 	FileExtension varchar(10),
@@ -56,7 +55,20 @@ Create TABLE dbo.Files(DocumentId int IDENTITY (1,1),
 	CreatedOn datetime,
 	TypeOfFile varchar(20),
 	PRIMARY KEY(DocumentId)
-)
+);
+
+Go
+
+CREATE PROCEDURE dbo.spDeleteNegativeAndZeroAccounts
+AS
+BEGIN
+	DELETE AccountHeader FROM AccountHeader 
+							LEFT JOIN AccountInfo ON AccountHeader.ArCode = AccountInfo.ArCode 
+							LEFT JOIN InvoiceBalance ON  AccountInfo.TransactionId = InvoiceBalance.TransactionId 
+							WHERE AccountInfo.TranDetail = 'Total Customer' AND InvoiceBalance.Balance <= 0.01
+END
+
+
 
 
 	

@@ -17,7 +17,7 @@
 	    {
         <tr>
             <td><a asp-page-handler="Download" asp-route-id="@file.DocumentId">@file.FileName</a></td>
-            <td>@file.CreatedOn.ToShortDateString()</td>
+            <td>@file.CreatedOn.ToShortDateString()  @file.CreatedOn.ToLongTimeString()</td>
             @if (string.Equals(file.TypeOfFile, "newData"))
             {
                 <td>New Data </td>

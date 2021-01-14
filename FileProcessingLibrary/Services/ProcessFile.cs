@@ -263,7 +263,7 @@ namespace FileProcessingLibrary
                 {
                     if (!char.IsWhiteSpace(line[0]))
                     {
-                        if (account.AccountHeader != null)
+                        if (account.AccountHeader != null )
                         {
                             manageData = new SaveToDb();
                             manageData.SaveAccountHeader(account);

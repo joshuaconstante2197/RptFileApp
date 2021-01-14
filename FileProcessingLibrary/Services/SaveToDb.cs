@@ -223,7 +223,7 @@ namespace FileProcessingLibrary.Services
                         cmd.Parameters.Add("@FileName", SqlDbType.VarChar).Value = fileName;
                         cmd.Parameters.Add("@FileExtension", SqlDbType.VarChar).Value = fileExtension;
                         cmd.Parameters.Add("@DataFile", SqlDbType.Binary).Value = bytes;
-                        cmd.Parameters.Add("@CreatedOn", SqlDbType.Date).Value = dateTime;
+                        cmd.Parameters.Add("@CreatedOn", SqlDbType.DateTime).Value = dateTime;
                         cmd.Parameters.Add("@TypeOfFile", SqlDbType.VarChar).Value = typeOfFile;
 
                         cmd.ExecuteNonQuery();

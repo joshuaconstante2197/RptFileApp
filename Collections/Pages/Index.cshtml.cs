@@ -25,11 +25,22 @@ namespace Collections.Pages
 
         public void OnGet()
         {
-            Accounts = GetDbData.DisplayAllAccounts();
-            foreach (var account in Accounts)
+            try
             {
-                account.TotalBalance = GetDbData.GetTotalBalance(account.ArCode);
+                //CurateDb.DeleteNegativeAndZeroAccounts();
+                Accounts = GetDbData.DisplayAllAccounts();
+                foreach (var account in Accounts)
+                {
+                    account.TotalBalance = GetDbData.GetTotalBalance(account.ArCode);
+                }
             }
+            catch (Exception ex)
+            {
+                var Err = new CreateLogFiles();
+                Err.ErrorLog(Config.WebDataPath + "err.log", ex.Message + "Error uploading file");
+                throw;
+            }
+            
         }
     }
 }

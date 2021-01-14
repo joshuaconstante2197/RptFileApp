@@ -41,12 +41,14 @@ namespace CollectionsWebLayer.Pages
 
                     ProcessFile.Process(rptFileUpload, tempFile, _hostingEnvironment.ContentRootPath + "\\Data");
                     getData.DownloadFileToProjectFolder(_hostingEnvironment.ContentRootPath + "\\Data");
-                return new RedirectToPageResult("Index");
+                    CurateDb.DeleteNegativeAndZeroAccounts1();
+                    return new RedirectToPageResult("Index");
                 }
                 catch (Exception ex)
                 {
                     var Err = new CreateLogFiles();
                     Err.ErrorLog(Config.WebDataPath + "err.log", ex.Message + "Error uploading file");
+                    return new RedirectToPageResult("Error");
                     throw;
                 }
             
