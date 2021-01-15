@@ -29,8 +29,7 @@ namespace CollectionsWebLayer.Pages
         public async Task<ActionResult> OnPost()
         {
                 
-                try
-                {
+                
                     var rptFileUpload = Path.GetTempPath() + Guid.NewGuid().ToString() + ".txt";
                     var tempFile = Path.GetTempPath() + Guid.NewGuid().ToString() + ".txt";
 
@@ -43,14 +42,8 @@ namespace CollectionsWebLayer.Pages
                     getData.DownloadFileToProjectFolder(_hostingEnvironment.ContentRootPath + "\\Data");
                     CurateDb.DeleteNegativeAndZeroAccounts1();
                     return new RedirectToPageResult("Index");
-                }
-                catch (Exception ex)
-                {
-                    var Err = new CreateLogFiles();
-                    Err.ErrorLog(Config.WebDataPath + "err.log", ex.Message + "Error uploading file");
-                    return new RedirectToPageResult("Error");
-                    throw;
-                }
+                
+                
             
 
         }

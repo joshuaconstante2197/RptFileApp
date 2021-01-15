@@ -74,7 +74,14 @@ namespace FileProcessingLibrary.Services
                                     {
                                         break;
                                     }
-                                    arInfo.Add(oldLine.Remove(' '));
+                                    else if (oldLine.Contains("TOTAL Customer"))
+                                    {
+                                        arInfo.Add(oldLine.Substring(0,57));
+                                    }
+                                    else
+                                    {
+                                        arInfo.Add(oldLine.Substring(0,60));
+                                    }
                                 }
                             }
                             //making sure that I'm not encountering the next AR
@@ -82,8 +89,16 @@ namespace FileProcessingLibrary.Services
                             {
 
                                 newFileLine = (newFile.ReadLine());
+                                string newFileLineSub;
 
-                                string newFileLineSub = newFileLine.Remove(' ');
+                                if (newFileLine.Contains("TOTAL Customer"))
+                                {
+                                    newFileLineSub = newFileLine.Substring(0, 57);
+                                }
+                                else
+                                {
+                                    newFileLineSub = newFileLine.Substring(0,60);
+                                }
 
                                 bool checkIfInfoExists = false;
 

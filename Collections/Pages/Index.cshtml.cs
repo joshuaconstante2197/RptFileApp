@@ -37,7 +37,7 @@ namespace Collections.Pages
             catch (Exception ex)
             {
                 var Err = new CreateLogFiles();
-                Err.ErrorLog(Config.WebDataPath + "err.log", ex.Message + "Error uploading file");
+                Err.ErrorLog(Config.WebDataPath + "err.log", ex.Message + "Error on idex page");
                 throw;
             }
             

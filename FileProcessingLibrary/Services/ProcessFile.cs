@@ -22,7 +22,7 @@ namespace FileProcessingLibrary
             string previousArLine = string.Empty;
             bool count = false;
             bool wordToEx = true;
-            string[] wordsToExclude = { "T R I A L", "Tran    Tran", "Date    Descr", "----    -----", "Time", "---------", "E", "TOTAL A/R", "*** End of Report ***" };
+            string[] wordsToExclude = { "T R I A L", "Tran    Tran", "Date    Descr", "----    -----", "Time", "---------", "E", "TOTAL A/R", "=========" };
             StreamReader rptFile = new StreamReader(pathToRptFile);
 
 
@@ -195,8 +195,9 @@ namespace FileProcessingLibrary
             }
             else 
             {
+
                 account.AccountInfo.Add(SetAccountInfo(line));
-                if (line.Substring(74, line.Length - 74).Any(char.IsDigit))
+                if (line.Substring(74, line.Length - 74).Any(char.IsDigit) )
                 {
                     account.Balances.Add(SetInvoiceBalance(line,account.AccountHeader.ArCode));
                 }
@@ -261,9 +262,23 @@ namespace FileProcessingLibrary
             {
                 while ((line = cleanFile.ReadLine()) != null)
                 {
-                    if (!char.IsWhiteSpace(line[0]) || line.Contains("========="))
+                    
+                    if (!char.IsWhiteSpace(line[0]) || cleanFile.Peek() == -1)
                     {
-                        if (account.AccountHeader != null )
+                        if (cleanFile.Peek() == -1)
+                        {
+                            SetAccount(account, line);
+                            manageData = new SaveToDb();
+                            manageData.SaveAccountHeader(account);
+                            manageData.SaveAccountHeader(account);
+
+                            if (account.AccountInfo.Count > 0)
+                            {
+                                manageData.SaveAccountInfo(account);
+                                manageData.SaveAccountBalances(account);
+                            }
+                        }
+                        else if (account.AccountHeader != null)
                         {
                             manageData = new SaveToDb();
                             manageData.SaveAccountHeader(account);
