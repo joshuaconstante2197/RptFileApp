@@ -18,16 +18,32 @@ namespace FileProcessingLibrary
         public static void DeleteEmptiesAndNonArs(string pathToRptFile, string pathToTempFile)
         {
             File.WriteAllText(pathToTempFile, string.Empty);
+            long initialPosition = 0;
             string line;
             string previousArLine = string.Empty;
             bool count = false;
             bool wordToEx = true;
-            string[] wordsToExclude = { "T R I A L", "Tran    Tran", "Date    Descr", "----    -----", "Time", "---------", "E", "TOTAL A/R", "=========" };
-            StreamReader rptFile = new StreamReader(pathToRptFile);
+            string[] wordsToExclude = { "T R I A L", "Tran    Tran", "Date    Descr", "----    -----", "Time", "---------", "E", "TOTAL A/R", "=========", "*** End of Report ***" };
 
+            using (StreamReader rpt = new StreamReader(pathToRptFile))
+            {
+                if (string.Equals(rpt.ReadLine(), "E    (s0p16.67h8.5v0s0b0T"))
+                {
+                    for (int i = 0; i < 36; i++)
+                    {
+                        rpt.ReadLine();
+                    }
+                    initialPosition = rpt.GetPosition();
+                }
+            }
+            StreamReader rptFile = new StreamReader(pathToRptFile);
 
             using (StreamWriter streamWriter = new StreamWriter(pathToTempFile))
             {
+                if (initialPosition > 0)
+                {
+                    rptFile.SetPosition(initialPosition);
+                }
                 while ((line = rptFile.ReadLine()) != null)
                 {
                     if (!string.IsNullOrEmpty(line))
