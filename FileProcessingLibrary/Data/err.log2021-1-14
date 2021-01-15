@@ -1,0 +1,123 @@
+1/14/2021 7:44:26 PM ==> System.Data.SqlClient.SqlException (0x80131904): Violation of PRIMARY KEY constraint 'PK__InvoiceB__84069A5D3C8F19F8'. Cannot insert duplicate key in object 'dbo.InvoiceBalance'. The duplicate key value is (WS-MATER, 396).
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at FileProcessingLibrary.Services.SaveToDb.SaveAccountBalances(Account account) in C:\Users\joshu\Source\Repos\RptFileApp\FileProcessingLibrary\Services\SaveToDb.cs:line 142
+ClientConnectionId:6c483b12-99c4-4a32-b454-55b1ddf9628f
+Error Number:2627,State:1,Class:14Error saving account balances int this line: INSERT INTO InvoiceBalance(ArCode,TransactionId, Balance,Curr,Over30,Over60,Over90) VALUES('WS-MATER',396,-3595.20,-3595.20,0,0,0)
+1/14/2021 7:44:26 PM ==> System.Data.SqlClient.SqlException (0x80131904): Violation of PRIMARY KEY constraint 'PK__InvoiceB__84069A5D3C8F19F8'. Cannot insert duplicate key in object 'dbo.InvoiceBalance'. The duplicate key value is (STAFF-RAIN, 333).
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at FileProcessingLibrary.Services.SaveToDb.SaveAccountBalances(Account account) in C:\Users\joshu\Source\Repos\RptFileApp\FileProcessingLibrary\Services\SaveToDb.cs:line 142
+ClientConnectionId:6c483b12-99c4-4a32-b454-55b1ddf9628f
+Error Number:2627,State:1,Class:14Error saving account balances int this line: INSERT INTO InvoiceBalance(ArCode,TransactionId, Balance,Curr,Over30,Over60,Over90) VALUES('STAFF-RAIN',333,0.0,0.0,0.0,0.0,-6.05)
+1/14/2021 7:44:26 PM ==> Object reference not set to an instance of an object.Error uploading file
+1/14/2021 7:50:38 PM ==> System.Data.SqlClient.SqlException (0x80131904): Violation of PRIMARY KEY constraint 'PK__InvoiceB__84069A5D121F5ECA'. Cannot insert duplicate key in object 'dbo.InvoiceBalance'. The duplicate key value is (WS-MATER, 396).
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at FileProcessingLibrary.Services.SaveToDb.SaveAccountBalances(Account account) in C:\Users\joshu\Source\Repos\RptFileApp\FileProcessingLibrary\Services\SaveToDb.cs:line 142
+ClientConnectionId:d18e4268-744c-4448-a21b-2bd48c153062
+Error Number:2627,State:1,Class:14Error saving account balances int this line: INSERT INTO InvoiceBalance(ArCode,TransactionId, Balance,Curr,Over30,Over60,Over90) VALUES('WS-MATER',396,-3595.20,-3595.20,0,0,0)
+1/14/2021 7:50:38 PM ==> System.Data.SqlClient.SqlException (0x80131904): Violation of PRIMARY KEY constraint 'PK__InvoiceB__84069A5D121F5ECA'. Cannot insert duplicate key in object 'dbo.InvoiceBalance'. The duplicate key value is (STAFF-RAIN, 333).
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at FileProcessingLibrary.Services.SaveToDb.SaveAccountBalances(Account account) in C:\Users\joshu\Source\Repos\RptFileApp\FileProcessingLibrary\Services\SaveToDb.cs:line 142
+ClientConnectionId:d18e4268-744c-4448-a21b-2bd48c153062
+Error Number:2627,State:1,Class:14Error saving account balances int this line: INSERT INTO InvoiceBalance(ArCode,TransactionId, Balance,Curr,Over30,Over60,Over90) VALUES('STAFF-RAIN',333,0.0,0.0,0.0,0.0,-6.05)
+1/14/2021 7:50:38 PM ==> Object reference not set to an instance of an object.Error uploading file
+1/14/2021 7:57:18 PM ==> System.Data.SqlClient.SqlException (0x80131904): Violation of PRIMARY KEY constraint 'PK__InvoiceB__84069A5DFC648CBA'. Cannot insert duplicate key in object 'dbo.InvoiceBalance'. The duplicate key value is (WS-MATER, 396).
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at FileProcessingLibrary.Services.SaveToDb.SaveAccountBalances(Account account) in C:\Users\joshu\Source\Repos\RptFileApp\FileProcessingLibrary\Services\SaveToDb.cs:line 142
+ClientConnectionId:d29c8bce-b1b6-4c82-8127-409e8f862f69
+Error Number:2627,State:1,Class:14Error saving account balances int this line: INSERT INTO InvoiceBalance(ArCode,TransactionId, Balance,Curr,Over30,Over60,Over90) VALUES('WS-MATER',396,-3595.20,-3595.20,0,0,0)
+1/14/2021 7:57:18 PM ==> System.Data.SqlClient.SqlException (0x80131904): Violation of PRIMARY KEY constraint 'PK__InvoiceB__84069A5DFC648CBA'. Cannot insert duplicate key in object 'dbo.InvoiceBalance'. The duplicate key value is (STAFF-RAIN, 333).
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at FileProcessingLibrary.Services.SaveToDb.SaveAccountBalances(Account account) in C:\Users\joshu\Source\Repos\RptFileApp\FileProcessingLibrary\Services\SaveToDb.cs:line 142
+ClientConnectionId:d29c8bce-b1b6-4c82-8127-409e8f862f69
+Error Number:2627,State:1,Class:14Error saving account balances int this line: INSERT INTO InvoiceBalance(ArCode,TransactionId, Balance,Curr,Over30,Over60,Over90) VALUES('STAFF-RAIN',333,0.0,0.0,0.0,0.0,-6.05)
+1/14/2021 7:57:18 PM ==> Object reference not set to an instance of an object.Error uploading file
+1/14/2021 8:02:29 PM ==> System.Data.SqlClient.SqlException (0x80131904): Violation of PRIMARY KEY constraint 'PK__InvoiceB__84069A5DF88A1555'. Cannot insert duplicate key in object 'dbo.InvoiceBalance'. The duplicate key value is (WS-MATER, 396).
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at FileProcessingLibrary.Services.SaveToDb.SaveAccountBalances(Account account) in C:\Users\joshu\Source\Repos\RptFileApp\FileProcessingLibrary\Services\SaveToDb.cs:line 142
+ClientConnectionId:865f1432-e7e6-40e6-b132-d079f6847cfe
+Error Number:2627,State:1,Class:14Error saving account balances int this line: INSERT INTO InvoiceBalance(ArCode,TransactionId, Balance,Curr,Over30,Over60,Over90) VALUES('WS-MATER',396,-3595.20,-3595.20,0,0,0)
+1/14/2021 8:09:14 PM ==> System.Data.SqlClient.SqlException (0x80131904): Violation of PRIMARY KEY constraint 'PK__InvoiceB__84069A5D52FB9F28'. Cannot insert duplicate key in object 'dbo.InvoiceBalance'. The duplicate key value is (WS-MATER, 396).
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at FileProcessingLibrary.Services.SaveToDb.SaveAccountBalances(Account account) in C:\Users\joshu\Source\Repos\RptFileApp\FileProcessingLibrary\Services\SaveToDb.cs:line 142
+ClientConnectionId:5c1f108d-5337-4f10-ac2a-f2d9a97f06ed
+Error Number:2627,State:1,Class:14Error saving account balances int this line: INSERT INTO InvoiceBalance(ArCode,TransactionId, Balance,Curr,Over30,Over60,Over90) VALUES('WS-MATER',396,-3595.20,-3595.20,0,0,0)
+1/14/2021 8:11:46 PM ==> System.Data.SqlClient.SqlException (0x80131904): Violation of PRIMARY KEY constraint 'PK__InvoiceB__84069A5DE3C06C83'. Cannot insert duplicate key in object 'dbo.InvoiceBalance'. The duplicate key value is (WS-MATER, 396).
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at FileProcessingLibrary.Services.SaveToDb.SaveAccountBalances(Account account) in C:\Users\joshu\Source\Repos\RptFileApp\FileProcessingLibrary\Services\SaveToDb.cs:line 142
+ClientConnectionId:4e835abc-5530-4aba-a456-06f8a5a178b4
+Error Number:2627,State:1,Class:14Error saving account balances int this line: INSERT INTO InvoiceBalance(ArCode,TransactionId, Balance,Curr,Over30,Over60,Over90) VALUES('WS-MATER',396,-3595.20,-3595.20,0,0,0)
+1/14/2021 8:12:46 PM ==> System.Data.SqlClient.SqlException (0x80131904): Violation of PRIMARY KEY constraint 'PK__InvoiceB__84069A5D1AD99FEA'. Cannot insert duplicate key in object 'dbo.InvoiceBalance'. The duplicate key value is (WS-MATER, 396).
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at FileProcessingLibrary.Services.SaveToDb.SaveAccountBalances(Account account) in C:\Users\joshu\Source\Repos\RptFileApp\FileProcessingLibrary\Services\SaveToDb.cs:line 142
+ClientConnectionId:5d940953-5461-4eeb-a5b3-1a4eb56835a0
+Error Number:2627,State:1,Class:14Error saving account balances int this line: INSERT INTO InvoiceBalance(ArCode,TransactionId, Balance,Curr,Over30,Over60,Over90) VALUES('WS-MATER',396,-3595.20,-3595.20,0,0,0)

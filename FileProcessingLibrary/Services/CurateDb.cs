@@ -13,7 +13,10 @@ namespace FileProcessingLibrary.Services
             using (SqlConnection sqlCon = new SqlConnection(Config.ConnString))
             {
                 var sql = "SELECT AccountInfo.ArCode FROM AccountInfo LEFT JOIN InvoiceBalance ON  AccountInfo.TransactionId = InvoiceBalance.TransactionId " +
-                            "WHERE AccountInfo.TranDetail = 'Total Customer' AND InvoiceBalance.Balance <= 0.01";
+                            "WHERE AccountInfo.TranDetail = 'Total Customer' AND InvoiceBalance.Balance <= 0.01 " +
+                            "UNION " +
+                            "SELECT ArCode FROM AccountHeader WHERE ArCode NOT IN(SELECT ArCode FROM AccountInfo)";
+;
                 using (SqlCommand cmd = new SqlCommand(sql, sqlCon))
                 {
                     sqlCon.Open();
@@ -40,12 +43,11 @@ namespace FileProcessingLibrary.Services
             var ars = GetNegativeAndZeroArs();
             try
             {
-                foreach (var ar in ars)
-                {
-                    using (SqlConnection sqlCon = new SqlConnection(Config.ConnString))
+                using (SqlConnection sqlCon = new SqlConnection(Config.ConnString))
                 {
                     sqlCon.Open();
-                    
+                    foreach (var ar in ars)
+                    {
                         var sql = $"DELETE FROM Accountheader WHERE Arcode = '{ar}'";
                         using (SqlCommand cmd = new SqlCommand(sql, sqlCon))
                         {

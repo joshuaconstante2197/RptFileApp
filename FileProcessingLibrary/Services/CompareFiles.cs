@@ -40,7 +40,6 @@ namespace FileProcessingLibrary.Services
         {
             string outputFilePath = Path.GetTempPath() + Guid.NewGuid().ToString() + ".txt";
 
-            StreamReader newFile = new StreamReader(pathToNewFile);
             StreamWriter outputFile = new StreamWriter(outputFilePath);
 
             string newFileLine;
@@ -52,73 +51,78 @@ namespace FileProcessingLibrary.Services
             List<string> arInfo;
             List<string> newArInfo;
 
-            while ((newFileLine = newFile.ReadLine()) != null)
+            using (StreamReader newFile = new StreamReader(pathToNewFile))
             {
-                if (!char.IsWhiteSpace(newFileLine[0]))
+                while ((newFileLine = newFile.ReadLine()) != null)
                 {
-                    arInfo = new List<string>();
 
-                    if ((arCounter = CheckIfArExistsOnOldFile(newFileLine, pathToOldFile)) > 0)
+                    if (!char.IsWhiteSpace(newFileLine[0]) || newFileLine.Contains("========="))
                     {
-                        newAr = newFileLine;
-                        newArInfo = new List<string>();
+                        arInfo = new List<string>();
 
-                        using (StreamReader oldFile = new StreamReader(pathToOldFile))
+                        if ((arCounter = CheckIfArExistsOnOldFile(newFileLine, pathToOldFile)) > 0)
                         {
-                            oldFile.SetPosition(arCounter);
-                            while ((oldLine = oldFile.ReadLine()) != null)
+                            newAr = newFileLine;
+                            newArInfo = new List<string>();
+
+                            using (StreamReader oldFile = new StreamReader(pathToOldFile))
                             {
-                                if (!char.IsWhiteSpace(oldLine[0]))
+                                oldFile.SetPosition(arCounter);
+                                while ((oldLine = oldFile.ReadLine()) != null)
                                 {
-                                    break;
-                                }
-                                arInfo.Add(oldLine.Substring(0, 60));
-                            }
-                        }
-                        //making sure that I'm not encountering the next AR
-                        while (newFile.Peek() != -1 && !char.IsLetterOrDigit(Convert.ToChar(newFile.Peek())))
-                        {
-
-                            newFileLine = (newFile.ReadLine());
-
-                            string newFileLineSub = newFileLine.Substring(0, 60);
-
-                            bool checkIfInfoExists = false;
-
-                            foreach (var info in arInfo)
-                            {
-                                if (string.Equals(info, newFileLineSub))
-                                {
-                                    checkIfInfoExists = true;
+                                    if (!char.IsWhiteSpace(oldLine[0]))
+                                    {
+                                        break;
+                                    }
+                                    arInfo.Add(oldLine.Remove(' '));
                                 }
                             }
-                            if (!checkIfInfoExists)
+                            //making sure that I'm not encountering the next AR
+                            while (newFile.Peek() != -1 && !char.IsLetterOrDigit(Convert.ToChar(newFile.Peek())))
                             {
-                                newArInfo.Add(newFileLine);
+
+                                newFileLine = (newFile.ReadLine());
+
+                                string newFileLineSub = newFileLine.Remove(' ');
+
+                                bool checkIfInfoExists = false;
+
+                                foreach (var info in arInfo)
+                                {
+                                    if (string.Equals(info, newFileLineSub))
+                                    {
+                                        checkIfInfoExists = true;
+                                    }
+                                }
+                                if (!checkIfInfoExists)
+                                {
+                                    newArInfo.Add(newFileLine);
+                                }
                             }
-                        }
 
-                        if (newArInfo.Count > 0)
-                        {
-                            outputFile.WriteLine(newAr);
-
-                            foreach (var newInfo in newArInfo)
+                            if (newArInfo.Count > 0)
                             {
-                                outputFile.WriteLine(newInfo);
-                            }
-                        }
+                                outputFile.WriteLine(newAr);
 
-                    }
-                    else
-                    {
-                        outputFile.WriteLine(newFileLine);
-                        while (newFile.Peek() != -1 && !char.IsLetterOrDigit(Convert.ToChar(newFile.Peek())))
+                                foreach (var newInfo in newArInfo)
+                                {
+                                    outputFile.WriteLine(newInfo);
+                                }
+                            }
+
+                        }
+                        else
                         {
-                            newFileLine = newFile.ReadLine();
                             outputFile.WriteLine(newFileLine);
+                            while (newFile.Peek() != -1 && !char.IsLetterOrDigit(Convert.ToChar(newFile.Peek())))
+                            {
+                                newFileLine = newFile.ReadLine();
+                                outputFile.WriteLine(newFileLine);
+                            }
                         }
                     }
                 }
+
             }
             outputFile.Close();
             return outputFilePath;

@@ -235,7 +235,7 @@ namespace FileProcessingLibrary
                     {
                         if (!char.IsWhiteSpace(line[0]))
                         {
-                            if (account.AccountHeader != null)
+                            if (account.AccountHeader != null )
                             {
                                 manageData = new SaveToDb();
 
@@ -261,7 +261,7 @@ namespace FileProcessingLibrary
             {
                 while ((line = cleanFile.ReadLine()) != null)
                 {
-                    if (!char.IsWhiteSpace(line[0]))
+                    if (!char.IsWhiteSpace(line[0]) || line.Contains("========="))
                     {
                         if (account.AccountHeader != null )
                         {
