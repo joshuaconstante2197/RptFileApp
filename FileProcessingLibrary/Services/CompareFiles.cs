@@ -15,12 +15,22 @@ namespace FileProcessingLibrary.Services
             long position;
             using (StreamReader oldFile = new StreamReader(pathToOldFile))
             {
-                while ((oldFileLine = oldFile.ReadLine()) != null && !string.Equals(oldFileLine, "E"))
+                while ((oldFileLine = oldFile.ReadLine()) != null)
                 {
-                    if (!char.IsWhiteSpace(oldFileLine[0]))
+                    if (!char.IsWhiteSpace(oldFileLine[0]) && oldFile.Peek() != -1)
                     {
                         string newAr = newFileLine.Substring(0, newFileLine.IndexOf(' '));
-                        string oldAr = oldFileLine.Substring(0, oldFileLine.IndexOf(' '));
+                        string oldAr;
+                        try
+                        {
+                             oldAr = oldFileLine.Substring(0, oldFileLine.IndexOf(' '));
+
+                        }
+                        catch (Exception)
+                        {
+
+                            throw;
+                        }
                         if (string.Compare(newAr, oldAr) < 1)
                         {
                             if (string.Equals(newAr, oldAr))
@@ -53,9 +63,9 @@ namespace FileProcessingLibrary.Services
 
             using (StreamReader newFile = new StreamReader(pathToNewFile))
             {
-                while ((newFileLine = newFile.ReadLine()) != null && !string.Equals(newFile, "E"))
+                while ((newFileLine = newFile.ReadLine()) != null)
                 {
-                    if (!char.IsWhiteSpace(newFileLine[0]))
+                    if (!char.IsWhiteSpace(newFileLine[0]) && newFile.Peek() != -1)
                     {
                         arInfo = new List<string>();
 
@@ -84,20 +94,27 @@ namespace FileProcessingLibrary.Services
                                 }
                             }
                             //making sure that I'm not encountering the next AR
-                            while (newFile.Peek() != -1 && !char.IsLetterOrDigit(Convert.ToChar(newFile.Peek())))
+                            while ((newFileLine = newFile.ReadLine()) != null && !char.IsLetterOrDigit(Convert.ToChar(newFile.Peek())))
                             {
                                 
-                                newFileLine = (newFile.ReadLine());
-                                
-                                string newFileLineSub = string.Empty;
+                                string newFileLineSub;
 
                                 if (newFileLine.Contains("TOTAL Customer"))
                                 {
                                     newFileLineSub = newFileLine.Substring(0, 57);
                                 }
-                                else if(newFileLine.Length > 4)
+                                else
                                 {
-                                    newFileLineSub = newFileLine.Substring(0, 60);
+                                    try
+                                    {
+                                        newFileLineSub = newFileLine.Substring(0, 60);
+
+                                    }
+                                    catch (Exception)
+                                    {
+
+                                        throw;
+                                    }
                                 }
 
                                 bool checkIfInfoExists = false;

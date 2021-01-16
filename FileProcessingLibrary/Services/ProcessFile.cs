@@ -250,19 +250,17 @@ namespace FileProcessingLibrary
                 {
                     while ((line = removedData.ReadLine()) != null)
                     {
-                        if (!char.IsWhiteSpace(line[0]) || removedData.Peek() == - 1)
+                        if (!char.IsWhiteSpace(line[0]))
                         {
-                           
-
-                                if (account.AccountHeader != null)
+                            if (account.AccountHeader != null)
                             {
                                 manageData = new SaveToDb();
 
-                                if (account.AccountInfo.Count > 0)
-                                {
-                                    manageData.DeletePaidAccounts(account);
-                                }
-                                account = new Account();
+                            if (account.AccountInfo.Count > 0)
+                            {
+                                manageData.DeletePaidAccounts(account);
+                            }
+                            account = new Account();
                             }
                         }
                         SetAccount(account, line);
@@ -280,12 +278,10 @@ namespace FileProcessingLibrary
             {
                 while ((line = cleanFile.ReadLine()) != null)
                 {
-                    
-                    if (!char.IsWhiteSpace(line[0]) || cleanFile.Peek() == -1)
+                    if (!char.IsWhiteSpace(line[0]))
                     {
                         if (account.AccountHeader != null)
                         {
-                            
                             manageData = new SaveToDb();
                             manageData.SaveAccountHeader(account);
 
@@ -294,8 +290,7 @@ namespace FileProcessingLibrary
                                 manageData.SaveAccountInfo(account);
                                 manageData.SaveAccountBalances(account);
                             }
-                        
-                            account = new Account();
+                        account = new Account();
                     }
                 }
                     SetAccount(account, line);
