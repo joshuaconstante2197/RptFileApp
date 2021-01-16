@@ -15,22 +15,25 @@ namespace FileProcessingLibrary.Services
             long position;
             using (StreamReader oldFile = new StreamReader(pathToOldFile))
             {
-                while ((oldFileLine = oldFile.ReadLine()) != null)
+                while ((oldFileLine = oldFile.ReadLine()) != null )
                 {
-                    if (!char.IsWhiteSpace(oldFileLine[0]) && oldFile.Peek() != -1)
+                    if (string.Equals(oldFileLine, "E"))
+                    {
+                        Console.WriteLine("a");
+                    }
+                    if (!char.IsWhiteSpace(oldFileLine[0]) && !string.Equals(oldFileLine, "E"))
                     {
                         string newAr = newFileLine.Substring(0, newFileLine.IndexOf(' '));
                         string oldAr;
                         try
                         {
-                             oldAr = oldFileLine.Substring(0, oldFileLine.IndexOf(' '));
-
+                            oldAr = oldFileLine.Substring(0, oldFileLine.IndexOf(' '));
                         }
-                        catch (Exception)
+                        catch (Exception ex)
                         {
-
-                            throw;
+                            throw new Exception("Error on this line" + oldFileLine + ex);
                         }
+
                         if (string.Compare(newAr, oldAr) < 1)
                         {
                             if (string.Equals(newAr, oldAr))
@@ -65,11 +68,12 @@ namespace FileProcessingLibrary.Services
             {
                 while ((newFileLine = newFile.ReadLine()) != null)
                 {
-                    if (!char.IsWhiteSpace(newFileLine[0]) && newFile.Peek() != -1)
+                    
+                    if (!char.IsWhiteSpace(newFileLine[0]))
                     {
                         arInfo = new List<string>();
-
-                        if ((arCounter = CheckIfArExistsOnOldFile(newFileLine, pathToOldFile)) > 0)
+                       
+                        if ((!string.Equals(newFileLine, "E")) && (arCounter = CheckIfArExistsOnOldFile(newFileLine, pathToOldFile)) > 0 )
                         {
                             newAr = newFileLine;
                             newArInfo = new List<string>();
@@ -79,60 +83,61 @@ namespace FileProcessingLibrary.Services
                                 oldFile.SetPosition(arCounter);
                                 while ((oldLine = oldFile.ReadLine()) != null)
                                 {
+                                    
                                     if (!char.IsWhiteSpace(oldLine[0]))
                                     {
                                         break;
                                     }
                                     else if (oldLine.Contains("TOTAL Customer"))
                                     {
-                                        arInfo.Add(oldLine.Substring(0,57));
+                                        arInfo.Add(oldLine.Substring(0, 57));
                                     }
                                     else
                                     {
-                                        arInfo.Add(oldLine.Substring(0,60));
+                                        arInfo.Add(oldLine.Substring(0, 60));
                                     }
                                 }
                             }
                             //making sure that I'm not encountering the next AR
-                            while ((newFileLine = newFile.ReadLine()) != null && !char.IsLetterOrDigit(Convert.ToChar(newFile.Peek())))
+                            while ((newFileLine = newFile.ReadLine()) != null && !char.IsWhiteSpace(newFileLine[0]))
                             {
-                                
+
                                 string newFileLineSub;
 
-                                if (newFileLine.Contains("TOTAL Customer"))
-                                {
-                                    newFileLineSub = newFileLine.Substring(0, 57);
-                                }
-                                else
-                                {
-                                    try
+                                    if (newFileLine.Contains("TOTAL Customer"))
                                     {
-                                        newFileLineSub = newFileLine.Substring(0, 60);
-
+                                        newFileLineSub = newFileLine.Substring(0, 57);
                                     }
-                                    catch (Exception)
+                                    else
                                     {
+                                        try
+                                        {
+                                            newFileLineSub = newFileLine.Substring(0, 60);
 
-                                        throw;
+                                        }
+                                        catch (Exception)
+                                        {
+
+                                            throw;
+                                        }
                                     }
-                                }
 
-                                bool checkIfInfoExists = false;
+                                    bool checkIfInfoExists = false;
 
-                                foreach (var info in arInfo)
-                                {
-                                    if (string.Equals(info, newFileLineSub))
+                                    foreach (var info in arInfo)
                                     {
-                                        checkIfInfoExists = true;
+                                        if (string.Equals(info, newFileLineSub))
+                                        {
+                                            checkIfInfoExists = true;
+                                        }
                                     }
-                                }
-                                if (!checkIfInfoExists)
-                                {
-                                    newArInfo.Add(newFileLine);
-                                }
-
+                                    if (!checkIfInfoExists)
+                                    {
+                                        newArInfo.Add(newFileLine);
+                                    }
                                 
                             }
+
 
                             if (newArInfo.Count > 0)
                             {

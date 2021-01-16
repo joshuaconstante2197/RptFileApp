@@ -288,13 +288,15 @@ namespace FileProcessingLibrary.Services
                                 // Array name to write tha buffer to0, 
                                 // the start index of the array to start the write operationBufferSize 
                                 // the maximum length to copy into the buffer);
-                                do
+                                BytesReturned = reader.GetBytes(3, CurrentIndex, Blob, 0, BufferSize);
+
+                                while (BytesReturned == BufferSize)
                                 {
-                                    BytesReturned = reader.GetBytes(3, CurrentIndex, Blob, 0, BufferSize);
                                     writer.Write(Blob);
                                     writer.Flush();
                                     CurrentIndex += BufferSize;
-                                } while (BytesReturned == BufferSize);
+                                    BytesReturned = reader.GetBytes(3, CurrentIndex, Blob, 0, BufferSize);
+                                }
                                 var fileName = fs.Name;
                                 writer.Write(Blob, 0, (int)BytesReturned); writer.Flush(); writer.Close(); fs.Close();
                                 return fileName;
@@ -348,14 +350,15 @@ namespace FileProcessingLibrary.Services
                                 // Array name to write tha buffer to0, 
                                 // the start index of the array to start the write operationBufferSize 
                                 // the maximum length to copy into the buffer);
+                                BytesReturned = reader.GetBytes(3, CurrentIndex, Blob, 0, BufferSize);
 
-                                do
+                                while (BytesReturned == BufferSize)
                                 {
-                                    BytesReturned = reader.GetBytes(3, CurrentIndex, Blob, 0, BufferSize);
                                     writer.Write(Blob);
                                     writer.Flush();
                                     CurrentIndex += BufferSize;
-                                } while (BytesReturned == BufferSize);
+                                    BytesReturned = reader.GetBytes(3, CurrentIndex, Blob, 0, BufferSize);
+                                }
                                 var fileName = fs.Name;
                                 writer.Write(Blob, 0, (int)BytesReturned); writer.Flush(); writer.Close(); fs.Close();
                                 var file = File.OpenRead(fileName);

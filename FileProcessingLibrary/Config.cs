@@ -11,6 +11,8 @@ namespace FileProcessingLibrary
         public static string DataPath = @"..\FileProcessingLibrary\Data\";
         public static string pathToRptFile = @"..\..\..\..\FileProcessingLibrary\Data\110320.txt";
         public static string pathToRptNewFile = @"..\..\..\..\FileProcessingLibrary\Data\121520.txt";
+        public static string pathToRptNewNewFile = @"..\..\..\..\FileProcessingLibrary\Data\011321.txt";
+
 
 
         public static string WebDataPath = @"..\FileProcessingLibrary\Data\";

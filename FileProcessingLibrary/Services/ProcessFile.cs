@@ -256,11 +256,12 @@ namespace FileProcessingLibrary
                             {
                                 manageData = new SaveToDb();
 
-                            if (account.AccountInfo.Count > 0)
-                            {
-                                manageData.DeletePaidAccounts(account);
-                            }
-                            account = new Account();
+                                if (account.AccountInfo.Count > 0)
+                                {
+                                    manageData.DeletePaidAccounts(account);
+                                }
+
+                                account = new Account();
                             }
                         }
                         SetAccount(account, line);
@@ -291,13 +292,12 @@ namespace FileProcessingLibrary
                                 manageData.SaveAccountBalances(account);
                             }
                         account = new Account();
+                        }
                     }
-                }
                     SetAccount(account, line);
+                }
             }
-        }
             manageData.SaveFileToDb(fileWithNewData, TypeOfFile.newData);
-
         }
     }
 }
