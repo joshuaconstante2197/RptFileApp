@@ -23,7 +23,7 @@ namespace FileProcessingLibrary
             string previousArLine = string.Empty;
             bool count = false;
             bool wordToEx = true;
-            string[] wordsToExclude = { "T R I A L", "Tran    Tran", "Date    Descr", "----    -----", "Time", "---------", "E", "TOTAL A/R", "=========", "*** End of Report ***" };
+            string[] wordsToExclude = { "T R I A L", "Tran    Tran", "Date    Descr", "----    -----", "Time", "---------", "TOTAL A/R", "=========", "*** End of Report ***" };
 
             using (StreamReader rpt = new StreamReader(pathToRptFile))
             {
@@ -250,9 +250,11 @@ namespace FileProcessingLibrary
                 {
                     while ((line = removedData.ReadLine()) != null)
                     {
-                        if (!char.IsWhiteSpace(line[0]))
+                        if (!char.IsWhiteSpace(line[0]) || removedData.Peek() == - 1)
                         {
-                            if (account.AccountHeader != null )
+                           
+
+                                if (account.AccountHeader != null)
                             {
                                 manageData = new SaveToDb();
 
@@ -281,21 +283,9 @@ namespace FileProcessingLibrary
                     
                     if (!char.IsWhiteSpace(line[0]) || cleanFile.Peek() == -1)
                     {
-                        if (cleanFile.Peek() == -1)
+                        if (account.AccountHeader != null)
                         {
-                            SetAccount(account, line);
-                            manageData = new SaveToDb();
-                            manageData.SaveAccountHeader(account);
-                            manageData.SaveAccountHeader(account);
-
-                            if (account.AccountInfo.Count > 0)
-                            {
-                                manageData.SaveAccountInfo(account);
-                                manageData.SaveAccountBalances(account);
-                            }
-                        }
-                        else if (account.AccountHeader != null)
-                        {
+                            
                             manageData = new SaveToDb();
                             manageData.SaveAccountHeader(account);
 
@@ -304,12 +294,13 @@ namespace FileProcessingLibrary
                                 manageData.SaveAccountInfo(account);
                                 manageData.SaveAccountBalances(account);
                             }
+                        
                             account = new Account();
-                        }
                     }
-                    SetAccount(account, line);
                 }
+                    SetAccount(account, line);
             }
+        }
             manageData.SaveFileToDb(fileWithNewData, TypeOfFile.newData);
 
         }

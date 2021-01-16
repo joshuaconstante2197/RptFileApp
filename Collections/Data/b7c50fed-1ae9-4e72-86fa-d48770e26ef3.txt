@@ -26,25 +26,14 @@ AR99OURKLC OUR KIDS - LC                  (305) 455-2578
                   12/30/81  Prior Balance                                     0.00
                    8/03/18  Invoice    305398                   9/02/18     315.96                                          315.96
                                            TOTAL Customer:                  315.96                                          315.96
-ARE1KIDORA KID S COMMUNITY COLLEGE-ORANGE (407) 982-2421
-                  12/30/81  Prior Balance                                     0.00
-                   9/25/18  Invoice    304009-91               10/25/18                                                      25.66
-                  10/02/18  Invoice    304009-92  FL EMB 10/01 11/01/18      59.88                                           34.22
-                   9/12/18  Credit Inv 304016-81  RREC/KID S C 10/12/18                                                      18.18-
-                  11/13/18  Credit Inv 304016-82  6-Return/exc 12/13/18                                                      18.18-
-                  10/19/18  Invoice    304016-91  SEE NOTES    11/18/18      18.18-                                          18.18
-                  10/18/18  Invoice    304026-91               11/17/18      21.38                                           21.38
-                  10/04/18  Invoice    308433-91  see notes    11/03/18      10.58                                           10.58
-                   1/17/19  Invoice    317888-91  TOCHARGEEMBR  2/16/19       4.27                                            4.27
-                                           TOTAL Customer:                   77.93                                           77.93
 ARE1KIDVPK KID S COMM COLLEGE-ORANGE VPK  (407) 982-2421
                   12/30/81  Prior Balance                                     0.00
                    5/16/18  Credit Inv 291875-80  Credit        6/15/18      21.99-                                          21.99-
                                            TOTAL Customer:                   21.99-                                          21.99-
-CORP-ACADE ACADEMICA MEDIA          CORP  (305) 669-2906
+CORP-BOB S BOB S SURFACES LLC       CORP  (786) 439-4529
                   12/30/81  Prior Balance                                     0.00
-                  10/29/20  Invoice    356113     5-Pick up in 11/28/20      33.94       33.94
-                                           TOTAL Customer:                   33.94       33.94
+                  11/11/20  Invoice    356678     BOBS SURFACE 12/11/20     190.00                              190.00
+                                           TOTAL Customer:                  190.00                              190.00
 CORP-CHAPM CHAPMAN PARTNERSHIP       CORP (305) 329-3003
                   12/30/81  Prior Balance                                     0.00
                    9/11/19  Invoice    336702     Chapman Vouc 10/11/19                                                    1000.08
@@ -54,10 +43,6 @@ CORP-ENERC ENERCOM PROPERTIES LLC    CORP (202) 843-   2
                   12/30/81  Prior Balance                                     0.00
                    6/08/20  Payment      On Acct          767               404.00-                                         404.00-
                                            TOTAL Customer:                  404.00-                                         404.00-
-CORP-MMM   MIDTOWN MIAMI MAGAZINE    CORP (305) 439-4892
-                  12/30/81  Prior Balance                                     0.00
-                  12/07/18  Invoice    317033     MMM Polos     1/06/19     239.76                                          239.76
-                                           TOTAL Customer:                  239.76                                          239.76
 CORP-QORTE QOR TECHNOLOGY           CORP  (305) 858-5580
                   12/30/81  Prior Balance                                     0.00
                    6/10/20  Invoice    342948     In Store 4    7/10/20                                                     395.04
@@ -84,8 +69,8 @@ GB-VOLUSIA VOLUSIA COUNTY SCHOOL          (386) 734-7190
                    7/07/17  Payment      On Acct       358891                                                               316.80-
                    6/11/19  Payment      On Acct       320138                                                               456.38
                    6/11/19  Payment      On Acct       320139                                                               456.38-
-                   9/05/20  Payment      On Acct       351774               664.80-                 348.00-
-                   9/07/20  Invoice    351774     VOLUSIA-DROP 10/07/20     348.00                  348.00
+                   9/05/20  Payment      On Acct       351774               664.80-                                         348.00-
+                   9/07/20  Invoice    351774     VOLUSIA-DROP 10/07/20     348.00                                          348.00
                                            TOTAL Customer:                  316.80-                                         316.80-
 INT-MAINLA MAINLAND PREPARATORY CLASSICAL (409) 934-9100
                   12/30/81  Prior Balance                                     0.00
@@ -104,7 +89,11 @@ PTA-4921   SEMINOLE ELEMENTARY            (305) 261-7071
                   12/30/81  Prior Balance                                     0.00
                    5/10/18  Payment      On Acct         1772                 1.09-                                           1.09-
                                            TOTAL Customer:                    1.09-                                           1.09-
-PTA-7101   CORAL REEF SHS                 (305) 333- 164
+PTA-5641   VILLAGE GREEN ES  PTA          (305) 226- 441
+                  12/30/81  Prior Balance                                     0.00
+                  11/06/20  Invoice    356936     110520VPT -  12/06/20     390.00                              390.00
+                                           TOTAL Customer:                  390.00                              390.00
+PTA-7101   CORAL REEF SHS - PTSA          (305) 333- 164
                   12/30/81  Prior Balance                                     0.00
                    6/08/17  Payment      On Acct                                                                           5000.00-
                    6/30/17  Payment      On Acct            1                                                              5000.00-
@@ -140,34 +129,166 @@ PTA-7101   CORAL REEF SHS                 (305) 333- 164
                    9/24/19  Payment    338602            1099               500.76                                          333.84-
                    9/20/19  Invoice    338603     338084 CONSG  3/18/20     151.94                                          151.94
                    9/20/19  Credit Inv 338604     334913-80 RE  3/18/20     652.70-                                         652.70-
-                   8/17/20  Invoice    341684                   2/13/21    7245.00                             7245.00
-                   8/17/20  Invoice    348159     CONSIGN-PATC  2/13/21     500.00                              500.00
-                                           TOTAL Customer:                 7745.00                             7745.00
+                   8/17/20  Invoice    341684                   2/13/21    7245.00                                         7245.00
+                   8/17/20  Invoice    348159     CONSIGN-PATC  2/13/21     500.00                                          500.00
+                  11/03/20  Invoice    350339     CONSIGNMENT#  5/02/21    2800.50                             2800.50
+                                           TOTAL Customer:                10545.50                             2800.50     7745.00
 RMAEC-8911 ROBERT MORGAN EDUC.CENTER-STAF (305) 253-9920
                   12/30/81  Prior Balance                                     0.00
                    7/05/18  Payment      On Acct     18911350                                                                 7.00-
-                   7/13/20  Payment      On Acct   1737101876               175.92-                                         168.92-
-                                           TOTAL Customer:                  175.92-                                         175.92-
+                   7/13/20  Payment      On Acct   1737101876                                                               168.92-
+                  11/11/20  Payment      On Acct     37101930               272.88-                              96.96-
+                                           TOTAL Customer:                  272.88-                              96.96-     175.92-
+S100010    BISCAYNE GARDENS ELEM-STAFF    (305) 691-5721
+                  12/30/81  Prior Balance                                     0.00
+                  11/06/20  Invoice    356912     BISCAYNE G.M 12/06/20     380.00                              380.00
+                                           TOTAL Customer:                  380.00                              380.00
+S100025    FULFORD ELEMENTARY-STAFF       (305) 949-3425
+                  12/30/81  Prior Balance                                     0.00
+                  11/05/20  Invoice    356840     102720-3-FUL 12/05/20     382.00                              382.00
+                                           TOTAL Customer:                  382.00                              382.00
+S100037    LAKE STEVENS ELEM-STAFF        (305) 625-6536
+                  12/30/81  Prior Balance                                     0.00
+                  11/05/20  Invoice    356837     LAKE S. CUST 12/05/20     300.00                              300.00
+                                           TOTAL Customer:                  300.00                              300.00
+S100049    MADIE IVES ELEMENTARY-STAFF    (305) 651-3155
+                  12/30/81  Prior Balance                                     0.00
+                  11/09/20  Invoice    357056     MADIE I. MAS 12/09/20     660.00                              660.00
+                                           TOTAL Customer:                  660.00                              660.00
+S100055    MIAMI SHORE ELEMENTARY STAFF   (305) 758-5525
+                  12/30/81  Prior Balance                                     0.00
+                  11/03/20  Invoice    356727     110220MSE-CU 12/03/20     415.00                              415.00
+                                           TOTAL Customer:                  415.00                              415.00
+S100057    MYRTLE GROVE ELEM-STAFF        (305) 624-8431
+                  12/30/81  Prior Balance                                     0.00
+                  11/09/20  Invoice    357054     MYRTLE MASKS 12/09/20     460.00                              460.00
+                                           TOTAL Customer:                  460.00                              460.00
+S100070    NORTH MIAMI ELEMENTARY-STAFF   (305) 949-6156
+                  12/30/81  Prior Balance                                     0.00
+                  11/09/20  Invoice    357091     NORTH MIAMI  12/09/20     415.00                              415.00
+                                           TOTAL Customer:                  415.00                              415.00
+S100072    NORWOOD ELEMENTARY-STAFF       (305) 653-  68
+                  12/30/81  Prior Balance                                     0.00
+                  11/09/20  Invoice    357067     NORWOOD MASK 12/09/20     325.00                              325.00
+                                           TOTAL Customer:                  325.00                              325.00
+S100073    OAK GROVE ELEMENTARY-STAFF     (305) 945-1511
+                  12/30/81  Prior Balance                                     0.00
+                  11/10/20  Invoice    357076     OAK GROVE MA 12/10/20     405.00                              405.00
+                                           TOTAL Customer:                  405.00                              405.00
+S100083    RAINBOW PARK ELEM-STAFF        (305) 688-4631
+                  12/30/81  Prior Balance                                     0.00
+                  11/06/20  Invoice    357084     RAINBOW P. M 12/06/20     285.00                              285.00
+                                           TOTAL Customer:                  285.00                              285.00
+S100109    W J BRYAN ELEMENTARY-STAFF     (305) 891- 602
+                  12/30/81  Prior Balance                                     0.00
+                  11/05/20  Invoice    356854     W.J.BRYAN MA 12/05/20     550.00                              550.00
+                                           TOTAL Customer:                  550.00                              550.00
+S100114    ARCH CREEK ELEMENTARY   STAFF  (305) 624-8802
+                  12/30/81  Prior Balance                                     0.00
+                  11/06/20  Invoice    356914     ARCH CREEK M 12/06/20     325.00                              325.00
+                                           TOTAL Customer:                  325.00                              325.00
 S20000     ADA MERRIT SCHOOL-STAFF        (305) 326- 791
                   12/30/81  Prior Balance                                     0.00
                    7/30/18  Payment      On Acct       303023              2191.70-                                        2191.70-
                    8/16/18  Invoice    303023     PO SM-DM 7/2  9/15/18    2190.50                                         2190.50
                                            TOTAL Customer:                    1.20-                                           1.20-
+S20008     COCONUT GROVE ELEM-STAFF       (305) 445-7876
+                  12/30/81  Prior Balance                                     0.00
+                   8/20/20  Payment      On Acct       347836               580.50-                                         580.50-
+                   9/01/20  Invoice    347836     Pick up in s 10/01/20     580.50                                          580.50
+                                           TOTAL Customer:                    0.00
+S20015     F.S.TUCKER ELEMENTARY-STAFF    (786) 356-4776
+                  12/30/81  Prior Balance                                     0.00
+                  11/06/20  Invoice    356973     Frances S. M 12/06/20     475.00                              475.00
+                                           TOTAL Customer:                  475.00                              475.00
+S20017     G.W.CARVER ELEMENTARY-STAFF    (305) 442-5286
+                  12/30/81  Prior Balance                                     0.00
+                  11/06/20  Invoice    356979     G.W.CARVER M 12/06/20     460.00                              460.00
+                                           TOTAL Customer:                  460.00                              460.00
 S20029     LORAH PARK ELEMENTARY-STAFF    (305) 633-1424
                   12/30/81  Prior Balance                                     0.00
-                  10/15/20  Invoice    355386     2-Pick up in 11/14/20      45.90       45.90
-                                           TOTAL Customer:                   45.90       45.90
+                  10/15/20  Invoice    355386     2-Pick up in 11/14/20      45.90                               45.90
+                                           TOTAL Customer:                   45.90                               45.90
+S20031     MAYA ANGELOU ELEMENTARY-STAFF  (305) 636-3480
+                  12/30/81  Prior Balance                                     0.00
+                  11/09/20  Invoice    357068     MAYA A. MASK 12/09/20     535.00                              535.00
+                                           TOTAL Customer:                  535.00                              535.00
 S20033     MIAMI CHILDRENS MUSEUM-STAFF   (305) 323-4667
                   12/30/81  Prior Balance                                     0.00
                   10/19/18  Payment      On Acct         7177               419.81-                                         419.81-
                   12/21/18  Invoice    317391     BO-MIAMI CHI  1/20/19     281.40                                          281.40
                    1/23/19  Invoice    317827     BO-MCMC DTG   2/22/19     443.50                                          443.50
                                            TOTAL Customer:                  305.09                                          305.09
+S20039     SANTA CLARA ELEMENTARY/STAFF   (305) 635-1417
+                  12/30/81  Prior Balance                                     0.00
+                  11/03/20  Invoice    355957     Ship by AM   12/03/20      68.85                               68.85
+                  11/05/20  Invoice    356889     SANTA CLARA  12/05/20     889.00                              889.00
+                                           TOTAL Customer:                  957.85                              957.85
+S20041     SHENANDOAH ELEMENTARY-STAFF    (305) 643-4433
+                  12/30/81  Prior Balance                                     0.00
+                  11/06/20  Invoice    356913     SHENANDOAH M 12/06/20     590.00                              590.00
+                                           TOTAL Customer:                  590.00                              590.00
+S20053     TOUSSAINT ELEMENTARY-STAFF     (305) 758-2600
+                  12/30/81  Prior Balance                                     0.00
+                  11/09/20  Invoice    357069     9000328969-M 12/09/20     675.00                              675.00
+                                           TOTAL Customer:                  675.00                              675.00
+S203501    MORNINGSIDE ELEMENTARY  STAFF  (305) 758-6741
+                  12/30/81  Prior Balance                                     0.00
+                  11/07/20  Invoice    356868     102720-2 MAS 12/07/20     806.00                              806.00
+                                           TOTAL Customer:                  806.00                              806.00
+S300001    AMELIA EARHART ELEM-STAFF      (305) 688-9619
+                  12/30/81  Prior Balance                                     0.00
+                  11/06/20  Invoice    356963     AMELIA E. MA 12/06/20     382.00                              382.00
+                                           TOTAL Customer:                  382.00                              382.00
+S300003    BEN SHEPPARD ELEM-STAFF        (305) 556-2204
+                  12/30/81  Prior Balance                                     0.00
+                  11/05/20  Invoice    356892     BEN S. MASKS 12/05/20     745.00                              745.00
+                                           TOTAL Customer:                  745.00                              745.00
+S300009    ERNEST R. GRAHAM K8 CENTER STA (305) 825-2122
+                  12/30/81  Prior Balance                                     0.00
+                  11/09/20  Invoice    357053     ERNEST G. MA 12/09/20     740.00                              740.00
+                                           TOTAL Customer:                  740.00                              740.00
+S300035    MEADOWLANE ELEM-STAFF          (305) 822- 660
+                  12/30/81  Prior Balance                                     0.00
+                  11/03/20  Invoice    356738     110220MEA-CU 12/03/20     325.00                              325.00
+                                           TOTAL Customer:                  325.00                              325.00
+S300071    SPANISH LAKE ELEMENTARY STAFF  (305) 816- 300
+                  12/30/81  Prior Balance                                     0.00
+                  12/16/16  Payment      On Acct        12191               499.55-                                         499.55-
+                   8/24/16  Invoice    269127                   9/23/16                                                    1004.29
+                   2/23/18  Credit Mem 269127           13554               499.55                                          504.74-
+                  11/07/20  Invoice    356870     1000901239-M 12/07/20     822.00                              822.00
+                                           TOTAL Customer:                  822.00                              822.00
+S40000     AIR BASE ELEMENTARY-STAFF      (305) 258-3676
+                  12/30/81  Prior Balance                                     0.00
+                  11/06/20  Invoice    356925     AIR BASE MAS 12/06/20     675.00                              675.00
+                                           TOTAL Customer:                  675.00                              675.00
+S40007     BLUE LAKES ELEMENTARY-STAFF    (305) 271-7411
+                  12/30/81  Prior Balance                                     0.00
+                  11/04/20  Invoice    356788     110420BLE-CU 12/04/20     675.00                              675.00
+                                           TOTAL Customer:                  675.00                              675.00
+S40012     CHRISTINA M. EVE ELEM-STAFF    (305) 383-9392
+                  12/30/81  Prior Balance                                     0.00
+                  11/03/20  Invoice    356742     110220CME-CU 12/03/20     625.00                              625.00
+                                           TOTAL Customer:                  625.00                              625.00
 S40013     CLAUDE PEPPER ELEM-STAFF       (305) 386-5244
                   12/30/81  Prior Balance                                     0.00
                   12/20/18  Invoice    317338     BO-CLAUDE P   1/19/19                                                    1234.09
                    5/20/19  Payment    317338             898               248.40-                                        1482.49-
-                                           TOTAL Customer:                  248.40-                                         248.40-
+                  11/04/20  Invoice    356771     CLAUDE PEPPE 12/04/20     475.00                              475.00
+                                           TOTAL Customer:                  226.60                              475.00      248.40-
+S40014     COLONIAL DRIVE ELEM-STAFF      (305) 283-9342
+                  12/30/81  Prior Balance                                     0.00
+                  11/06/20  Invoice    356974     COLONIAL D.  12/06/20     675.00                              675.00
+                                           TOTAL Customer:                  675.00                              675.00
+S40020     ETHEL KOGER BECKHAM ELEM-STAFF (305) 222-8161
+                  12/30/81  Prior Balance                                     0.00
+                  11/06/20  Invoice    356958     217116EKB-MA 12/06/20     935.00                              935.00
+                                           TOTAL Customer:                  935.00                              935.00
+S40023     GLORIA FLOYD ELEM-STAFF        (305) 255-3934
+                  12/30/81  Prior Balance                                     0.00
+                  11/03/20  Invoice    356740     CUSTOM. MASK 12/03/20     445.00                              445.00
+                                           TOTAL Customer:                  445.00                              445.00
 S40029     JACK D.GORDON ELEM-STAFF       (305) 234-4805
                   12/30/81  Prior Balance                                     0.00
                    8/23/19  Payment      On Acct         1094                                                                93.04-
@@ -183,7 +304,8 @@ S40029     JACK D.GORDON ELEM-STAFF       (305) 234-4805
                    9/03/19  Invoice    336968      JACK.D.G.-L 10/03/19      26.26                                           26.26
                    9/09/19  Invoice    337123     JACK.D.G.-LL 10/09/19      49.11                                           49.11
                    8/30/19  Invoice    337126     JACK.D.G-MA-  9/29/19      55.60                                           55.60
-                                           TOTAL Customer:                    4.00-                                           4.00-
+                  11/09/20  Invoice    357092     JACK D.G. MA 12/09/20     675.00                              675.00
+                                           TOTAL Customer:                  671.00                              675.00        4.00-
 S40033     KENWOOD K-8 CENTER-STAFF       (305) 271-5061
                   12/30/81  Prior Balance                                     0.00
                   10/03/18  Invoice    309694-01  SENT DRIVER  11/02/18                                                      11.98
@@ -192,33 +314,84 @@ S40033     KENWOOD K-8 CENTER-STAFF       (305) 271-5061
                   10/15/18  Invoice    314848     BO/KENWOOD E 11/14/18      33.94                                           33.94
                   10/01/19  Invoice    338177-01  KENWOOD POLO 10/31/19      16.00                                           16.00
                    2/14/20  Invoice    341542     REP- 341266   3/15/20      21.98                                           21.98
-                                           TOTAL Customer:                   83.90                                           83.90
+                  11/09/20  Invoice    357095     KENWOOD MASK 12/09/20     825.00                              825.00
+                                           TOTAL Customer:                  908.90                              825.00       83.90
+S40039     LUDLAM ELEMEMTARY-STAFF        (305) 667-5551
+                  12/30/81  Prior Balance                                     0.00
+                  11/03/20  Invoice    356715     11120LE - CU 12/03/20     325.00                              325.00
+                                           TOTAL Customer:                  325.00                              325.00
+S40040     MIAMI HEIGHTS ELEM-STAFF       (305) 238-3602
+                  12/30/81  Prior Balance                                     0.00
+                  11/05/20  Invoice    356881     MIAMI H. MAS 12/05/20     750.00                              750.00
+                                           TOTAL Customer:                  750.00                              750.00
 S40049     PINE VILLA ELEMENTARY-STAFF    (305) 258-5366
                   12/30/81  Prior Balance                                     0.00
-                   9/01/20  Invoice    349715     Pick up at s 10/01/20     154.74                              154.74
-                                           TOTAL Customer:                  154.74                              154.74
-S40053     RIVIERA MIDDLE-STAFF           (305) 226-4286
+                   9/01/20  Invoice    349715     Pick up at s 10/01/20     154.74                                          154.74
+                                           TOTAL Customer:                  154.74                                          154.74
+S40056     ROYAL GREEN ELEM - STAFF       (305) 221-4452
                   12/30/81  Prior Balance                                     0.00
-                   9/23/20  Invoice    352751     5 Pick up in 10/23/20     114.75                  114.75
-                                           TOTAL Customer:                  114.75                  114.75
-S600077    PINE MIDDLE SCHOOL-STAFF       (754) 323-4000
+                  11/09/20  Invoice    357103     11220RGE-ROY 12/09/20     454.00                              454.00
+                                           TOTAL Customer:                  454.00                              454.00
+S40057     ROYAL PALM ELEMENTARY-STAFF    (305) 221-7961
                   12/30/81  Prior Balance                                     0.00
-                  10/28/20  Payment      On Acct       356418                71.85-      71.85-
-                                           TOTAL Customer:                   71.85-      71.85-
+                  11/06/20  Invoice    356969     ROYAL PALM M 12/06/20     370.00                              370.00
+                                           TOTAL Customer:                  370.00                              370.00
+S40063     VILLAGE GREEN ELEMENTARY-STAFF (305) 226- 441
+                  12/30/81  Prior Balance                                     0.00
+                  11/06/20  Invoice    356934     110520VGE -M 12/06/20     285.00                              285.00
+                                           TOTAL Customer:                  285.00                              285.00
+S40068     WINSTON PARK ELEMENTARY-STAFF  (305) 386-7622
+                  12/30/81  Prior Balance                                     0.00
+                  11/06/20  Invoice    356915     WINSTON PARK 12/06/20     385.00                              385.00
+                                           TOTAL Customer:                  385.00                              385.00
+S40072     ZORA NEALE HURSTON ELEM-STAFF  (305) 222-8152
+                  12/30/81  Prior Balance                                     0.00
+                  11/05/20  Invoice    356833     ZORA NEALE M 12/05/20     475.00                              475.00
+                                           TOTAL Customer:                  475.00                              475.00
+S40074     FRANK C. MARTIN K-8 -STAFF
+                  12/30/81  Prior Balance                                     0.00
+                  11/05/20  Invoice    356888     102920FCM-MA 12/05/20     553.00                              553.00
+                                           TOTAL Customer:                  553.00                              553.00
+S500007    CORAL TERRACE ELEM-STAFF       (305) 262-8300
+                  12/30/81  Prior Balance                                     0.00
+                  11/03/20  Invoice    356731     110220CT-CUS 12/03/20     325.00                              325.00
+                                           TOTAL Customer:                  325.00                              325.00
+S500014    FAIRLAWN ELEMENTARY-STAFF      (305) 261-8880
+                  12/30/81  Prior Balance                                     0.00
+                  11/05/20  Invoice    356836     110420FLE-MA 12/05/20     415.00                              415.00
+                                           TOTAL Customer:                  415.00                              415.00
+S500021    KINLOCH PARK ELEM-STAFF        (305) 445-1351
+                  12/30/81  Prior Balance                                     0.00
+                  11/09/20  Invoice    357060     KINLOCH MASK 12/09/20     505.00                              505.00
+                                           TOTAL Customer:                  505.00                              505.00
+S500026    OLYMPIA HEIGHTS ELEM-STAFF     (305) 221-3821
+                  12/30/81  Prior Balance                                     0.00
+                  11/09/20  Invoice    357088     OLYMPIA H. M 12/09/20     475.00                              475.00
+                                           TOTAL Customer:                  475.00                              475.00
+S500034    SWEETWATER ELEMENTARY-STAFF    (305) 559-1101
+                  12/30/81  Prior Balance                                     0.00
+                  11/06/20  Invoice    356918     SWETTWATER M 12/06/20     961.00                              961.00
+                                           TOTAL Customer:                  961.00                              961.00
+S500035    SYLVANIA HEIGHTS ELEM-STAFF    (305) 266-3511
+                  12/30/81  Prior Balance                                     0.00
+                  11/12/20  Invoice    357146     SYLVANIA MAS 12/12/20     450.00                              450.00
+                                           TOTAL Customer:                  450.00                              450.00
+S600074    PARKWAY CHRISTIAN SCHL-STAFF   (305) 981-8419
+                  12/30/81  Prior Balance                                     0.00
+                  11/05/20  Invoice    356862     PARKWAY ES M 12/05/20     200.00                              200.00
+                                           TOTAL Customer:                  200.00                              200.00
+ST04DEVONA DEVON AIRE K-8 CENTER-STAFF    (305) 274-7100
+                  12/30/81  Prior Balance                                     0.00
+                  11/06/20  Invoice    356927     DEVON A. MAS 12/06/20     999.40                              999.40
+                                           TOTAL Customer:                  999.40                              999.40
+STAF-0671  CALUSA ELEMENTARY     STAFF    (305) 385- 589
+                  12/30/81  Prior Balance                                     0.00
+                  11/05/20  Invoice    356866     CALUSA MASKS 12/05/20     595.00                              595.00
+                                           TOTAL Customer:                  595.00                              595.00
 STAF-4441  HOWARD D. MCMILLAN      STAFF
                   12/30/81  Prior Balance                                     0.00
                    1/24/20  Payment      On Acct     44100980                 8.05-                                           8.05-
                                            TOTAL Customer:                    8.05-                                           8.05-
-STAF-7151  HOMESTEAD  SHS                 (305) 245-7000
-                  12/30/81  Prior Balance                                     0.00
-                  10/22/20  Invoice    355746     7-Pick up in 11/21/20      31.96       31.96
-                                           TOTAL Customer:                   31.96       31.96
-STAF-BRIVI BRIDGEPREP AC-VILLAGE GREEN    (305) 643-4833
-                  12/30/81  Prior Balance                                     0.00
-                   7/29/20  Payment      On Acct        11803              5293.30-                                        5293.30-
-                   1/16/20  Invoice    341048     BPA VG- 3393  2/15/20      57.98                                           57.98
-                   8/17/20  Invoice    345184     BPVG-REU+BFE  9/16/20    5293.30                             5293.30
-                                           TOTAL Customer:                   57.98                             5293.30     5235.32-
 STAF-COUNT COUNTRYSIDE MONTESSORI STAFF   (813) 996- 991
                   12/30/81  Prior Balance                                     0.00
                   10/02/19  Payment      On Acct          123                 2.61-                                           2.61-
@@ -230,92 +403,77 @@ STAF-DOWNT DOWNTOWN DORAL CHARTER ES  STA (305) 569-2223
                    8/20/19  Payment      On Acct     42302027                                                                62.95-
                    9/09/19  Payment      On Acct     45207068                                                                25.00-
                    7/03/20  Payment      On Acct   2596075975                                                              1685.00-
-                   8/25/20  Debit Memo   On Acct        13854               102.43-                            1685.00
+                   8/25/20  Debit Memo   On Acct        13854               102.43-                                        1685.00
                    1/21/19  Invoice    317833     BO-DDCS ELEM  2/20/19                                                      89.17
                    2/11/19  Payment    317833        19654833                 4.20                                           84.97-
                    2/13/19  Invoice    318536     BO-DDCS UPPE  3/15/19     174.73                                          174.73
                    4/04/19  Invoice    320124     319835        5/04/19      17.98                                           17.98
                    8/20/19  Invoice    335081     EMB-8/14DDCE  9/19/19      81.85                                           81.85
-                   8/17/20  Credit Inv 344245                   9/16/20       6.00-                               6.00-
-                                           TOTAL Customer:                  170.33                             1679.00     1508.67-
-STAF-PINEC PINECREST GLADES     STAFF     (305) 669-2906
+                   8/17/20  Credit Inv 344245                   9/16/20       6.00-                                           6.00-
+                                           TOTAL Customer:                  170.33                                          170.33
+STAFF-1041 CORAL REEF ELEMENTARY          (305) 235-1464
                   12/30/81  Prior Balance                                     0.00
-                   9/05/20  Payment      On Acct       351768                68.85-                  68.85-
-                   9/14/20  Invoice    351768     Pick up in s 10/14/20      68.85                   68.85
-                  10/01/20  Invoice    354092     PINECREST De 10/31/20    2766.60                 2766.60
-                                           TOTAL Customer:                 2766.60                 2766.60
-STAFF-2881 LEEWOOD K-8 CENTER     (STAFF) (305) 233-7430
-                  12/30/81  Prior Balance                                     0.00
-                  10/28/20  Payment      On Acct       356463               554.00-     554.00-
-                                           TOTAL Customer:                  554.00-     554.00-
+                  11/07/20  Invoice    356880     CORAL REEF M 12/07/20     599.50                              599.50
+                                           TOTAL Customer:                  599.50                              599.50
 STAFF-3100 MATER ACADEMY EAST ES    STAFF (305) 324-4667
                   12/30/81  Prior Balance                                     0.00
                    2/10/20  Payment      On Acct         1592                 0.24-                                            .24-
-                   8/07/20  Invoice    345648     DELIVERED 8/  9/06/20     161.40                              161.40
-                  10/30/20  Invoice    355680     Sent to scho 11/29/20     121.35      121.35
-                  10/30/20  Invoice    355980     Sent to Scho 11/29/20     774.86      774.86
-                                           TOTAL Customer:                 1057.37      896.21                  161.40         .24-
-STAFF-7029 TERRA ENVIRONMENTAL R INSTITU  (305) 412-5800
+                                           TOTAL Customer:                    0.24-                                            .24-
+STAFF-5671 VINELAND ELEMENTARY K-8  STAFF (305) 238-7931
                   12/30/81  Prior Balance                                     0.00
-                   5/13/20  Invoice    341641                   6/12/20     644.70                                          644.70
-                                           TOTAL Customer:                  644.70                                          644.70
-STAFF-ACAD ACADEMIR CHARTER MS   STAFF    (305) 967-8492
+                  11/03/20  Invoice    356710     VINELAND-CUS 12/03/20     445.00                              445.00
+                                           TOTAL Customer:                  445.00                              445.00
+STAFF-5861 HENRY W. MACK/WEST LITTLE STAF (305) 691-6491
                   12/30/81  Prior Balance                                     0.00
-                   9/27/18  Credit Inv 313246-81  Re/Acad Staf 10/27/18      24.59-                                          24.59-
-                  10/22/20  Invoice    355551     IbileyDelive 11/21/20    6400.00     6400.00
-                                           TOTAL Customer:                 6375.41     6400.00                               24.59-
+                  11/12/20  Invoice    357176     HENRY W.M.-M 12/12/20     350.00                              350.00
+                                           TOTAL Customer:                  350.00                              350.00
 STAFF-ALPH ALPHA CHARTER OF EXCELLE STAFF (954) 809-4790
                   12/30/81  Prior Balance                                     0.00
                    7/13/20  Payment      On Acct     44553730                                                                 8.33-
-                  10/28/20  Payment      On Acct     47649404               613.80-     605.47-
-                                           TOTAL Customer:                  613.80-     605.47-                               8.33-
-STAFF-ANDR ANDREA CASTILLO PREP ACADEMY
-                  12/30/81  Prior Balance                                     0.00
-                  10/30/20  Invoice    356091     3-Pick up in 11/29/20      95.88       95.88
-                                           TOTAL Customer:                   95.88       95.88
+                  10/28/20  Payment      On Acct     47649404               613.80-                             605.47-
+                                           TOTAL Customer:                  613.80-                             605.47-       8.33-
 STAFF-ATLA ATLANTIC MONTESSORI      STAFF (954) 815-4739
                   12/30/81  Prior Balance                                     0.00
                   10/02/18  Payment      On Acct     61968688                                                              1810.00-
                    4/30/19  Payment      On Acct         6309              1846.00-                                          36.00-
                                            TOTAL Customer:                 1846.00-                                        1846.00-
+STAFF-AVEN AVENTURA WATERWAYS K-8 C. STAF (305) 933-5200
+                  12/30/81  Prior Balance                                     0.00
+                  11/04/20  Payment      On Acct       356768               935.00-                             935.00-
+                  11/04/20  Invoice    356768     AV. WATERWAY 12/04/20                                         935.00
+                  11/06/20  Invoice    356768-90  ADJ.BALANCE- 12/06/20    1870.00                              935.00
+                                           TOTAL Customer:                  935.00                              935.00
 STAFF-BPAR BRIDGEPREP ACADEMY RIVERVIEW S (813) 370-1910
                   12/30/81  Prior Balance                                     0.00
                    7/29/20  Payment      On Acct        10857              2452.80-                                        2452.80-
-                   8/31/18  Invoice    311569     EMB 08/30 JP  9/30/18                                                     424.58
-                  10/31/18  Payment    311569             460                                                                23.14-
-                  10/31/18  Payment    311569                                                                                23.97-
-                  10/31/18  Payment    311569               1               347.50                                           29.97-
                    7/29/20  Invoice    345205     BPRIVER-BFE9  8/28/20                                                     462.00
                    7/31/20  Invoice    345205-02  BPRIVER-BFE9  8/30/20    2452.80                                         1990.80
-                   9/22/20  Invoice    351275     Ship by AM   10/22/20     108.85                  108.85
-                                           TOTAL Customer:                  456.35                  108.85                  347.50
+                   9/22/20  Invoice    351275     Ship by AM   10/22/20     108.85                                          108.85
+                                           TOTAL Customer:                  108.85                                          108.85
 STAFF-BPAT BRIDGEPREP SOUTH TAMPA   STAFF (813) 258-2652
                   12/30/81  Prior Balance                                     0.00
                   12/18/18  Invoice    317339     STAFFORDER    1/17/19      77.18                                           77.18
                                            TOTAL Customer:                   77.18                                           77.18
 STAFF-BPBR BRIDGEPREP AC. OF BROWARD K-8
                   12/30/81  Prior Balance                                     0.00
-                   9/21/20  Payment      On Acct        10759               436.20-                 436.20-
-                                           TOTAL Customer:                  436.20-                 436.20-
+                   9/21/20  Payment      On Acct        10759               436.20-                                         436.20-
+                                           TOTAL Customer:                  436.20-                                         436.20-
 STAFF-BTAM BRIDGEPREP OF TAMARAC    STAFF (954) 309-9365
                   12/30/81  Prior Balance                                     0.00
                    2/06/19  Invoice    318490     BO-BPA TAMAR  3/08/19      77.97                                           77.97
                                            TOTAL Customer:                   77.97                                           77.97
 STAFF-CENT CENTRAL BAPTIST CHRISTIAN      (813) 689-6133
                   12/30/81  Prior Balance                                     0.00
-                   4/02/18  Payment      On Acct        35892                                                                23.47-
-                  10/13/20  Payment      On Acct       355581                27.29-       3.82-
+                   4/02/18  Payment      On Acct        35892                23.47-                                          23.47-
                    4/25/18  Invoice    295957                   5/25/18                                                     248.10
                    5/25/18  Payment    295957           36005                                                               133.92-
                    6/28/18  Payment    295957           36090                16.23                                           97.95-
-                   9/10/20  Invoice    351320     Ship by AM   10/10/20     129.70                  129.70
-                  10/13/20  Payment    355580          355580                           105.00-
-                  10/16/20  Invoice    355580                  11/15/20       3.82      108.82
-                                           TOTAL Customer:                  122.46                  129.70                    7.24-
+                                           TOTAL Customer:                    7.24-                                           7.24-
 STAFF-CLAR CLARK COUNTY SCHOOL DISTRICT S (702) 799-5225
                   12/30/81  Prior Balance                                     0.00
-                  10/21/20  Invoice    356011     CLARK-DROP S 11/20/20   90000.00    90000.00
-                                           TOTAL Customer:                90000.00    90000.00
+                  10/21/20  Invoice    356011     CLARK-DROP S 11/20/20                                       90000.00
+                  12/15/20  Payment    356011         8246984              1000.00-                           91000.00-
+                                           TOTAL Customer:                 1000.00-                            1000.00-
 STAFF-COVE COVENANT CHRISTIAN ACADEMY STA (956) 686-7866
                   12/30/81  Prior Balance                                     0.00
                    8/01/18  Invoice    305185     Sent 08/03/1  8/31/18                                                    3870.00
@@ -323,18 +481,23 @@ STAFF-COVE COVENANT CHRISTIAN ACADEMY STA (956) 686-7866
                    8/16/18  Invoice    305185-90  NAPMAT SENT   9/15/18                                                    3393.20
                    8/23/18  Payment    305185-90       305185               256.80-                                        3650.00-
                                            TOTAL Customer:                  256.80-                                         256.80-
-STAFF-EARL EARLY START              STAFF (305) 229-2858
+STAFF-EDGE EDGEWOOD JR./SR. HIGH SCHOOL   (321) 454-1030
                   12/30/81  Prior Balance                                     0.00
-                  10/21/20  Payment      On Acct       355918              1373.50-    1373.50-
-                                           TOTAL Customer:                 1373.50-    1373.50-
+                   7/17/20  Payment      On Acct       344302               600.00-                                         600.00-
+                   8/04/20  Invoice    344302                   9/03/20     600.00                                          600.00
+                                           TOTAL Customer:                    0.00
 STAFF-FALB FALLBROOK ACADEMY    STAFF     (281) 880-1360
                   12/30/81  Prior Balance                                     0.00
                   10/25/18  Invoice    315720     TX/FALL PACK 11/24/18      67.97                                           67.97
                                            TOTAL Customer:                   67.97                                           67.97
+STAFF-GOLD GOLDEN GLADES ELEMENTARY  STAF (305) 624-9641
+                  12/30/81  Prior Balance                                     0.00
+                  11/06/20  Invoice    356975     9000328955/1 12/06/20     277.00                              277.00
+                                           TOTAL Customer:                  277.00                              277.00
 STAFF-HIMI HIALEAH-MIAMI LAKES SHS  STAFF
                   12/30/81  Prior Balance                                     0.00
-                  10/09/20  Invoice    355411     ZX-171310158 11/08/20     114.95      114.95
-                                           TOTAL Customer:                  114.95      114.95
+                  10/09/20  Invoice    355411     ZX-171310158 11/08/20     114.95                                          114.95
+                                           TOTAL Customer:                  114.95                                          114.95
 STAFF-HOLY HOLY CROSS LUTHERAN SCHOOL STA (305) 625-8050
                   12/30/81  Prior Balance                                     0.00
                   10/15/18  Payment      On Acct         8637               281.42-                                         281.42-
@@ -348,11 +511,8 @@ STAFF-IMAT IMATER ELEMENTARY        STAFF (305) 884-6320
                    1/16/20  Payment      On Acct            9                                                                  .04-
                    2/12/20  Payment      On Acct       341431                 0.20-                                            .04-
                   10/01/18  Invoice    314339     SEND WITH DR 10/31/18      33.99                                           33.99
-                  12/06/19  Invoice    340427                   1/05/20     100.39                                          100.39
-                  12/06/19  Invoice    340429                   1/05/20     100.39                                          100.39
-                   2/11/20  Credit Inv 341431-80  Wrong style   3/12/20                                                      50.97-
-                   2/18/20  Invoice    341431-90  REP-iMater P  3/19/20      25.00                                           75.97
-                                           TOTAL Customer:                  259.57                                          259.57
+                   2/11/20  Credit Inv 341431-80  Wrong style   3/12/20      50.97-                                          50.97-
+                                           TOTAL Customer:                   17.18-                                          17.18-
 STAFF-JANM JAN MANN EDUCATIONAL CENTER ST (305) 625- 855
                   12/30/81  Prior Balance                                     0.00
                    2/28/20  Invoice    341711     JAN MANN.-SE  3/29/20                                                      68.97
@@ -361,18 +521,23 @@ STAFF-JANM JAN MANN EDUCATIONAL CENTER ST (305) 625- 855
                    3/10/20  Invoice    341953     JAN MANN-S50  4/09/20      80.97                                           80.97
                    3/10/20  Invoice    341955     JAN MANN-SP2  4/09/20      68.97                                           68.97
                                            TOTAL Customer:                  218.91                                          218.91
+STAFF-JMMA JOSE MARTI MAST 6-12   STAFF   (305) 557-5931
+                  12/30/81  Prior Balance                                     0.00
+                   4/18/19  Payment      On Acct     29101398                50.00-                                          50.00-
+                   6/13/19  Invoice    320237     BO-JOSE MART  7/13/19      50.00                                           50.00
+                                           TOTAL Customer:                    0.00
+STAFF-JOHN JOHN I. SMITH            STAF  (305) 406- 220
+                  12/30/81  Prior Balance                                     0.00
+                  11/12/20  Invoice    357147     1000902433-J 12/12/20     805.00                              805.00
+                                           TOTAL Customer:                  805.00                              805.00
+STAFF-KSQU KENDALL SQUARE K-8 CENTER  STA
+                  12/30/81  Prior Balance                                     0.00
+                  11/07/20  Invoice    356873     KENDALL MASK 12/07/20     190.00                              190.00
+                                           TOTAL Customer:                  190.00                              190.00
 STAFF-LAKE MIAMI LAKES EDUCATIONAL C.STAF (305) 557-1100
                   12/30/81  Prior Balance                                     0.00
                    5/05/20  Invoice    342168                   6/04/20      90.94                                           90.94
                                            TOTAL Customer:                   90.94                                           90.94
-STAFF-LEGA LEGACY PREPARATORY ACADEMY     (813) 253-  53
-                  12/30/81  Prior Balance                                     0.00
-                   1/03/18  Invoice    294129     PO ESPERANDO  2/02/18      15.00                                           15.00
-                                           TOTAL Customer:                   15.00                                           15.00
-STAFF-LIBE LIBERTY ACADEMY          STAFF (305) 696-8100
-                  12/30/81  Prior Balance                                     0.00
-                  10/15/20  Payment      On Acct       352408               375.00-     375.00-
-                                           TOTAL Customer:                  375.00-     375.00-
 STAFF-NAUT NAUTILUS MIDDLE SCHOOL   STAFF (305) 532-3481
                   12/30/81  Prior Balance                                     0.00
                    9/12/19  Payment      On Acct     54100917                 3.22-                                           3.22-
@@ -384,9 +549,16 @@ STAFF-NEWH NEW HOPE PRESCHOOL       STAFF
                                            TOTAL Customer:                  127.94                                          127.94
 STAFF-NOAH NOAH S ARK ACADEMY PRESCHOOL S (561) 641-2890
                   12/30/81  Prior Balance                                     0.00
-                   7/07/20  Invoice    342902     In Store 5    8/06/20     719.60                                          719.60
-                   8/24/20  Invoice    347723     SILKSCREEN -  9/23/20     960.00                              960.00
-                                           TOTAL Customer:                 1679.60                              960.00      719.60
+                   8/24/20  Invoice    347723     SILKSCREEN -  9/23/20     960.00                                          960.00
+                                           TOTAL Customer:                  960.00                                          960.00
+STAFF-NORM NORMA BUTLER BOSSARD ES   STAF (305) 254-5200
+                  12/30/81  Prior Balance                                     0.00
+                  11/05/20  Invoice    356841     NORMA - CUST 12/05/20     675.00                              675.00
+                                           TOTAL Customer:                  675.00                              675.00
+STAFF-OLIN OLINDA ELEMENTARY SCHOOL  STAF
+                  12/30/81  Prior Balance                                     0.00
+                  11/05/20  Invoice    356852     OLINDA MASKS 12/05/20     935.00                              935.00
+                                           TOTAL Customer:                  935.00                              935.00
 STAFF-OLOS OUR LADY OF SORROWS SCHOOL STA (956) 686-3651
                   12/30/81  Prior Balance                                     0.00
                    5/21/20  Invoice    342163                   6/20/20    2556.20                                         2556.20
@@ -397,21 +569,18 @@ STAFF-POIN CENTRAL POINTE CHRISTIAN ACAD
                                            TOTAL Customer:                 1085.60                                         1085.60
 STAFF-RAIN RAINBOW CHRISTIAN        STAFF (305) 338- 657
                   12/30/81  Prior Balance                                     0.00
-                   8/13/20  Invoice    347696                   9/12/20                                         500.00
-                   9/07/20  Payment    347696           36497               120.00                              380.00-
-                   8/14/20  Invoice    347890                   9/13/20     500.00                              500.00
-                   8/20/20  Invoice    348875                   9/19/20     500.00                              500.00
-                   8/25/20  Invoice    349729                   9/24/20     500.00                              500.00
-                   8/25/20  Invoice    349854                   9/24/20     500.00                              500.00
-                   9/04/20  Invoice    351870                  10/04/20     500.00                  500.00
-                   9/11/20  Invoice    352425                  10/11/20     250.00                  250.00
-                   9/23/20  Invoice    353383                  10/23/20     250.00                  250.00
-                  10/21/20  Invoice    356031                  11/20/20     250.00      250.00
-                                           TOTAL Customer:                 3370.00      250.00     1000.00     2120.00
+                  12/28/18  Payment      On Acct        35230                                                                 6.05-
+                  10/31/19  Debit Memo   On Acct        13819                 0.00                                            6.05
+                                           TOTAL Customer:                    0.00
 STAFF-RICH RICHARDSON CLASSICAL ACADEMY S (972) 479-9584
                   12/30/81  Prior Balance                                     0.00
                    7/24/19  Payment      On Acct       137971               120.94-                                         120.94-
                                            TOTAL Customer:                  120.94-                                         120.94-
+STAFF-SIDE SOUTHSIDE PREP AC. MUSEUMS     (786) 781-1066
+                  12/30/81  Prior Balance                                     0.00
+                  11/03/20  Invoice    356346     2-Pick up in 12/03/20     425.00                              425.00
+                  11/06/20  Invoice    356972     SIUTHSIDE MA 12/06/20     985.00                              985.00
+                                           TOTAL Customer:                 1410.00                             1410.00
 STAFF-SLAM SLAM SCHOOL               STAF (786) 853-5650
                   12/30/81  Prior Balance                                     0.00
                    9/06/18  Invoice    312627     sent with Ju 10/06/18                                                   14787.50
@@ -428,50 +597,49 @@ STAFF-SLPB SLAM PALM BEACH          STAFF (561) 641-4449
                   12/27/19  Invoice    340624     SLAM PALM BE  1/26/20                                                     103.83
                    2/10/20  Credit Inv 340624-80  RETURN-WRONG  3/11/20                                                      15.97-
                    3/11/20  Invoice    340624-90  REP-SLAM PAL  4/10/20     103.83                                           15.97
-                   7/14/20  Invoice    343328                   1/10/21    2747.50                                         2747.50
-                   9/29/20  Invoice    352017     Pick up in s 10/29/20    3019.50                 3019.50
-                                           TOTAL Customer:                 7480.24                 3019.50                 4460.74
-STAFF-SMAL SMALL WORLD PRE SCHOOL         (561) 641-2890
-                  12/30/81  Prior Balance                                     0.00
-                   6/04/20  Invoice    342316     SMALL-IN STO  7/04/20     720.00                                          720.00
-                                           TOTAL Customer:                  720.00                                          720.00
+                   7/14/20  Invoice    343328                   1/10/21                                                    2747.50
+                  12/29/20  Payment    343328            1385               308.00                                         2439.50-
+                                           TOTAL Customer:                 2021.24                                         2021.24
 STAFF-SOLA SOMERSET ACADEMY LAKES   STAFF (561) 641-4449
                   12/30/81  Prior Balance                                     0.00
                   10/29/19  Invoice    339513     SOMERSET AC. 11/28/19      76.38                                           76.38
                   12/27/19  Invoice    340623     SOMERSET L.   1/26/20     204.63                                          204.63
-                   9/29/20  Invoice    352014     Pick up in s 10/29/20     472.00                  472.00
-                                           TOTAL Customer:                  753.01                  472.00                  281.01
+                                           TOTAL Customer:                  281.01                                          281.01
 STAFF-SOME SOMERSET ACADEMY SOUTH HOME    (305) 245-6108
                   12/30/81  Prior Balance                                     0.00
                   11/06/18  Payment      On Acct         2903               438.24-                                         438.24-
                    7/01/20  Invoice    330817     SOHO POLOS G  7/31/20     100.45                                          100.45
                    9/07/19  Invoice    338006                  10/07/19     147.40                                          147.40
                    3/11/20  Invoice    342063     SOHO-CONSIGN  9/07/20                                                    2408.00
-                   9/01/20  Credit Inv 342063-80               10/01/20    2240.00                              168.00-
-                                           TOTAL Customer:                 2049.61                              168.00-    2217.61
+                   9/01/20  Credit Inv 342063-80               10/01/20    2240.00                                          168.00-
+                                           TOTAL Customer:                 2049.61                                         2049.61
 STAFF-TPAB TAMPA BAY ACADEMY
                   12/30/81  Prior Balance                                     0.00
-                   8/20/20  Payment    345161          345161                                                  1427.50-
-                   8/22/20  Invoice    345161     8/20 EMB TAM  9/21/20                                        2870.03
-                   9/05/20  Payment    345161                                15.03                 1427.50-
-                   9/22/20  Invoice    351312     Ibiley deliv 10/22/20    1760.00                 1760.00
-                                           TOTAL Customer:                 1775.03                  332.50     1442.53
+                   8/20/20  Payment    345161          345161                                                              1427.50-
+                   8/22/20  Invoice    345161     8/20 EMB TAM  9/21/20                                                    2870.03
+                   9/05/20  Payment    345161                                15.03                                         1427.50-
+                   9/22/20  Invoice    351312     Ibiley deliv 10/22/20    1760.00                                         1760.00
+                                           TOTAL Customer:                 1775.03                                         1775.03
 SWEET-STAF CITY OF SWEETWATER - STAFF     (305) 485-4526
                   12/30/81  Prior Balance                                     0.00
                    2/25/20  Payment      On Acct     56035838                                                                24.95-
                    6/19/20  Payment      On Acct         6806                                                                 2.00-
-                   7/14/20  Payment      On Acct     70337066                                                                 8.00-
-                  10/13/20  Payment      On Acct         7747               190.53-     155.58-
-                  10/15/20  Invoice    354097     5-Pick up in 11/14/20     155.88      155.88
-                                           TOTAL Customer:                   34.65-        .30                               34.95-
-TRPR4      KENDALL - QUOTE                (305) 625-8050
-                  12/30/81  Prior Balance                                     0.00
-                   2/17/20  Invoice    341650                   3/18/20     106.73                                          106.73
-                                           TOTAL Customer:                  106.73                                          106.73
+                   7/14/20  Payment      On Acct     70337066                34.95-                                           8.00-
+                  10/13/20  Payment    354097            7747                                                               155.58-
+                  10/15/20  Invoice    354097     5-Pick up in 11/14/20       0.30                              155.88
+                  11/11/20  Invoice    356808     5-Sent to st 12/11/20                                          94.90
+                  12/15/20  Payment    356808        12152020                 4.00                               90.90-
+                                           TOTAL Customer:                   30.65-                             159.88      190.53-
 WS-MATER   MATER ACADEMY      (WHOLESALE) (305) 828-1886
                   12/30/81  Prior Balance                                     0.00
-                  10/20/20  Payment      On Acct         2415              3595.20-    3595.20-
+                  10/20/20  Payment      On Acct         2415              3595.20-                            3595.20-
                    2/25/19  Payment    318550-01         2610                                                              2425.17-
                   11/12/19  Invoice    318550-01  BO-MATER AC- 12/12/19    8565.87                                        10991.04
-                                           TOTAL Customer:                 4970.67     3595.20-                            8565.87
+                                           TOTAL Customer:                 4970.67                             3595.20-    8565.87
+WS-VILLAGE VILLAGE OF EXCELLENCE AC.  WS  (813) 374-9422
+                  12/30/81  Prior Balance                                     0.00
+                  11/10/20  Payment    356804          356804              3337.50-                            3337.50-
+                                           TOTAL Customer:                 3337.50-                            3337.50-
+E
+                  TOTAL Customer:                 3337.50-                            3337.50-
 E

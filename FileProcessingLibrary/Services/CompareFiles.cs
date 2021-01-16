@@ -15,7 +15,7 @@ namespace FileProcessingLibrary.Services
             long position;
             using (StreamReader oldFile = new StreamReader(pathToOldFile))
             {
-                while ((oldFileLine = oldFile.ReadLine()) != null)
+                while ((oldFileLine = oldFile.ReadLine()) != null && !string.Equals(oldFileLine, "E"))
                 {
                     if (!char.IsWhiteSpace(oldFileLine[0]))
                     {
@@ -53,10 +53,9 @@ namespace FileProcessingLibrary.Services
 
             using (StreamReader newFile = new StreamReader(pathToNewFile))
             {
-                while ((newFileLine = newFile.ReadLine()) != null)
+                while ((newFileLine = newFile.ReadLine()) != null && !string.Equals(newFile, "E"))
                 {
-
-                    if (!char.IsWhiteSpace(newFileLine[0]) || newFileLine.Contains("========="))
+                    if (!char.IsWhiteSpace(newFileLine[0]))
                     {
                         arInfo = new List<string>();
 
@@ -87,17 +86,18 @@ namespace FileProcessingLibrary.Services
                             //making sure that I'm not encountering the next AR
                             while (newFile.Peek() != -1 && !char.IsLetterOrDigit(Convert.ToChar(newFile.Peek())))
                             {
-
+                                
                                 newFileLine = (newFile.ReadLine());
-                                string newFileLineSub;
+                                
+                                string newFileLineSub = string.Empty;
 
                                 if (newFileLine.Contains("TOTAL Customer"))
                                 {
                                     newFileLineSub = newFileLine.Substring(0, 57);
                                 }
-                                else
+                                else if(newFileLine.Length > 4)
                                 {
-                                    newFileLineSub = newFileLine.Substring(0,60);
+                                    newFileLineSub = newFileLine.Substring(0, 60);
                                 }
 
                                 bool checkIfInfoExists = false;
@@ -113,6 +113,8 @@ namespace FileProcessingLibrary.Services
                                 {
                                     newArInfo.Add(newFileLine);
                                 }
+
+                                
                             }
 
                             if (newArInfo.Count > 0)

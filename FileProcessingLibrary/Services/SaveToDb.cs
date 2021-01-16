@@ -46,12 +46,8 @@ namespace FileProcessingLibrary.Services
                     {
                         try
                         {
-                            var i = cmd.ExecuteNonQuery();
-                             i += 0;
-                            if (i > 1)
-                            {
-                                i += 0;
-                            }
+                           cmd.ExecuteNonQuery();
+                             
                         }
                         catch (Exception ex)
                         {

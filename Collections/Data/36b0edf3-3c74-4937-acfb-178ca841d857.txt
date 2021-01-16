@@ -475,3 +475,5 @@ WS-MATER   MATER ACADEMY      (WHOLESALE) (305) 828-1886
                   11/12/19  Invoice    318550-01  BO-MATER AC- 12/12/19    8565.87                                        10991.04
                                            TOTAL Customer:                 4970.67     3595.20-                            8565.87
 E
+       TOTAL Customer:                 4970.67     3595.20-                            8565.87
+E
