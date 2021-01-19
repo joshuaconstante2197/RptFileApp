@@ -9,16 +9,16 @@ a.navbar-brand {
 
 #invInfo {
     position: absolute;
-    left: 8%;
+    left: 2%;
     right: auto;
-    max-width: 20%;
+    max-width: 15%;
     line-height: 2;
 }
 #invBalance {
     position: absolute;
     left: auto;
-    right: 8%;
-    min-width: 15%;
+    right: 2%;
+    max-width: 15%;
     line-height: 2;
 }
     /* Provide sufficient contrast against white background */
