@@ -5,7 +5,7 @@
 }
 <h1>@Model.accountHeader.AccountName</h1>
 <a asp-page="EditAccountHeader" asp-route-arCode="@Model.accountHeader.ArCode">Edit</a>
-<div class="text-center">
+<div class="text-center ">
     <table class="table table-bordered table-striped" id="dataTable">
         <thead>
             <tr>
@@ -17,6 +17,7 @@
                 <th>Reference Number</th>
                 <th>Transaction Balance</th>
                 <th>Last Comment</th>
+                <th>Option</th>
             </tr>
         </thead>
         <tbody>
@@ -45,6 +46,31 @@
                                 <div asp-validation-summary="All" class="text-danger"></div>
                                 <div class="form-group">
                                     <label asp-for="@Model.comment.ArCode" value="@Model.accountHeader.ArCode" hidden class="form-control" />
+                                    <input asp-for="@Model.comment.ArCode" value="@Model.accountHeader.ArCode" hidden class="form-control " />
+                                    <span asp-validation-for="@Model.comment.ArCode" class="text-danger"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label asp-for="@Model.comment.TransactionId" value="@account.TransactionId" hidden class="form-control" />
+                                    <input asp-for="@Model.comment.TransactionId" value="@account.TransactionId" hidden class="form-control" />
+                                    <span asp-validation-for="@Model.comment.TransactionId" class="text-danger"></span>
+
+                                </div>
+                                <div class="form-group mt-0" >
+                                    <input  asp-for="@Model.comment.CommentText" class="form-control mt-0 mb-1" required>
+                                    <span asp-validation-for="@Model.comment.CommentText" class="text-danger"></span>
+                                </div>
+                                <button class="btn btn-sm btn-primary" type="submit">Submit</button>
+                            </form>
+                        </td>
+                    }
+                    else
+                    { 
+                        <td>
+                            <span class="lastComment"> @account.LastCommnet</span> 
+                            <form method="post" class="form-inline commentForm" style="display:none">
+                                <div asp-validation-summary="All" class="text-danger"></div>
+                                <div class="form-group">
+                                    <label asp-for="@Model.comment.ArCode" value="@Model.accountHeader.ArCode" hidden class="form-control" />
                                     <input asp-for="@Model.comment.ArCode" value="@Model.accountHeader.ArCode" hidden class="form-control" />
                                     <span asp-validation-for="@Model.comment.ArCode" class="text-danger"></span>
                                 </div>
@@ -54,23 +80,41 @@
                                     <span asp-validation-for="@Model.comment.TransactionId" class="text-danger"></span>
 
                                 </div>
-                                <div class="form-group" id="inputComment">
-                                    <input asp-for="@Model.comment.CommentText" class="form-control" required>
+                                <div class="form-group" >
+                                    <input asp-for="@Model.comment.CommentText" class="form-control mt-0 mb-1" required>
                                     <span asp-validation-for="@Model.comment.CommentText" class="text-danger"></span>
                                 </div>
                                 <button class="btn btn-sm btn-primary" type="submit">Submit</button>
                             </form>
                         </td>
-                    }
-                    else
-                    { 
-                        <td>@account.LastCommnet</td>
-                    }
+                        <td>
+                            <button class="btn btn-sm btn-primary addCommentButton"   >Comment</button>
+                            <button class="btn btn-sm btn-primary seeLastCommentButton"  style="display:none">See Last</button>
+                        </td>
 
+                    }
                 </tr>
             }
         </tbody>
     </table>
 </div>
 <a href="javascript: history.go(-1)">Go Back</a>
+<script src="~/js/account.js"></script>
+    
+    @*$(".addCommentButton").click(function () {
+        var index = $(".addCommentButton").index(this);
+        $(".commentForm:eq(" + index + ")").css("display", "block");
+        $(".seeLastCommentButton:eq(" + index + ")").css("display", "block");
+        $(".lastComment:eq(" + index + ")").css("display", "none");
+        $(".addCommentButton:eq(" + index + ")").css("display", "none");
+    })
+    $(".seeLastCommentButton").click(function () {
+        var index = $(".seeLastCommentButton").index(this);
+        $(".commentForm:eq(" + index + ")").css("display", "none");
+        $(".seeLastCommentButton:eq(" + index + ")").css("display", "none");
+        $(".lastComment:eq(" + index + ")").css("display", "block");
+        $(".addCommentButton:eq(" + index + ")").css("display", "block");
+    })*@
+    
+
 
