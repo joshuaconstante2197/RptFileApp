@@ -1,0 +1,46 @@
+﻿@page
+@model CollectionsWebLayer.Pages.MetricsModel
+@{
+}
+<div id="chartContainer" style="height: 370px; width: 100%;"></div>
+<script type="text/javascript">
+    window.onload = function () {
+        var chart = new CanvasJS.Chart("chartContainer", {
+            title: {
+                text: "Top accounts @DateTime.Now.ToShortDateString()"
+            },
+            animationEnabled: true,
+            legend: {
+                verticalAlign: "center",
+                horizontalAlign: "left",
+                fontSize: 20,
+                fontFamily: "Helvetica"
+            },
+            theme: "light2",
+            data: [
+                {
+                    type: "pie",
+                    indexLabelFontFamily: "Garamond",
+                    indexLabelFontSize: 20,
+                    indexLabel: "{label} {y}%",
+                    startAngle: -20,
+                    showInLegend: true,
+                    toolTipContent: "{legendText} {y}%",
+                    dataPoints: [
+                        @foreach (var topAccount in Model.topAccounts)
+                        {
+                            
+                            @: { y: @string.Format("{0:0.00}", topAccount.Percentage), legendText: "@topAccount.AccountName", label: "@topAccount.AccountName" },
+
+                        }
+                        
+                    ]
+                }
+            ]
+        });
+        chart.render();
+    };
+</script>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+
+

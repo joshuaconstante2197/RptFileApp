@@ -483,6 +483,39 @@ namespace FileProcessingLibrary.Services
             return true;
 
         }
+        public List<TopAccount> GetTopAccounts(int qty)
+        {
+            var topAccounts = new List<TopAccount>();
+            using (SqlConnection sqlCon = new SqlConnection(Config.ConnString))
+            {
+                var sql = $"SELECT TOP {qty} AccountHeader.ArCode, AccountHeader.AccountName, Balance FROM InvoiceBalance " +
+                            "INNER JOIN AccountInfo ON AccountInfo.TransactionId = InvoiceBalance.TransactionId AND AccountInfo.TranDetail = 'Total Customer' " +
+                            "INNER JOIN AccountHeader ON AccountHeader.ArCode = InvoiceBalance.ArCode " +
+                            "Order By Balance Desc";
+                sqlCon.Open();
+                using (SqlCommand cmd = new SqlCommand(sql,sqlCon))
+                {
+                    using (SqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            var topAccount = new TopAccount();
+                            for (int i = 0; i < reader.FieldCount; i++)
+                            {
+                                var fieldName = reader.GetName(i);
+                                var property = topAccount.GetType().GetProperty(fieldName);
+                                if (property != null && !reader.IsDBNull(i))
+                                {
+                                    property.SetValue(topAccount, reader.GetValue(i), null);
+                                }
+                            }
+                            topAccounts.Add(topAccount);
+                        }
+                    }
+                }
+            }
+            return topAccounts;
+        }
         
     }
 }
