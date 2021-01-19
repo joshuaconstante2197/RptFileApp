@@ -1,0 +1,119 @@
+1/18/2021 1:28:15 PM ==> Error on GetInvoiceBalanceInvalid column name 'post'.Error on this querySELECT DISTINCT * FROM InvoiceBalance WHERE ArCode = 'AR03BRIGCH' AND TransactionId = post
+1/18/2021 1:30:01 PM ==> Error on GetInvoiceBalanceInvalid column name 'post'.Error on this querySELECT DISTINCT * FROM InvoiceBalance WHERE ArCode = 'AR03BRIGCH' AND TransactionId = post
+1/18/2021 1:34:34 PM ==> Error on GetInvoiceBalanceInvalid column name 'post'.Error on this querySELECT DISTINCT * FROM InvoiceBalance WHERE ArCode = 'AR03BRIGCH' AND TransactionId = post
+1/18/2021 1:36:30 PM ==> Error on GetInvoiceBalanceInvalid column name 'post'.Error on this querySELECT DISTINCT * FROM InvoiceBalance WHERE ArCode = 'AR04ROSEMO' AND TransactionId = post
+1/18/2021 1:38:34 PM ==> Error on GetInvoiceBalanceInvalid column name 'post'.Error on this querySELECT DISTINCT * FROM InvoiceBalance WHERE ArCode = 'AR04ROSEMO' AND TransactionId = post
+1/18/2021 2:05:56 PM ==> System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'Comment'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at FileProcessingLibrary.Services.SaveToDb.SaveComment(Comment comment) in C:\Users\joshu\Source\Repos\RptFileApp\FileProcessingLibrary\Services\SaveToDb.cs:line 249
+ClientConnectionId:39f27907-4157-4b89-a7e5-f1b4b5c7f132
+Error Number:207,State:1,Class:16Error inserting comment: INSERT INTO Comment(ArCode, TransactionId, Comment, CommentDate) VALUES('AR03BRIGCH',1,'ghjkhj', '1/1/0001 12:00:00 AM')
+1/18/2021 2:11:53 PM ==> System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'Comment'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at FileProcessingLibrary.Services.SaveToDb.SaveComment(Comment comment) in C:\Users\joshu\Source\Repos\RptFileApp\FileProcessingLibrary\Services\SaveToDb.cs:line 249
+ClientConnectionId:44810d31-fade-4a21-ac48-e5fda746cd63
+Error Number:207,State:1,Class:16Error inserting comment: INSERT INTO Comment(ArCode, TransactionId, Comment, CommentDate) VALUES('AR03BRIGCH',1,'fghj', '1/1/0001 12:00:00 AM')
+1/18/2021 2:14:00 PM ==> System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'Comment'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at FileProcessingLibrary.Services.SaveToDb.SaveComment(Comment comment) in C:\Users\joshu\Source\Repos\RptFileApp\FileProcessingLibrary\Services\SaveToDb.cs:line 249
+ClientConnectionId:409193eb-f17f-46cf-848d-55fa27297957
+Error Number:207,State:1,Class:16Error inserting comment: INSERT INTO Comment(ArCode, TransactionId, Comment, CommentDate) VALUES('AR03BRIGCH',1,'fghj', '1/18/2021 2:14:00 PM')
+1/18/2021 2:18:43 PM ==> System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'Comment'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at FileProcessingLibrary.Services.SaveToDb.SaveComment(Comment comment)
+ClientConnectionId:9d47053a-5a66-4c56-9d5a-e684b93ab8c4
+Error Number:207,State:1,Class:16Error inserting comment: INSERT INTO Comment(ArCode, TransactionId, Comment, CommentDate) VALUES('AR03BRIGCH','1','ghj', '1/18/2021 2:16:59 PM')
+1/18/2021 2:20:53 PM ==> System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'Commnent'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at FileProcessingLibrary.Services.SaveToDb.SaveComment(Comment comment)
+ClientConnectionId:4e03ce31-652b-4d3e-8140-4585affeef90
+Error Number:207,State:1,Class:16Error inserting comment: INSERT INTO Comment(ArCode, TransactionId, Commnent, CommentDate) VALUES('AR03BRIGCH','1','asdf', '1/18/2021 2:20:39 PM')
+1/18/2021 2:23:35 PM ==> System.Data.SqlClient.SqlException (0x80131904): Violation of PRIMARY KEY constraint 'PK__Comment__84069A5DBAD6BE3A'. Cannot insert duplicate key in object 'dbo.Comment'. The duplicate key value is (AR03BRIGCH, 1).
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at FileProcessingLibrary.Services.SaveToDb.SaveComment(Comment comment) in C:\Users\joshu\Source\Repos\RptFileApp\FileProcessingLibrary\Services\SaveToDb.cs:line 249
+ClientConnectionId:08a3eace-8844-43ad-9f6a-ff709492e981
+Error Number:2627,State:1,Class:14Error inserting comment: INSERT INTO Comment(ArCode, TransactionId, Comment, CommentDate) VALUES('AR03BRIGCH','1','asdfasdfadsf', '1/18/2021 2:22:01 PM')
+1/18/2021 2:51:13 PM ==> System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'Comment'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at FileProcessingLibrary.Services.SaveToDb.SaveComment(Comment comment) in C:\Users\joshu\Source\Repos\RptFileApp\FileProcessingLibrary\Services\SaveToDb.cs:line 249
+ClientConnectionId:4b89f076-1a70-4273-9d92-a1c73786c4bd
+Error Number:207,State:1,Class:16Error inserting comment: INSERT INTO Comment(ArCode, TransactionId, Comment, CommentDate) VALUES('AR03BRIGCH','1','asdf', '1/18/2021 2:51:13 PM')
+1/18/2021 7:23:28 PM ==> System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near '('.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at FileProcessingLibrary.Services.SaveToDb.EditAccountHeader(AccountHeader accountHeader) in C:\Users\joshu\Source\Repos\RptFileApp\FileProcessingLibrary\Services\SaveToDb.cs:line 273
+ClientConnectionId:df6bb3e9-c8f2-4878-97c1-f8024067184b
+Error Number:102,State:1,Class:15Error inserting comment: UPDATE AccounHeader SET(AccountName = 'ROSEMONT ACADEMY ELEMENTARY ', AccountPhoneNumber = '123') WHERE ArCode = '')
+1/18/2021 7:25:18 PM ==> System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near '('.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at FileProcessingLibrary.Services.SaveToDb.EditAccountHeader(AccountHeader accountHeader) in C:\Users\joshu\Source\Repos\RptFileApp\FileProcessingLibrary\Services\SaveToDb.cs:line 273
+ClientConnectionId:96a49769-3ddc-464c-8269-62cebcf08d6b
+Error Number:102,State:1,Class:15Error inserting comment: UPDATE AccountHeader SET(AccountName = 'BRIGHT CHILDREN DAYCARE A/R ', AccountPhoneNumber = '(305) 362-6688') WHERE ArCode = ''
+1/18/2021 7:26:08 PM ==> System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near '('.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at FileProcessingLibrary.Services.SaveToDb.EditAccountHeader(AccountHeader accountHeader) in C:\Users\joshu\Source\Repos\RptFileApp\FileProcessingLibrary\Services\SaveToDb.cs:line 273
+ClientConnectionId:96a49769-3ddc-464c-8269-62cebcf08d6b
+Error Number:102,State:1,Class:15Error inserting comment: UPDATE AccountHeader SET(AccountName = 'BRIGHT CHILDREN DAYCARE A/R ', AccountPhoneNumber = '(305) 362-6688') WHERE ArCode = ''
+1/18/2021 7:27:37 PM ==> Incorrect syntax near '('.Error updating accountHeader: UPDATE AccountHeader SET(AccountName = 'BRIGHT CHILDREN DAYCARE A/R ', AccountPhoneNumber = '(305) 362-6688') WHERE ArCode = ''
+1/18/2021 7:29:03 PM ==> Incorrect syntax near '('.Error updating accountHeader: UPDATE AccountHeader SET(AccountName = 'BRIGHT CHILDREN DAYCARE A/R ', AccountPhoneNumber = '(305) 362-6688') WHERE ArCode = 'AR03BRIGCH'
+1/18/2021 7:30:26 PM ==> Incorrect syntax near '('.Error updating accountHeader: UPDATE AccountHeader SET (AccountName = 'ROSEMONT ACADEMY ELEMENTARY ', AccountPhoneNumber = 'as') WHERE ArCode = 'AR04ROSEMO'

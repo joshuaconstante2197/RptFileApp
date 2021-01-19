@@ -29,22 +29,17 @@ namespace CollectionsWebLayer.Pages
         public async Task<ActionResult> OnPost()
         {
                 
-                
-                    var rptFileUpload = Path.GetTempPath() + Guid.NewGuid().ToString() + ".txt";
-                    var tempFile = Path.GetTempPath() + Guid.NewGuid().ToString() + ".txt";
+            var rptFileUpload = Path.GetTempPath() + Guid.NewGuid().ToString() + ".txt";
+            var tempFile = Path.GetTempPath() + Guid.NewGuid().ToString() + ".txt";
 
-                    using (var fileStream = new FileStream(rptFileUpload, FileMode.Create))
-                    {
-                        await Upload.CopyToAsync(fileStream);
-                    }
+            using (var fileStream = new FileStream(rptFileUpload, FileMode.Create))
+            {
+                await Upload.CopyToAsync(fileStream);
+            }
 
-                    ProcessFile.Process(rptFileUpload, tempFile, _hostingEnvironment.ContentRootPath + "\\Data");
-                    getData.DownloadFileToProjectFolder(_hostingEnvironment.ContentRootPath + "\\Data");
-                    CurateDb.DeleteNegativeAndZeroAccounts1();
-                    return new RedirectToPageResult("Index");
-                
-                
-            
+            ProcessFile.Process(rptFileUpload, tempFile, _hostingEnvironment.ContentRootPath + "\\Data");
+            CurateDb.DeleteNegativeAndZeroAccounts1();
+            return new RedirectToPageResult("Index");
 
         }
     }

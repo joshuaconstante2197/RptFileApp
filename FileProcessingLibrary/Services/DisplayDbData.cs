@@ -411,6 +411,78 @@ namespace FileProcessingLibrary.Services
             }
             return files;
         }
+        public List<Comment> GetComments(string arCode, string transactionId)
+        {
+            var comments = new List<Comment>();
+            using (SqlConnection sqlCon = new SqlConnection(Config.ConnString))
+            {
+                sqlCon.Open();
+                var sql = $"SELECT * FROM Comment WHERE(ArCode = '{arCode}') AND TransactionId = {transactionId} ORDER BY CommentId DESC";
+                using (SqlCommand cmd = new SqlCommand(sql,sqlCon))
+                {
+                    using (SqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            var comment = new Comment();
+                            for (int i = 0; i < reader.FieldCount; i++)
+                            {
+                                var fieldName = reader.GetName(i);
+                                var property = comment.GetType().GetProperty(fieldName);
+                                if (property != null && !reader.IsDBNull(i))
+                                {
+                                    property.SetValue(comment, reader.GetValue(i), null);
+                                }
+                            }
+                            comments.Add(comment);
+                        }
+                    }
+                }
+            }
+            return comments;
+        }
+        public bool GetLastComment(List<AccountInfo> accountInfos)
+        {
+            using (SqlConnection sqlCon = new SqlConnection(Config.ConnString))
+            {
+                sqlCon.Open();
+                foreach (var accountInfo in accountInfos)
+                {
+                    var sql = $"SELECT TOP 1 * FROM Comment WHERE  TransactionId = {accountInfo.TransactionId} ORDER BY CommentId DESC";
+                    try
+                    {
+                        using (SqlCommand cmd = new SqlCommand(sql, sqlCon))
+                        {
+                            using (SqlDataReader reader = cmd.ExecuteReader())
+                            {
+                                while (reader.Read())
+                                {
+                                    if (!reader.IsDBNull(0))
+                                    {
+                                        accountInfo.LastCommnet = reader["CommentText"].ToString();
+                                    }
+                                }
+                            }
+                        }
+
+                    }
+                    
+                    catch (Exception ex)
+                    {
+                        var Err = new CreateLogFiles();
+                        Err.ErrorLog(Config.WebDataPath + "err.log", "Error on Downloding previos file" + ex.Message);
+                        return false;
+                        throw;
+                    }
+
+                }
+                    
+
+            }
+                
+            return true;
+
+        }
         
     }
 }

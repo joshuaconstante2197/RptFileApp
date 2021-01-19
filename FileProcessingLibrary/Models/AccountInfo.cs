@@ -14,6 +14,7 @@ namespace FileProcessingLibrary
         public string ReferenceNumber { get; set; }
 
         public decimal TranBalance { get; set; }
+        public string LastCommnet { get; set; }
 
     }
 }

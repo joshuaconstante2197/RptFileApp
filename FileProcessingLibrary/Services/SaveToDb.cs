@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FileProcessingLibrary.Models;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
@@ -228,6 +229,54 @@ namespace FileProcessingLibrary.Services
                     {
                         var err = new CreateLogFiles();
                         err.ErrorLog(Config.DataPath + "err.log", ex + "Error saving file to DB: " + sql);
+                        return false;
+                        throw;
+                    }
+                }
+            }
+            return true;
+        }
+        public bool SaveComment(Comment comment)
+        {
+            using (SqlConnection sqlCon = new SqlConnection(Config.ConnString))
+            {
+                sqlCon.Open();
+                var sql = $"INSERT INTO Comment(ArCode, TransactionId, CommentText, CommentTime) VALUES('{comment.ArCode}','{comment.TransactionId}','{comment.CommentText}', '{DateTime.Now}')";
+                using (SqlCommand cmd = new SqlCommand(sql,sqlCon))
+                {
+                    try
+                    {
+                        cmd.ExecuteNonQuery();
+                    }
+                    catch (Exception ex)
+                    {
+
+                        var err = new CreateLogFiles();
+                        err.ErrorLog(Config.DataPath + "err.log", ex.Message + "Error inserting comment: " + sql);
+                        return false;
+                        throw;
+                    }
+                }
+            }
+            return true;
+        }
+        public bool EditAccountHeader(AccountHeader accountHeader)
+        {
+            using (SqlConnection sqlCon = new SqlConnection(Config.ConnString))
+            {
+                sqlCon.Open();
+                var sql = $"UPDATE AccountHeader SET AccountName = '{accountHeader.AccountName}', AccountPhoneNumber = '{accountHeader.AccountPhoneNumber}' WHERE ArCode = '{accountHeader.ArCode}'";
+                using (SqlCommand cmd = new SqlCommand(sql, sqlCon))
+                {
+                    try
+                    {
+                        cmd.ExecuteNonQuery();
+                    }
+                    catch (Exception ex)
+                    {
+
+                        var err = new CreateLogFiles();
+                        err.ErrorLog(Config.DataPath + "err.log", ex.Message + "Error updating accountHeader: " + sql);
                         return false;
                         throw;
                     }

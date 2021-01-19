@@ -268,7 +268,6 @@ namespace FileProcessingLibrary
                     }
                 }
                 manageData.SaveFileToDb(fileWithRemovedData, TypeOfFile.removedData);
-
             }
 
             if (string.IsNullOrEmpty(fileWithNewData))
@@ -297,7 +296,7 @@ namespace FileProcessingLibrary
                     SetAccount(account, line);
                 }
             }
-            manageData.SaveFileToDb(fileWithNewData, TypeOfFile.newData);
+            manageData.SaveFileToDb(pathToTempFile, TypeOfFile.newData);
         }
     }
 }

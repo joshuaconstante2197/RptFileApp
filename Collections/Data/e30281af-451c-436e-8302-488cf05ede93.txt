@@ -1,0 +1,12 @@
+S20008     COCONUT GROVE ELEM-STAFF       (305) 445-7876
+                  12/30/81  Prior Balance                                     0.00
+                   8/20/20  Payment      On Acct       347836               580.50-                                         580.50-
+                   9/01/20  Invoice    347836     Pick up in s 10/01/20     580.50                                          580.50
+                                           TOTAL Customer:                    0.00
+S300071    SPANISH LAKE ELEMENTARY STAFF  (305) 816- 300
+                  12/30/81  Prior Balance                                     0.00
+                  12/16/16  Payment      On Acct        12191               499.55-                                         499.55-
+                   8/24/16  Invoice    269127                   9/23/16                                                    1004.29
+                   2/23/18  Credit Mem 269127           13554               499.55                                          504.74-
+                                           TOTAL Customer:                    0.00
+E
