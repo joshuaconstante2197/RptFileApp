@@ -2,7 +2,34 @@
 @model CollectionsWebLayer.Pages.MetricsModel
 @{
 }
-<div id="chartContainer" style="height: 100%; width: 100%;"></div>
+<div class="container px-4 mb-5">
+    <div class="row gx-5">
+        <div class="col">
+            <div class="p-3 border bg-light">Total Customer</div>
+        </div>
+        <div class="col">
+            <div class="p-3 mb-2 border bg-light">Balance</div>
+            <div class="p-3 border bg-light">@string.Format("{0:0.00}", Model.totalAr.Balance)</div>
+        </div>
+        <div class="col">
+            <div class="p-3 mb-2 border bg-light">Current</div>
+            <div class="p-3 border bg-light">@string.Format("{0:0.00}", Model.totalAr.Curr)</div>
+        </div>
+        <div class="col">
+            <div class="p-3 mb-2 border bg-light">Over30</div>
+            <div class="p-3 border bg-light">@string.Format("{0:0.00}", Model.totalAr.Over30)</div>
+        </div>
+        <div class="col">
+            <div class="p-3 mb-2 border bg-light">Over60</div>
+            <div class="p-3 border bg-light">@string.Format("{0:0.00}", Model.totalAr.Over60)</div>
+        </div>
+        <div class="col">
+            <div class="p-3 mb-2 border bg-light">Over90</div>
+            <div class="p-3 border bg-light">@string.Format("{0:0.00}",Model.totalAr.Over90)</div>
+        </div>
+    </div>
+</div>
+<div id="chartContainer" class="mt-5" style="height: 100%; width: 100%;"></div>
 <script type="text/javascript">
     window.onload = function () {
         var chart = new CanvasJS.Chart("chartContainer", {
@@ -19,7 +46,7 @@
             theme: "light2",
             data: [
                 {
-                    type: "pie",
+            type: "pie",
                     indexLabelFontFamily: "Garamond",
                     indexLabelFontSize: 15,
                     indexLabel: "{label} {y}%",
@@ -29,8 +56,8 @@
                     dataPoints: [
                         @foreach (var topAccount in Model.topAccounts)
                         {
-                            
-                            @: { y: @string.Format("{0:0.00}", topAccount.Percentage), legendText: "@topAccount.AccountName: @string.Format("{0:0.00}",topAccount.Balance)", label: "@topAccount.AccountName" },
+
+@: { y: @string.Format("{0:0.00}", topAccount.Percentage), legendText: "@topAccount.AccountName: @string.Format("{0:0.00}",topAccount.Balance)", label: "@topAccount.AccountName" },
 
                         }
                         
@@ -42,5 +69,6 @@
     };
 </script>
 <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+
 
 

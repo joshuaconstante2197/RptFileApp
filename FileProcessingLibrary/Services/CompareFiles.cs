@@ -110,16 +110,7 @@ namespace FileProcessingLibrary.Services
                                     }
                                     else
                                     {
-                                        try
-                                        {
-                                            newFileLineSub = newFileLine.Substring(0, 60);
-
-                                        }
-                                        catch (Exception)
-                                        {
-
-                                            throw;
-                                        }
+                                        newFileLineSub = newFileLine.Substring(0, 60);
                                     }
 
                                     bool checkIfInfoExists = false;

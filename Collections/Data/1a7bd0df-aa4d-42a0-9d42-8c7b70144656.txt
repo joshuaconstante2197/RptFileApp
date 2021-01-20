@@ -29,12 +29,6 @@ STAF-7151  HOMESTEAD  SHS                 (305) 245-7000
                   12/30/81  Prior Balance                                     0.00
                   10/22/20  Invoice    355746     7-Pick up in 11/21/20      31.96       31.96
                                            TOTAL Customer:                   31.96       31.96
-STAF-BRIVI BRIDGEPREP AC-VILLAGE GREEN    (305) 643-4833
-                  12/30/81  Prior Balance                                     0.00
-                   7/29/20  Payment      On Acct        11803              5293.30-                                        5293.30-
-                   1/16/20  Invoice    341048     BPA VG- 3393  2/15/20      57.98                                           57.98
-                   8/17/20  Invoice    345184     BPVG-REU+BFE  9/16/20    5293.30                             5293.30
-                                           TOTAL Customer:                   57.98                             5293.30     5235.32-
 STAF-PINEC PINECREST GLADES     STAFF     (305) 669-2906
                   12/30/81  Prior Balance                                     0.00
                    9/05/20  Payment      On Acct       351768                68.85-                  68.85-
@@ -58,6 +52,10 @@ STAFF-ANDR ANDREA CASTILLO PREP ACADEMY
                   12/30/81  Prior Balance                                     0.00
                   10/30/20  Invoice    356091     3-Pick up in 11/29/20      95.88       95.88
                                            TOTAL Customer:                   95.88       95.88
+STAFF-CLAR CLARK COUNTY SCHOOL DISTRICT S (702) 799-5225
+                  12/30/81  Prior Balance                                     0.00
+                  10/21/20  Invoice    356011     CLARK-DROP S 11/20/20   90000.00    90000.00
+                                           TOTAL Customer:                90000.00    90000.00
 STAFF-EARL EARLY START              STAFF (305) 229-2858
                   12/30/81  Prior Balance                                     0.00
                   10/21/20  Payment      On Acct       355918              1373.50-    1373.50-
@@ -74,8 +72,4 @@ STAFF-SMAL SMALL WORLD PRE SCHOOL         (561) 641-2890
                   12/30/81  Prior Balance                                     0.00
                    6/04/20  Invoice    342316     SMALL-IN STO  7/04/20     720.00                                          720.00
                                            TOTAL Customer:                  720.00                                          720.00
-TRPR4      KENDALL - QUOTE                (305) 625-8050
-                  12/30/81  Prior Balance                                     0.00
-                   2/17/20  Invoice    341650                   3/18/20     106.73                                          106.73
-                                           TOTAL Customer:                  106.73                                          106.73
 E

@@ -127,7 +127,7 @@ namespace FileProcessingLibrary.Services
             int i = 0;
             foreach (var accountBalance in account.Balances)
             {
-                var sql = $"INSERT INTO InvoiceBalance(ArCode,TransactionId, Balance,Curr,Over30,Over60,Over90) VALUES('{accountBalance.ArCode}',{transactionId[i]},{accountBalance.Balance},{accountBalance.Current}," +
+                var sql = $"INSERT INTO InvoiceBalance(ArCode,TransactionId, Balance,Curr,Over30,Over60,Over90) VALUES('{accountBalance.ArCode}',{transactionId[i]},{accountBalance.Balance},{accountBalance.Curr}," +
                           $"{accountBalance.Over30},{accountBalance.Over60},{accountBalance.Over90})";
                 using (SqlConnection sqlCon = new SqlConnection(Config.ConnString))
                 {
@@ -277,6 +277,31 @@ namespace FileProcessingLibrary.Services
 
                         var err = new CreateLogFiles();
                         err.ErrorLog(Config.DataPath + "err.log", ex.Message + "Error updating accountHeader: " + sql);
+                        return false;
+                        throw;
+                    }
+                }
+            }
+            return true;
+        }
+        public bool SaveTotalAr(InvoiceBalance invoiceBalance)
+        {
+            using (SqlConnection sqlCon = new SqlConnection(Config.ConnString))
+            {
+                sqlCon.Open();
+                var sql = "INSERT INTO TotalAR(UploadDate,Balance,Curr,Over30,Over60,Over90) " + 
+                            $"VALUES('{DateTime.Now}',{invoiceBalance.Balance},{invoiceBalance.Curr},{invoiceBalance.Over30},{invoiceBalance.Over60},{invoiceBalance.Over90})";
+                using (SqlCommand cmd = new SqlCommand(sql, sqlCon))
+                {
+                    try
+                    {
+                        cmd.ExecuteNonQuery();
+                    }
+                    catch (Exception ex)
+                    {
+
+                        var err = new CreateLogFiles();
+                        err.ErrorLog(Config.DataPath + "err.log", ex.Message + "Error inserting total ar: " + sql);
                         return false;
                         throw;
                     }

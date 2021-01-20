@@ -516,6 +516,34 @@ namespace FileProcessingLibrary.Services
             }
             return topAccounts;
         }
+        public TotalAR GetTotalBalance()
+        {
+            var totalAr = new TotalAR();
+            using (SqlConnection sqlCon = new SqlConnection(Config.ConnString))
+            {
+                var sql = $"SELECT TOP 1 * FROM TotalAR ORDER BY UploadDate DESC";
+                sqlCon.Open();
+                using (SqlCommand cmd = new SqlCommand(sql, sqlCon))
+                {
+                    using (SqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            for (int i = 0; i < reader.FieldCount; i++)
+                            {
+                                var fieldName = reader.GetName(i);
+                                var property = totalAr.GetType().GetProperty(fieldName);
+                                if (property != null && !reader.IsDBNull(i))
+                                {
+                                    property.SetValue(totalAr, reader.GetValue(i), null);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            return totalAr;
+        }
         
     }
 }

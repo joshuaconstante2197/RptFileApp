@@ -23,7 +23,7 @@ namespace FileProcessingLibrary
             string previousArLine = string.Empty;
             bool count = false;
             bool wordToEx = true;
-            string[] wordsToExclude = { "T R I A L", "Tran    Tran", "Date    Descr", "----    -----", "Time", "---------", "TOTAL A/R", "=========", "*** End of Report ***" };
+            string[] wordsToExclude = { "T R I A L", "Tran    Tran", "Date    Descr", "----    -----", "Time", "---------",  "=========", "*** End of Report ***" };
 
             using (StreamReader rpt = new StreamReader(pathToRptFile))
             {
@@ -137,7 +137,7 @@ namespace FileProcessingLibrary
         {
             var accountInfo = new AccountInfo();
 
-            if (!line.Contains("TOTAL"))
+            if (!line.Contains("TOTAL Customer"))
             {
                 if (line.Substring(18, 9).Contains('/'))
                 {
@@ -170,11 +170,10 @@ namespace FileProcessingLibrary
                     accountInfo.DueDate = Convert.ToDateTime(line.Substring(63, 8).TrimStart());
                 }
             }
-            else
+            else if(!line.Contains("TOTAL A/R"))
             {
                 accountInfo.TranDetail = "Total Customer";
             }
-
 
             return accountInfo;
         }
@@ -268,6 +267,7 @@ namespace FileProcessingLibrary
                     }
                 }
                 manageData.SaveFileToDb(fileWithRemovedData, TypeOfFile.removedData);
+                File.Delete(fileWithRemovedData);
             }
 
             if (string.IsNullOrEmpty(fileWithNewData))
@@ -278,6 +278,12 @@ namespace FileProcessingLibrary
             {
                 while ((line = cleanFile.ReadLine()) != null)
                 {
+                    if (line.Contains("TOTAL A/R"))
+                    {
+                        var totalAr = SetInvoiceBalance(line, "Total A/R");
+                        manageData.SaveTotalAr(totalAr);
+                        continue;
+                    }
                     if (!char.IsWhiteSpace(line[0]))
                     {
                         if (account.AccountHeader != null)
@@ -295,8 +301,11 @@ namespace FileProcessingLibrary
                     }
                     SetAccount(account, line);
                 }
+                manageData.SaveFileToDb(pathToTempFile, TypeOfFile.newData);
             }
-            manageData.SaveFileToDb(pathToTempFile, TypeOfFile.newData);
+            File.Delete(fileWithNewData);
+
+
         }
     }
 }

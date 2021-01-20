@@ -32,7 +32,6 @@ CREATE TABLE dbo.AccountInfo (ArCode varchar(12),
 );
 Create TABLE dbo.InvoiceBalance(ArCode varchar(12),
 	TransactionId int,
-	InvoiceNumber varchar (10),
 	Balance money,
 	Curr money,
 	Over30 money,
@@ -57,6 +56,14 @@ Create TABLE dbo.Files(DocumentId int IDENTITY (1,1),
 	TypeOfFile varchar(20),
 	PRIMARY KEY(DocumentId)
 );
+Create TABLE dbo.TotalAR(TotalId int IDENTITY(1,1),
+	UploadDate date,
+	Balance money,
+	Curr money,
+	Over30 money,
+	Over60 money,
+	Over90 money
+)
 
 Go
 
