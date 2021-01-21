@@ -90,27 +90,29 @@ namespace FileProcessingLibrary.Services
                                     }
                                     else if (oldLine.Contains("TOTAL Customer"))
                                     {
-                                        arInfo.Add(oldLine.Substring(0, 57));
+                                        arInfo.Add(oldLine.Replace(" ",""));
                                     }
                                     else
                                     {
-                                        arInfo.Add(oldLine.Substring(0, 60));
+                                        arInfo.Add(oldLine.Substring(0, 71));
                                     }
                                 }
                             }
                             //making sure that I'm not encountering the next AR
-                            while ((newFileLine = newFile.ReadLine()) != null && !char.IsWhiteSpace(newFileLine[0]))
+
+                            while (newFile.Peek() != -1 && !char.IsLetterOrDigit(Convert.ToChar(newFile.Peek())) && newFile.Peek() != 27)
                             {
+                                newFileLine = newFile.ReadLine();
 
                                 string newFileLineSub;
 
                                     if (newFileLine.Contains("TOTAL Customer"))
                                     {
-                                        newFileLineSub = newFileLine.Substring(0, 57);
+                                        newFileLineSub = newFileLine.Replace(" ", "");
                                     }
                                     else
                                     {
-                                        newFileLineSub = newFileLine.Substring(0, 60);
+                                        newFileLineSub = newFileLine.Substring(0, 71);
                                     }
 
                                     bool checkIfInfoExists = false;
@@ -126,7 +128,6 @@ namespace FileProcessingLibrary.Services
                                     {
                                         newArInfo.Add(newFileLine);
                                     }
-                                
                             }
 
 

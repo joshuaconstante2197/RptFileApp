@@ -17,7 +17,7 @@ namespace ConsoleApp2
 
             string pathToTempFile = System.IO.Path.GetTempPath() + Guid.NewGuid().ToString() + ".txt";
             ProcessFile.DeleteEmptiesAndNonArs(Config.pathToRptNewNewFile, pathToTempFile);
-            var outputFile = CompareFiles.Compare(  pathToTempFile, Config.pathToRptFile);
+            var outputFile = CompareFiles.Compare(pathToTempFile, Config.pathToRptFile);
             var outputFile2 = CompareFiles.Compare(Config.pathToRptFile, pathToTempFile);
 
             using (StreamReader reader = new StreamReader(outputFile))

@@ -159,7 +159,7 @@ namespace FileProcessingLibrary.Services
             using (SqlConnection sqlCon = new SqlConnection(Config.ConnString))
             {
                 sqlCon.Open();
-                var sql = $"SELECT TransactionId FROM AccountInfo WHERE ArCode = '{ArCode}' ";
+                var sql = $"SELECT TransactionId FROM AccountInfo  WHERE TransactionId NOT IN(SELECT TransactionId FROM InvoiceBalance) AND AccountInfo.ArCode = '{ArCode}'";
                 using (SqlCommand cmd = new SqlCommand(sql,sqlCon))
                 {
                     using (SqlDataReader reader = cmd.ExecuteReader())
