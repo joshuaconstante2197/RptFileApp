@@ -14,12 +14,21 @@ a.navbar-brand {
     max-width: 15%;
     line-height: 2;
 }
+
 #invBalance {
     position: absolute;
     left: auto;
     right: 2%;
     max-width: 15%;
     line-height: 2;
+}
+#chartContainer
+{
+    position:absolute;
+    left:20%;
+    right:auto;
+    min-height:40%;
+    min-width:60%;
 }
     /* Provide sufficient contrast against white background */
     a {

@@ -29,8 +29,8 @@
         </div>
     </div>
 </div>
-<div id="chartContainer" class="mt-5" style="height: 100%; width: 100%;"></div>
-<script type="text/javascript">
+    <div id="chartContainer" class="mt-5" ></div>
+    <script type="text/javascript">
     window.onload = function () {
         var chart = new CanvasJS.Chart("chartContainer", {
             title: {
@@ -57,17 +57,18 @@
                         @foreach (var topAccount in Model.topAccounts)
                         {
 
-@: { y: @string.Format("{0:0.00}", topAccount.Percentage), legendText: "@topAccount.AccountName: @string.Format("{0:0.00}",topAccount.Balance)", label: "@topAccount.AccountName" },
+                            @: { y: @string.Format("{0:0.00}", topAccount.Percentage), legendText: "@topAccount.AccountName: @string.Format("{0:0.00}",topAccount.Balance)", label: "@topAccount.AccountName" },
 
                         }
-                        
+                        {y:@string.Format("{0:0.00}",(100 - (Model.topAccounts.Sum(x => x.Percentage)))), legendText: "Other: @string.Format("{0:0.00}", (Model.totalAr.Balance - (Model.topAccounts.Sum(x => x.Balance))))", label:"Other" }
+
                     ]
                 }
             ]
         });
         chart.render();
     };
-</script>
+    </script>
 <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
 
 

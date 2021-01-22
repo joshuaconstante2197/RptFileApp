@@ -4,9 +4,9 @@
     ViewData["Title"] = "Transaction";
     DateTime date = DateTime.Now;
 }
-<div id="transactionBody">
+<div id="transactionBody" >
 
-    <div class="card" id="invInfo">
+    <div class="card " id="invInfo">
         <div class="card-header">
             <a asp-page="EditAccountHeader" asp-route-arCode="@Model.accountHeader.ArCode">Edit</a>
             <h2>@Model.accountHeader.AccountName</h2>
@@ -14,7 +14,7 @@
             <h3>Phone Number: @Model.accountHeader.AccountPhoneNumber</h3>
         </div>
     </div>
-    <div class="card" id="invBalance">
+    <div class="card " id="invBalance">
         <div class="card-body">
             <h4>Invoice Number:  @Model.invoiceBalance.InvoiceNumber</h4>
             <h4>Balance: @string.Format("{0:0.00}", Model.invoiceBalance.Balance)</h4>
@@ -24,7 +24,7 @@
             <h4>Over 90: @string.Format("{0:0.00}", @Model.invoiceBalance.Over90)</h4>
         </div>
     </div>
-    <div class="" id="commentSection" style="margin-left:5%">
+    <div class="col-lg-10 col-md-8 col-sm-6" id="commentSection" style="margin:auto">
         <form method="post">
             <div asp-validation-summary="All" class="text-danger"></div>
             <div class="form-group">

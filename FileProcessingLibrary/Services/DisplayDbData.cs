@@ -459,7 +459,7 @@ namespace FileProcessingLibrary.Services
                                 {
                                     if (!reader.IsDBNull(0))
                                     {
-                                        accountInfo.LastCommnet = reader["CommentText"].ToString();
+                                        accountInfo.LastComment = reader["CommentText"].ToString();
                                     }
                                 }
                             }

@@ -22,7 +22,7 @@ namespace CollectionsWebLayer.Pages
             decimal total = topAccounts.Sum(x => x.Balance);
             foreach (var topAccount in topAccounts)
             {
-                topAccount.Percentage = (topAccount.Balance * 100) / total;
+                topAccount.Percentage = (topAccount.Balance * 100) / totalAr.Balance;
             }
 
         }
