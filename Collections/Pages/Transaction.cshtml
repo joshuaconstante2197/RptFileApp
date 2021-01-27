@@ -1,4 +1,4 @@
-﻿@page "{arCode}/{transactionId}"
+﻿@page "{arCode}/{transactionId}/{invoiceNumber}"
 @model TransactionModel
 @{
     ViewData["Title"] = "Transaction";
@@ -16,7 +16,7 @@
     </div>
     <div class="card " id="invBalance">
         <div class="card-body">
-            <h4>Invoice Number:  @Model.invoiceBalance.InvoiceNumber</h4>
+            <h4>Invoice Number:  @Model._invoiceNumber</h4>
             <h4>Balance: @string.Format("{0:0.00}", Model.invoiceBalance.Balance)</h4>
             <h4>Current: @string.Format("{0:0.00}", @Model.invoiceBalance.Curr)</h4>
             <h4>Over 30: @string.Format("{0:0.00}", @Model.invoiceBalance.Over30)</h4>

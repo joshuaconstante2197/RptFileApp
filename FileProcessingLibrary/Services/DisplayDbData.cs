@@ -55,7 +55,7 @@ namespace FileProcessingLibrary.Services
 
             return accounts;
         }
-        public List<AccountInfo> DisplayAccountInfo(string arCode)
+        public List<AccountInfo> GetAccountInfo(string arCode)
         {
             var accounts = new List<AccountInfo>();
             string sql = string.Empty;

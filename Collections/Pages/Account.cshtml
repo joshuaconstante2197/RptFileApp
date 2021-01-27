@@ -2,7 +2,7 @@
 @model AccountModel
 @{
     ViewData["Tile"] = "Account";
-
+    
 }
 <h1>@Model.accountHeader.AccountName</h1>
 <a asp-page="EditAccountHeader" asp-route-arCode="@Model.accountHeader.ArCode">Edit</a>
@@ -29,11 +29,21 @@
                         var d = new Dictionary<string, string>
                                     {
                             { "arCode", $"{Model.accountHeader.ArCode}" },
-                            { "transactionId", $"{account.TransactionId}" }
+                            { "transactionId", $"{account.TransactionId}" },
+                            { "invoiceNumber", $"{account.InvoiceNumber}"}
 
                         };
                         var tranDate = account.TranDate == DateTime.MinValue ? "-" : account.TranDate.ToShortDateString();
                         var dueDate = account.DueDate == DateTime.MinValue ? "-" : account.DueDate.ToShortDateString();
+                        var lastComment = string.Empty;
+                        if (!string.IsNullOrEmpty(account.LastComment) && account.LastComment.Length > 24)
+                        {
+                            lastComment = account.LastComment.Substring(0, account.LastComment.IndexOf(' ',10)) + " ...";
+                        }
+                        else
+                        {
+                            lastComment = account.LastComment;
+                        }
 
                     }
                     <td><a asp-page="/Transaction" asp-all-route-data="d">Details</a> </td>
@@ -43,9 +53,9 @@
                     <td>@account.InvoiceNumber</td>
                     <td>@account.ReferenceNumber</td>
                     <td>@string.Format("{0:0.00}", account.TranBalance)</td>
-
+                    
                         <td>
-                            <span class="lastComment">@account.LastComment</span> 
+                            <span class="lastComment">@lastComment</span> 
                             <form method="post" class="form-inline commentForm" style="display:none">
                                 <div asp-validation-summary="All" class="text-danger"></div>
                                 <div class="form-group">

@@ -21,7 +21,7 @@ namespace Collections.Pages
 
         public void OnGet(string id)
         {
-            accountInfos = getData.DisplayAccountInfo(id);
+            accountInfos = getData.GetAccountInfo(id);
             accountHeader = getData.GetAccountHeaderByArCode(id);
             foreach (var account in accountInfos)
             {

@@ -38,9 +38,25 @@ namespace Collections.Pages
             {
                 var Err = new CreateLogFiles();
                 Err.ErrorLog(Config.WebDataPath + "err.log", ex.Message + "Error on idex page");
+                RedirectToPage("Error");
                 throw;
             }
             
+        }
+        public ActionResult OnPost()
+        {
+            try
+            {
+                CurateDb.DeleteNegativeAndZeroAccounts();
+                return new RedirectToPageResult("Index");
+            }
+            catch (Exception ex)
+            {
+                var Err = new CreateLogFiles();
+                Err.ErrorLog(Config.WebDataPath + "err.log", ex.Message + "Error on idex page");
+                return new RedirectToPageResult("Error");
+                throw;
+            }
         }
     }
 }

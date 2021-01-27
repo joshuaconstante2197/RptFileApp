@@ -16,13 +16,15 @@ namespace Collections.Pages
         public SaveToDb saveData = new SaveToDb();
         public InvoiceBalance invoiceBalance;
         public AccountHeader accountHeader;
+        public string _invoiceNumber;
         public List<Comment> comments;
 
         [BindProperty]
         public Comment comment { get; set; }
-        public void OnGet(string arCode, string transactionId)
+        public void OnGet(string arCode, string transactionId, string invoiceNumber)
         {
             invoiceBalance = getData.GetInvoiceBalance(arCode, transactionId);
+            _invoiceNumber = invoiceNumber;
             accountHeader = getData.GetAccountHeaderByArCode(arCode);
             comments = getData.GetComments(arCode, transactionId);
         }
