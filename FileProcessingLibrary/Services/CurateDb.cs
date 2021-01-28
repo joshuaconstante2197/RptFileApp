@@ -68,7 +68,7 @@ namespace FileProcessingLibrary.Services
         }
         public static bool DeleteNegativeAndZeroAccounts1()
         {
-            var ars = GetNegativeAndZeroArs1();
+            var ars = GetNegativeAndZeroArs();
             try
             {
                 using (SqlConnection sqlCon = new SqlConnection(Config.ConnString))

@@ -47,7 +47,7 @@ namespace Collections.Pages
         {
             try
             {
-                CurateDb.DeleteNegativeAndZeroAccounts();
+                CurateDb.DeleteNegativeAndZeroAccounts1();
                 return new RedirectToPageResult("Index");
             }
             catch (Exception ex)

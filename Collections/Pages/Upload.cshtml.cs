@@ -38,7 +38,7 @@ namespace CollectionsWebLayer.Pages
             }
 
             ProcessFile.Process(rptFileUpload, tempFile, _hostingEnvironment.ContentRootPath + "\\Data");
-            
+            //CurateDb.DeleteNegativeAndZeroAccounts();
             return new RedirectToPageResult("Index");
 
         }
