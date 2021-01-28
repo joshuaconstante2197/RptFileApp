@@ -65,16 +65,9 @@ Create TABLE dbo.TotalAR(TotalId int IDENTITY(1,1),
 	Over90 money
 )
 
-Go
 
-CREATE PROCEDURE dbo.spDeleteNegativeAndZeroAccounts
-AS
-BEGIN
-	DELETE AccountHeader FROM AccountHeader 
-							LEFT JOIN AccountInfo ON AccountHeader.ArCode = AccountInfo.ArCode 
-							LEFT JOIN InvoiceBalance ON  AccountInfo.TransactionId = InvoiceBalance.TransactionId 
-							WHERE AccountInfo.TranDetail = 'Total Customer' AND InvoiceBalance.Balance <= 0.01
-END
+
+
 
 
 
