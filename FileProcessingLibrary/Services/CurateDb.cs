@@ -38,35 +38,8 @@ namespace FileProcessingLibrary.Services
             }
             return ars;
         }
-        private static List<string> GetNegativeAndZeroArs1()
-        {
-            var ars = new List<string>();
-            using (SqlConnection sqlCon = new SqlConnection(Config.ConnString))
-            {
-                var sql = "SELECT ArCode FROM AccountHeader WHERE ArCode NOT IN(SELECT ArCode FROM AccountInfo)";
-
-                using (SqlCommand cmd = new SqlCommand(sql, sqlCon))
-                {
-                    sqlCon.Open();
-                    using (SqlDataReader reader = cmd.ExecuteReader())
-                    {
-
-                        while (reader.Read())
-                        {
-                            string ar = string.Empty;
-
-                            for (int i = 0; i < reader.FieldCount; i++)
-                            {
-                                ar = reader.GetValue(i).ToString();
-                            }
-                            ars.Add(ar);
-                        }
-                    }
-                }
-            }
-            return ars;
-        }
-        public static bool DeleteNegativeAndZeroAccounts1()
+        
+        public static bool DeleteNegativeAndZeroAccounts()
         {
             var ars = GetNegativeAndZeroArs();
             try
@@ -96,29 +69,6 @@ namespace FileProcessingLibrary.Services
             }
 
         }
-        public static bool DeleteNegativeAndZeroAccounts()
-        {
-            using (SqlConnection sqlCon = new SqlConnection(Config.ConnString))
-            {
-                sqlCon.Open();
-                var spGetNegativesAndZeroAccounts = "dbo.spDeleteNegativeAndZeroAccounts";
-                using (SqlCommand cmd = new SqlCommand(spGetNegativesAndZeroAccounts,sqlCon))
-                {
-                    try
-                    {
-                        cmd.CommandType = System.Data.CommandType.StoredProcedure;
-                        cmd.ExecuteNonQuery();
-                        return true;
-                    }
-                    catch (Exception ex)
-                    {
-                        var errLog = new CreateLogFiles();
-                        errLog.ErrorLog(Config.DataPath, "Error curating DB" + ex.Message);
-                        return false;
-                        throw;
-                    }
-                }
-            }
-        }
+        
     }
 }
