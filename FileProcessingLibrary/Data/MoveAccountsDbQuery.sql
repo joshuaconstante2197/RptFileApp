@@ -21,3 +21,19 @@ UPDATE Inv
 	END
 From InvoiceBalance Inv INNER JOIN @resultTable Result ON Inv.TransactionId = Result.transactionId
  
+
+ SELECT AccountInfo.TransactionId FROM AccountInfo 
+	INNER JOIN InvoiceBalance ON InvoiceBalance.TransactionId = AccountInfo.TransactionId
+	WHERE (DATEDIFF(Day,TranDate,CAST(('2021-01-13') As Date)) >= 49 AND DATEDIFF(Day,TranDate,CAST(('2021-01-13') As Date)) < 85) 
+		AND TranDetail != 'Total Customer'
+		AND TranDetail != 'Prior Balance'
+		AND TranDate != '0001-01-01' 
+		AND Over60 = 00.00
+
+SELECT AccountInfo.TransactionId FROM AccountInfo 
+	INNER JOIN InvoiceBalance ON InvoiceBalance.TransactionId = AccountInfo.TransactionId
+	WHERE (DATEDIFF(Day,TranDate,CAST(('2021-01-13') As Date)) >= 34 AND DATEDIFF(Day,TranDate,CAST(('2021-01-13') As Date)) < 49) 
+		AND TranDetail != 'Total Customer'
+		AND TranDetail != 'Prior Balance'
+		AND TranDate != '0001-01-01'
+		AND Over30 = 00.00 
