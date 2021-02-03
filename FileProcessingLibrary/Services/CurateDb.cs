@@ -63,12 +63,16 @@ namespace FileProcessingLibrary.Services
             catch (Exception ex)
             {
                 var errLog = new CreateLogFiles();
-                errLog.ErrorLog(Config.DataPath, "Error curating DB" + ex.Message);
+                errLog.ErrorLog(Config.DataPath, "Error deleting negatives and zero accounts" + ex.Message);
                 return false;
                 throw;
             }
 
         }
+        //public static List<InvoiceBalance> GetOver90sToMove()
+        //{
+        //    var tranIds = new List
+        //}
         
     }
 }
