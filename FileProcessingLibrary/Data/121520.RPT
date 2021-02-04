@@ -1,0 +1,1759 @@
+E    (s0p16.67h8.5v0s0b0T
+Run Date 12/15/20                               A / R   T R I A L   B A L A N C E                                       Page    1
+Run Time  1:06 PM                                     IBILEY SCHOOL UNIFORMS                                            User  JOSHUA
+
+
+[SELECT OPTIONS]   Sort Order (1/2)?              1          <1>=Sort Open items by Invoice Number, <2>=Sort by Invoice Date
+                   Region Code:                   ALL
+                   Location Code:                 ALL        Uses Location Code in Customer Maintenance
+                   Customer Code:                 ALL
+                   Customer Type:                 ALL
+                   Salesman Code:                 ALL
+                   Beg Date:                                 Does not print Prior Balances for Open Items < Beg Date
+                   End Date:                      12/15/20
+                   Print Employee Name    (Y/N)?  N
+                   Balance Customers    (1/2/3):  2          <1>=All A/R Cust Balances, <2>=Exclude Zero Balance, <3>=Exclude <= Zero Bal
+                   Zero Balance Invoices  (Y/N)?  N
+                   A/R Customers Only     (Y/N)?  Y
+                   Employee Cust Type     (Y/N)?  N          <Y>=Uses Employee's Customer Type, <N>=Uses Company's Type
+                   Receipts Comment       (Y/N)?  N          <Y>=Prints comment from Cash Receipts/Adjustments Entry
+                   Cust Statement Text    (Y/N)?  N          <Y>=Prints statement text from Customer Maintenance
+                   Print Special Terms    (Y/N)?  N
+                   Print Totals Only    (1/2/3):  1          <1>=Prints Detail, <2>=Totals by Customer, <3>=Company Total Only
+                   Skip Line for Invoices (Y/N)?  Y
+                   Open Item Type         (1-5):  ALL        <1>=Invoices, <2>=Deposits <3>=Payments, <4>=Adjustments, <5>=Finance Charge
+                   Invoices > Days Aged:          60         Only prints transactions > days aged from Invoice Date
+                   # Collection Entry Lines:      0          Prints last # of lines entered for Collections Entry that are Open
+                   Fin Charg Cust Only    (Y/N)?  N          <Y>=Exclude Cash Customers (Special Orders at POS), <N>=All Customers
+                   # Payment History Lines:       0          Prints last # of lines entered for Payment History
+                   Invoice#:                      ALL
+                   Location Source        (1/2):  1          <1>=Customer Maint Locate, <2>=O/E Locate (If pay on acct, uses Cust Maint)
+
+
+
+                    Tran    Tran         Invoice    Reference    Due
+                    Date    Descr        Number     Number       Date      Balance     Current     Over 30     Over 60     Over 90
+                    ----    -----        -------    ---------    ----      -------     -------     -  ------   -------     -------
+
+01R0557806 OPSES-MARIMOUTOU, JENNIFER     (786) 395-3713
+                  12/30/81  Prior Balance                                     0.00
+
+                   6/27/18  Invoice    297467                   7/27/18     166.88                                          166.88
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                  166.88                                          166.88
+
+
+01R0559093 LAWSON, CARLENE1               (786) 728-7184
+                  12/30/81  Prior Balance                                     0.00
+
+                   3/28/19  Deposit    319956-01                             89.40-                                          89.40-
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                   89.40-                                          89.40-
+
+
+02R0078215 LOCKETTE, SHIKIRA              (305) 300-5634
+                  12/30/81  Prior Balance                                     0.00
+Run Date 12/15/20                               A / R   T R I A L   B A L A N C E                                       Page    2
+Run Time  1:06 PM                                     IBILEY SCHOOL UNIFORMS                                            User  JOSHUA
+
+
+
+                    Tran    Tran         Invoice    Reference    Due
+                    Date    Descr        Number     Number       Date      Balance     Current     Over 30     Over 60     Over 90
+                    ----    -----        -------    ---------    ----      -------     -------     -  ------   -------     -------
+
+02R0078215 LOCKETTE, SHIKIRA              (305) 300-5634
+                  10/02/20  Deposit    354410-01                            171.03-                             171.03-
+
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                  171.03-                             171.03-
+
+
+02R0086294 BERMUDEZ, KARINA               (786) 763-7479
+                  12/30/81  Prior Balance                                     0.00
+
+                   8/04/18  Invoice    306560                   9/03/18      75.55                                           75.55
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                   75.55                                           75.55
+
+
+04B0052680 HARVEY, LAVERNE                (786) 210-5517
+                  12/30/81  Prior Balance                                     0.00
+
+                   5/02/19  Deposit    320713-01                             22.14-                                          22.14-
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                   22.14-                                          22.14-
+
+
+04R0574451 TENORIO, YANIA                 (786) 752-1731
+                  12/30/81  Prior Balance                                     0.00
+
+                   9/06/18  Deposit    313166-01                              4.27-                                           4.27-
+
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                    4.27-                                           4.27-
+
+
+04R0583760 VALENICA, PAULA                (786) 768-6042
+                  12/30/81  Prior Balance                                     0.00
+
+                   5/18/19  Deposit    321003-01                                                                             81.33-
+                   6/23/19  Invoice    321003-01  4/bin 8       7/23/19       0.01-                                          81.32
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                    0.01-                                            .01-
+
+
+04R0588921 BRONSON, DAWN                  (305) 968-4155
+                  12/30/81  Prior Balance                                     0.00
+
+                   9/08/20  Deposit    352166-01                                                                             47.54-Run Date 12/15/20                               A / R   T R I A L   B A L A N C E                                       Page    3
+Run Time  1:06 PM                                     IBILEY SCHOOL UNIFORMS                                            User  JOSHUA
+
+
+
+                    Tran    Tran         Invoice    Reference    Due
+                    Date    Descr        Number     Number       Date      Balance     Current     Over 30     Over 60     Over 90
+                    ----    -----        -------    ---------    ----      -------     -------     -  ------   -------     -------
+
+04R0588921 BRONSON, DAWN                  (305) 968-4155
+                   9/18/20  Invoice    352166-01  5so bin 5    10/18/20       7.74                               55.28
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                    7.74                               55.28       47.54-
+
+
+04R0591552 PADRON, SANDRA                 (786) 328-9931
+                  12/30/81  Prior Balance                                     0.00
+
+                   7/11/19  Deposit    324210-01                                                                             86.52-
+                   8/14/19  Invoice    324210-01  BIN 17        9/13/19       0.01-                                          86.51
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                    0.01-                                            .01-
+
+
+04R0593983 CARDENAS, DANI                 (786) 317-3173
+                  12/30/81  Prior Balance                                     0.00
+
+                   7/18/19  Deposit    325469-01                                                                             51.92-
+                   8/12/19  Invoice    325469-01  4/BIN17       9/11/19       0.01-                                          51.91
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                    0.01-                                            .01-
+
+
+04R0594070 RAFAEL, RAFAEL                 (305) 322- 982
+                  12/30/81  Prior Balance                                     0.00
+
+                   7/17/19  Deposit    325307-01                                                                             63.44-
+                   9/17/19  Invoice    325307-01  4/BIN1       10/17/19       0.01                                           63.45
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                    0.01                                             .01
+
+
+04R0598380 GUTIERREZ, JULIA               (786) 256-1656
+                  12/30/81  Prior Balance                                     0.00
+
+                   7/15/19  Deposit    324851-01                                                                             51.92-
+                   8/02/19  Invoice    324851-01  bin17         9/01/19       0.01-                                          51.91
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                    0.01-                                            .01-
+
+
+04R0598775 GONZALEZ, FRANCIS              (786) 667- 349
+                  12/30/81  Prior Balance                                     0.00
+Run Date 12/15/20                               A / R   T R I A L   B A L A N C E                                       Page    4
+Run Time  1:07 PM                                     IBILEY SCHOOL UNIFORMS                                            User  JOSHUA
+
+
+
+                    Tran    Tran         Invoice    Reference    Due
+                    Date    Descr        Number     Number       Date      Balance     Current     Over 30     Over 60     Over 90
+                    ----    -----        -------    ---------    ----      -------     -------     -  ------   -------     -------
+
+04R0598775 GONZALEZ, FRANCIS              (786) 667- 349
+                   9/29/18  Deposit    314601-01                              4.27-                                           4.27-
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                    4.27-                                           4.27-
+
+
+04R0602674 DIAZ, CYNTHIA                  (786) 298-7896
+                  12/30/81  Prior Balance                                     0.00
+
+                   6/28/19  Deposit    322940-01                                                                             51.92-
+                   7/17/19  Invoice    322940-01  bin17         8/16/19       0.01-                                          51.91
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                    0.01-                                            .01-
+
+
+05R0102421 MERCY, DAY CARE                (305) 595-2019
+                  12/30/81  Prior Balance                                     0.00
+
+                   8/30/18  Deposit    312699-01                                                                             95.25-
+                  10/01/18  Invoice    312699-01  Alpha-DM 9/5 10/31/18      22.55                                          117.80
+
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                   22.55                                           22.55
+
+
+05R0119789 BERNAL, MARGARITA              (305) 323-5280
+                  12/30/81  Prior Balance                                     0.00
+
+                  10/16/18  Deposit    304857-88                            162.57                                          162.57
+
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                  162.57                                          162.57
+
+
+05R0120071 GAYON, IVON                    (786) 797- 394
+                  12/30/81  Prior Balance                                     0.00
+
+                   3/08/18  Invoice    283211-02                4/07/18      27.81                                           27.81
+
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                   27.81                                           27.81
+
+
+05R0120280 LAZO, YANELYS                  (786) 520-8535
+                  12/30/81  Prior Balance                                     0.00
+Run Date 12/15/20                               A / R   T R I A L   B A L A N C E                                       Page    5
+Run Time  1:07 PM                                     IBILEY SCHOOL UNIFORMS                                            User  JOSHUA
+
+
+
+                    Tran    Tran         Invoice    Reference    Due
+                    Date    Descr        Number     Number       Date      Balance     Current     Over 30     Over 60     Over 90
+                    ----    -----        -------    ---------    ----      -------     -------     -  ------   -------     -------
+
+05R0120280 LAZO, YANELYS                  (786) 520-8535
+                   7/01/19  Deposit    323167-01                                                                             89.01-
+                   7/19/19  Invoice    323167-01                8/18/19                                                      23.54
+                   8/09/19  Invoice    323167-02  5 BIN FRONT   9/08/19       0.01-                                          65.46
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                    0.01-                                            .01-
+
+
+05R0120430 PEREZ, JESSICA                 (305) 609-6924
+                  12/30/81  Prior Balance                                     0.00
+
+                   8/14/19  Deposit    335366-01                                                                            188.18-
+                   8/23/19  Invoice    335366-01  PDTE 2 12/14  9/22/19                                                     144.54
+                   8/27/19  Invoice    335366-02  5 BIN JEN     9/26/19       0.01-                                          43.63
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                    0.01-                                            .01-
+
+
+05R0120899 OROPESA, ENAYSIS               (305) 397-3023
+                  12/30/81  Prior Balance                                     0.00
+
+                   7/13/19  Deposit    324552-01                                                                             46.12-
+                   8/14/19  Invoice    324552-01  5 BIN FRONT   9/13/19       0.02-                                          46.10
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                    0.02-                                            .02-
+
+
+05R0121088 SARKARATI, SYLVIA              (786) 399-6460
+                  12/30/81  Prior Balance                                     0.00
+
+                   4/25/19  Deposit    319565-81                             28.88                                           28.88
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                   28.88                                           28.88
+
+
+05R0123606 GATTAMORTA, ASHELY             (305) 972-2660
+                  12/30/81  Prior Balance                                     0.00
+
+                   3/08/18  Invoice    286507-02                4/07/18       7.69                                            7.69
+
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                    7.69                                            7.69
+Run Date 12/15/20                               A / R   T R I A L   B A L A N C E                                       Page    6
+Run Time  1:07 PM                                     IBILEY SCHOOL UNIFORMS                                            User  JOSHUA
+
+
+
+                    Tran    Tran         Invoice    Reference    Due
+                    Date    Descr        Number     Number       Date      Balance     Current     Over 30     Over 60     Over 90
+                    ----    -----        -------    ---------    ----      -------     -------     -  ------   -------     -------
+
+05R0124633 LEON, MARIA                    (305) 382-2211
+                  12/30/81  Prior Balance                                     0.00
+
+                   7/15/19  Deposit    324768-01                                                                             75.18-
+                   8/15/19  Invoice    324768-01  5 BIN FRONT   9/14/19       0.02-                                          75.16
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                    0.02-                                            .02-
+
+
+05R0124889 JARAMILLO, SANDRA              (786) 287-8586
+                  12/30/81  Prior Balance                                     0.00
+
+                   6/26/19  Deposit    322808-01                                                                            128.21-
+                   7/17/19  Invoice    322808-01  5 BIN 17      8/16/19       0.02-                                         128.19
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                    0.02-                                            .02-
+
+
+05R0125030 FRAGOSO, JANELLE               (786) 390-7150
+                  12/30/81  Prior Balance                                     0.00
+
+                   8/05/19  Deposit    331678-01                             17.99-                                          17.99-
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                   17.99-                                          17.99-
+
+
+05R0125592 ACOSTA, YADIANA                (786) 527-1426
+                  12/30/81  Prior Balance                                     0.00
+
+                   7/31/19  Deposit    329343-01                                                                             54.88-
+                   8/22/19  Invoice    329343-01  5 BIN FRONT   9/21/19       0.01                                           54.89
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                    0.01                                             .01
+
+
+05R0126137 MOLINA, DOROTHY                (305) 609-8139
+                  12/30/81  Prior Balance                                     0.00
+
+                   3/08/18  Invoice    288171-03                4/07/18      96.26                                           96.26
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                   96.26                                           96.26
+
+
+05R0126909 BURGU, JESSICA                 (786) 300-9395
+                  12/30/81  Prior Balance                                     0.00
+Run Date 12/15/20                               A / R   T R I A L   B A L A N C E                                       Page    7
+Run Time  1:07 PM                                     IBILEY SCHOOL UNIFORMS                                            User  JOSHUA
+
+
+
+                    Tran    Tran         Invoice    Reference    Due
+                    Date    Descr        Number     Number       Date      Balance     Current     Over 30     Over 60     Over 90
+                    ----    -----        -------    ---------    ----      -------     -------     -  ------   -------     -------
+
+05R0126909 BURGU, JESSICA                 (786) 300-9395
+                   3/08/18  Invoice    288877-02                4/07/18      25.03                                           25.03
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                   25.03                                           25.03
+
+
+05R0130030 MIRANDA, ANDRIA                (786) 402-5123
+                  12/30/81  Prior Balance                                     0.00
+
+                   7/24/20  Deposit    344865-01                                                                             57.68-
+                   8/05/20  Invoice    344865-01  5SO BIN 5     9/04/20       0.01-                                          57.67
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                    0.01-                                            .01-
+
+
+05R0132576 ALVAREZ, ANGELICA              (786) 208-5486
+                  12/30/81  Prior Balance                                     0.00
+
+                   9/05/19  Invoice    324272-91  5 BIN FRONT  10/05/19      35.62                                           35.62
+
+                   8/13/19  Deposit    335099-01                             34.66-                                          34.66-
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                    0.96                                             .96
+
+
+05R0133022 FUENTES, FRANCISCO             (786) 291-7783
+                  12/30/81  Prior Balance                                     0.00
+
+                   2/15/19  Deposit    318848-01                                                                            117.44-
+                   3/15/19  Invoice    318848-01  5 Bin 20      4/14/19       5.78                                          123.22
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                    5.78                                            5.78
+
+
+05R0133325 SANTANA, YERALDIN              (786) 712-4400
+                  12/30/81  Prior Balance                                     0.00
+
+                   7/13/19  Deposit    324468-01                                                                             64.36-
+                   7/26/19  Invoice    324468-01  07-18-19 PO#  8/25/19                                                      37.41
+                   8/09/19  Invoice    324468-02  5 BIN FRONT   9/08/19       0.01-                                          26.94
+
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                    0.01-                                            .01-
+Run Date 12/15/20                               A / R   T R I A L   B A L A N C E                                       Page    8
+Run Time  1:07 PM                                     IBILEY SCHOOL UNIFORMS                                            User  JOSHUA
+
+
+
+                    Tran    Tran         Invoice    Reference    Due
+                    Date    Descr        Number     Number       Date      Balance     Current     Over 30     Over 60     Over 90
+                    ----    -----        -------    ---------    ----      -------     -------     -  ------   -------     -------
+
+05R0133379 AGUILAR, ROSA                  (786) 384-2514
+                  12/30/81  Prior Balance                                     0.00
+
+                   7/30/19  Deposit    328946-01                                                                             34.22-
+                   9/04/19  Invoice    328946-01  5BINJEN COBR 10/04/19      17.11                                           51.33
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                   17.11                                           17.11
+
+
+05R0133602 BRAVO, OSCAR                   (305) 905-6289
+                  12/30/81  Prior Balance                                     0.00
+
+                   7/12/19  Deposit    324258-01                                                                             44.70-
+                   7/26/19  Invoice    324258-01  07-24-19 PO   8/25/19                                                      29.47
+                   8/12/19  Invoice    324258-02  5 BIN FRONT   9/11/19       0.01                                           15.24
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                    0.01                                             .01
+
+
+05R0134812 DOMINGUEZ, SASHA               (305) 775-6992
+                  12/30/81  Prior Balance                                     0.00
+
+                   6/08/20  Deposit    342945-01                                                                             65.21-
+                   6/11/20  Invoice    342945-01  *5 Bin 9      7/11/20       0.02                                           65.23
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                    0.02                                             .02
+
+
+05R0137123 CACERES, BIANCA                (305) 333-5967
+                  12/30/81  Prior Balance                                     0.00
+
+                   6/08/20  Deposit    342952-01                                                                             32.60-
+                   6/12/20  Invoice    342952-01  *5 Bin 8      7/12/20       0.01                                           32.61
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                    0.01                                             .01
+
+
+05R0137270 SOLIS, PATRICIA                (786) 200-2179
+                  12/30/81  Prior Balance                                     0.00
+
+                   6/10/20  Deposit    343008-01                                                                             54.35-
+                   6/13/20  Invoice    343008-01  *5 Bin 9      7/13/20       0.01                                           54.36
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                    0.01                                             .01
+Run Date 12/15/20                               A / R   T R I A L   B A L A N C E                                       Page    9
+Run Time  1:07 PM                                     IBILEY SCHOOL UNIFORMS                                            User  JOSHUA
+
+
+
+                    Tran    Tran         Invoice    Reference    Due
+                    Date    Descr        Number     Number       Date      Balance     Current     Over 30     Over 60     Over 90
+                    ----    -----        -------    ---------    ----      -------     -------     -  ------   -------     -------
+
+05R0137272 CRUZ, AYLEN                    (786) 518-9684
+                  12/30/81  Prior Balance                                     0.00
+
+                   6/10/20  Deposit    343010-01                                                                             32.60-
+                   6/12/20  Invoice    343010-01  *5 Bin 9      7/12/20       0.01                                           32.61
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                    0.01                                             .01
+
+
+05R0137438 GUZMAN, CELMA                  (786) 340-1855
+                  12/30/81  Prior Balance                                     0.00
+
+                   8/05/20  Deposit    345976-01                                                                             55.12-
+                   9/18/20  Invoice    345976-01  5e bin 5     10/18/20       0.01-                              55.11
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                    0.01-                              55.11       55.12-
+
+
+06R0525259 SANTIAGO, FRANKI               (813) 447-9426
+                  12/30/81  Prior Balance                                     0.00
+
+                   8/07/18  Invoice    307713                   9/06/18     166.49                                          166.49
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                  166.49                                          166.49
+
+
+06R0526440 YADAO, JULIE                   (863) 670-6665
+                  12/30/81  Prior Balance                                     0.00
+
+                   6/20/18  Deposit    297264-01                                                                             80.88-
+                   6/28/18  Invoice    297264-01                7/28/18       2.41                                           83.29
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                    2.41                                            2.41
+
+
+07R0551926 LADO, MARI                     (305) 748-3465
+                  12/30/81  Prior Balance                                     0.00
+
+                   7/11/19  Deposit    324196-01                             21.39-                                          21.39-
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                   21.39-                                          21.39-
+
+
+07R0552371 DIAZ, TANIA                    (813) 495-8138
+                  12/30/81  Prior Balance                                     0.00
+Run Date 12/15/20                               A / R   T R I A L   B A L A N C E                                       Page   10
+Run Time  1:07 PM                                     IBILEY SCHOOL UNIFORMS                                            User  JOSHUA
+
+
+
+                    Tran    Tran         Invoice    Reference    Due
+                    Date    Descr        Number     Number       Date      Balance     Current     Over 30     Over 60     Over 90
+                    ----    -----        -------    ---------    ----      -------     -------     -  ------   -------     -------
+
+07R0552371 DIAZ, TANIA                    (813) 495-8138
+                  10/10/19  Deposit    339213-01                             12.81-                                          12.81-
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                   12.81-                                          12.81-
+
+
+11R0008180 ALDAHONDO, ZAIDA               (407) 694-7471
+                  12/30/81  Prior Balance                                     0.00
+
+                  10/17/18  Credit Inv 304163-81               11/16/18      19.25-                                          19.25-
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                   19.25-                                          19.25-
+
+
+12R0007488 OLIVEROS, ADRIANA              (813) 408-9703
+                  12/30/81  Prior Balance                                     0.00
+
+                  10/01/20  Deposit    352956-81                             16.00                               16.00
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                   16.00                               16.00
+
+
+12R0008503 RIVERA, GLENDALIS              (407) 967-8955
+                  12/30/81  Prior Balance                                     0.00
+
+                   7/14/20  Invoice    344331                   8/13/20      35.06                                           35.06
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                   35.06                                           35.06
+
+
+13R0550350 SINGH, GIB                     (201) 328-7852
+                  12/30/81  Prior Balance                                     0.00
+
+                   7/25/18  Deposit    304019-01                             21.38-                                          21.38-
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                   21.38-                                          21.38-
+
+
+15R0006536 SEEDAT, SUSANA                 (407) 879-7837
+                  12/30/81  Prior Balance                                     0.00
+
+                   7/12/19  Invoice    324281                   8/11/19     127.85                                          127.85
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                  127.85                                          127.85
+Run Date 12/15/20                               A / R   T R I A L   B A L A N C E                                       Page   11
+Run Time  1:07 PM                                     IBILEY SCHOOL UNIFORMS                                            User  JOSHUA
+
+
+
+                    Tran    Tran         Invoice    Reference    Due
+                    Date    Descr        Number     Number       Date      Balance     Current     Over 30     Over 60     Over 90
+                    ----    -----        -------    ---------    ----      -------     -------     -  ------   -------     -------
+
+99B0052536 HARVEY, LAVERNE                (786) 210-5517
+                  12/30/81  Prior Balance                                     0.00
+
+                   8/07/18  Deposit    307719-01                              3.84-                                           3.84-
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                    3.84-                                           3.84-
+
+
+AR03BRIGCH BRIGHT CHILDREN DAYCARE   A/R  (305) 362-6689
+                  12/30/81  Prior Balance                                     0.00
+
+                   8/16/18  Invoice    310635                   9/15/18      12.83                                           12.83
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                   12.83                                           12.83
+
+
+AR04ROSEMO ROSEMONT ACADEMY ELEMENTARY
+                  12/30/81  Prior Balance                                     0.00
+
+                   8/24/18  Invoice    300292-91  TX Pack 8/24  9/23/18      60.93                                           60.93
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                   60.93                                           60.93
+
+
+AR04TRUECL TRUE NORTH CLASICAL ACADEMY
+                  12/30/81  Prior Balance                                     0.00
+
+                   9/24/18  Deposit    301921-81                             59.88                                           59.88
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                   59.88                                           59.88
+
+
+AR07AIRBAS AIR BASE K - 8                 (305) 258-3676
+                  12/30/81  Prior Balance                                     0.00
+
+                  11/28/18  Credit Inv 302053-81  Return/Excha 12/28/18                                                      18.17-
+                   8/22/18  Credit Inv 302053-91  FL 91 AIR BA  9/21/18                                                       4.27-
+                  10/15/18  Invoice    302053-92  fl pack 10/1 11/14/18       4.27-                                          18.17
+
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                    4.27-                                           4.27-
+
+
+AR99OURKIM OUR KIDS - MASTER          A/R (305) 455-8578
+                  12/30/81  Prior Balance                                     0.00
+Run Date 12/15/20                               A / R   T R I A L   B A L A N C E                                       Page   12
+Run Time  1:07 PM                                     IBILEY SCHOOL UNIFORMS                                            User  JOSHUA
+
+
+
+                    Tran    Tran         Invoice    Reference    Due
+                    Date    Descr        Number     Number       Date      Balance     Current     Over 30     Over 60     Over 90
+                    ----    -----        -------    ---------    ----      -------     -------     -  ------   -------     -------
+
+AR99OURKIM OUR KIDS - MASTER          A/R (305) 455-8578
+                   8/06/18  Invoice    307319                   9/05/18      52.50                                           52.50
+
+                   8/15/18  Invoice    310332                   9/14/18       0.04                                             .04
+
+                   8/17/18  Invoice    311032                   9/16/18       0.01                                             .01
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                   52.55                                           52.55
+
+
+AR99OURKLC OUR KIDS - LC                  (305) 455-2578
+                  12/30/81  Prior Balance                                     0.00
+
+                   8/03/18  Invoice    305398                   9/02/18     315.96                                          315.96
+
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                  315.96                                          315.96
+
+
+ARE1KIDVPK KID'S COMM COLLEGE-ORANGE VPK  (407) 982-2421
+                  12/30/81  Prior Balance                                     0.00
+
+                   5/16/18  Credit Inv 291875-80  Credit        6/15/18      21.99-                                          21.99-
+
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                   21.99-                                          21.99-
+
+
+CORP-CHAPM CHAPMAN PARTNERSHIP       CORP (305) 329-3003
+                  12/30/81  Prior Balance                                     0.00
+
+                   9/11/19  Invoice    336702     Chapman Vouc 10/11/19                                                    1000.08
+                   9/11/19  Payment    336702           65665                 0.08                                         1000.00-
+
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                    0.08                                             .08
+
+
+CORP-ENERC ENERCOM PROPERTIES LLC    CORP (202) 843-   2
+                  12/30/81  Prior Balance                                     0.00
+
+                   6/08/20  Payment      On Acct          767               404.00-                                         404.00-
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                  404.00-                                         404.00-
+Run Date 12/15/20                               A / R   T R I A L   B A L A N C E                                       Page   13
+Run Time  1:07 PM                                     IBILEY SCHOOL UNIFORMS                                            User  JOSHUA
+
+
+
+                    Tran    Tran         Invoice    Reference    Due
+                    Date    Descr        Number     Number       Date      Balance     Current     Over 30     Over 60     Over 90
+                    ----    -----        -------    ---------    ----      -------     -------     -  ------   -------     -------
+
+CORP-QORTE QOR TECHNOLOGY           CORP  (305) 858-5580
+                  12/30/81  Prior Balance                                     0.00
+
+                   6/10/20  Invoice    342948     In Store 4    7/10/20                                                     395.04
+                   6/10/20  Payment    342948          342948                 0.01-                                         395.05-
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                    0.01-                                            .01-
+
+
+CORPCADMAN ADULTS MANKIND ORGANIZATION    (305) 721-6971
+                  12/30/81  Prior Balance                                     0.00
+
+                   7/12/19  Payment      On Acct        41120                                                                35.92-
+                  11/25/19  Payment      On Acct        41800                36.80-                                            .88-
+
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                   36.80-                                          36.80-
+
+
+CORPCFAIR  THE FAIR                       (305) 223-7060
+                  12/30/81  Prior Balance                                     0.00
+
+                   4/03/19  Invoice    319965     Adver Trade   5/03/19                                                    7169.80
+                   3/28/19  Credit Inv 319965-80  Advertising   4/27/19    2830.20-                                       10000.00-
+
+                   4/02/19  Invoice    319967     FAIR-JACKETS  5/02/19     386.84                                          386.84
+
+                   4/17/19  Invoice    320200     THE FAIR-JAC  5/17/19      96.99                                           96.99
+
+                   9/09/19  Invoice    329313     EMBROIDERY 0 10/09/19     116.93                                          116.93
+
+                   9/06/19  Invoice    333142                  10/06/19     204.85                                          204.85
+
+                   9/27/19  Invoice    338670     THE FAIR  EM 10/27/19     127.69                                          127.69
+
+                   1/13/20  Invoice    340647     THE FAIR JAC  2/12/20      82.97                                           82.97
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                 1813.93-                                        1813.93-
+
+
+E1E0014641 PEREZ, CHRISTY                 (305) 790-5502
+                  12/30/81  Prior Balance                                     0.00
+
+                   8/07/20  Deposit    343460-81                             25.67                                           25.67
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                   25.67                                           25.67
+Run Date 12/15/20                               A / R   T R I A L   B A L A N C E                                       Page   14
+Run Time  1:07 PM                                     IBILEY SCHOOL UNIFORMS                                            User  JOSHUA
+
+
+
+                    Tran    Tran         Invoice    Reference    Due
+                    Date    Descr        Number     Number       Date      Balance     Current     Over 30     Over 60     Over 90
+                    ----    -----        -------    ---------    ----      -------     -------     -  ------   -------     -------
+
+E1E0015622 SERRANO, ASHLEY                (956) 893-4335
+                  12/30/81  Prior Balance                                     0.00
+
+                   8/02/19  Deposit    330060-01                             34.98-                                          34.98-
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                   34.98-                                          34.98-
+
+
+E1E0016112 GOODMAN, TOMEKA                (407) 878-9893
+                  12/30/81  Prior Balance                                     0.00
+
+                   8/08/19  Credit Inv 329924-02  TXT1          9/07/19       0.01-                                            .01-
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                    0.01-                                            .01-
+
+
+E1E0017888 CORTEZ, DIANA                  (786) 230-5106
+                  12/30/81  Prior Balance                                     0.00
+
+                   7/29/19  Deposit    328426-01                                                                            128.01-
+                   9/10/19  Invoice    328426-01  5 BIN JEN    10/10/19                                                      91.43
+                   2/10/20  Invoice    328426-02  5 BIN JEN     3/11/20       0.01-                                          36.57
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                    0.01-                                            .01-
+
+
+E1E0019121 SUERO, LORENA                  (305) 710-5016
+                  12/30/81  Prior Balance                                     0.00
+
+                   9/24/18  Deposit    298318-81                            181.79                                          181.79
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                  181.79                                          181.79
+
+
+E1E0021141 TROY, ELAINE                   (305) 978-7400
+                  12/30/81  Prior Balance                                     0.00
+
+                   9/13/18  Deposit    304879-81                             28.88                                           28.88
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                   28.88                                           28.88
+
+
+E1E0021428 JACOBSON, FARA                 (786) 385-3157
+                  12/30/81  Prior Balance                                     0.00
+Run Date 12/15/20                               A / R   T R I A L   B A L A N C E                                       Page   15
+Run Time  1:07 PM                                     IBILEY SCHOOL UNIFORMS                                            User  JOSHUA
+
+
+
+                    Tran    Tran         Invoice    Reference    Due
+                    Date    Descr        Number     Number       Date      Balance     Current     Over 30     Over 60     Over 90
+                    ----    -----        -------    ---------    ----      -------     -------     -  ------   -------     -------
+
+E1E0021428 JACOBSON, FARA                 (786) 385-3157
+                   9/15/20  Deposit    352690-01                            205.18-                                         205.18-
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                  205.18-                                         205.18-
+
+
+E1E0021511 TEMES, ALEXANDRA               (407) 760-6417
+                  12/30/81  Prior Balance                                     0.00
+
+                   9/12/18  Credit Inv 308294-81  RREC/BRIDGEP 10/12/18                                                     106.95-
+                  10/03/18  Invoice    308294-91  FL PACK 10/0 11/02/18       5.35-                                         101.60
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                    5.35-                                           5.35-
+
+
+E1E0022116 INFANTE BLANCO, CRISTIAN       (407) 694-2617
+                  12/30/81  Prior Balance                                     0.00
+
+                   9/22/18  Credit Inv 308251-81  Return/Excha 10/22/18                                                      42.78-
+                   9/25/18  Invoice    308251-91  FL PACK 9/25 10/25/18       2.14-                                          40.64
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                    2.14-                                           2.14-
+
+
+E1E0022740 JUNCO, LIZ                     (305) 773-2305
+                  12/30/81  Prior Balance                                     0.00
+
+                  10/03/18  Credit Inv 310777-82  Returned     11/02/18      22.44-                                          22.44-
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                   22.44-                                          22.44-
+
+
+E1E0022800 BRANCO, ROGER                  (786) 374-9457
+                  12/30/81  Prior Balance                                     0.00
+
+                   9/26/18  Deposit    311144-82                             44.91                                           44.91
+
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                   44.91                                           44.91
+
+
+E1E0022811 GALLIAN, GINA                  (305) 905-7344
+                  12/30/81  Prior Balance                                     0.00
+
+                   9/28/18  Credit Inv 311191-81               10/28/18                                                      38.50-Run Date 12/15/20                               A / R   T R I A L   B A L A N C E                                       Page   16
+Run Time  1:07 PM                                     IBILEY SCHOOL UNIFORMS                                            User  JOSHUA
+
+
+
+                    Tran    Tran         Invoice    Reference    Due
+                    Date    Descr        Number     Number       Date      Balance     Current     Over 30     Over 60     Over 90
+                    ----    -----        -------    ---------    ----      -------     -------     -  ------   -------     -------
+
+E1E0022811 GALLIAN, GINA                  (305) 905-7344
+                  10/04/18  Invoice    311191-91  FL Coral Ree 11/03/18       2.14                                           40.64
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                    2.14                                            2.14
+
+
+E1E0023091 PEHLIVANLAR, MIA               (415) 902-1498
+                  12/30/81  Prior Balance                                     0.00
+
+                  11/07/18  Deposit    312418-81                             57.75                                           57.75
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                   57.75                                           57.75
+
+
+E1E0023606 GONZALEZ, CARLOS               (305) 215-6787
+                  12/30/81  Prior Balance                                     0.00
+
+                   3/01/19  Deposit    315938-81                             12.94                                           12.94
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                   12.94                                           12.94
+
+
+E1E0023875 BROWN, KERRI                   (813) 394-9354
+                  12/30/81  Prior Balance                                     0.00
+
+                   2/28/19  Deposit    317783-81                             29.94                                           29.94
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                   29.94                                           29.94
+
+
+E1E0024098 MOORE, DARCIE                  (786) 246-4961
+                  12/30/81  Prior Balance                                     0.00
+
+                   4/01/19  Deposit    319062-81                             22.45                                           22.45
+
+                   2/04/20  Deposit    340595-81                             21.39                                           21.39
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                   43.84                                           43.84
+
+
+E1E0024228 BLANCO, CECILIA                (305) 458-3800
+                  12/30/81  Prior Balance                                     0.00
+
+                   7/13/19  Deposit    320319-81                            101.38                                          101.38
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                  101.38                                          101.38
+Run Date 12/15/20                               A / R   T R I A L   B A L A N C E                                       Page   17
+Run Time  1:07 PM                                     IBILEY SCHOOL UNIFORMS                                            User  JOSHUA
+
+
+
+                    Tran    Tran         Invoice    Reference    Due
+                    Date    Descr        Number     Number       Date      Balance     Current     Over 30     Over 60     Over 90
+                    ----    -----        -------    ---------    ----      -------     -------     -  ------   -------     -------
+
+E1E0024463 POILLEUX LOPEZ, SIENNA         (646) 478-6100
+                  12/30/81  Prior Balance                                     0.00
+
+                   8/07/19  Deposit    321754-81                             40.40                                           40.40
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                   40.40                                           40.40
+
+
+E1E0024636 CASTILLO, SUSANA               (305) 989-4598
+                  12/30/81  Prior Balance                                     0.00
+
+                   7/20/19  Deposit    325983-01                                                                            155.93-
+                   7/27/19  Invoice    325983-01  5 BIN FRONT   8/26/19       0.01-                                         155.92
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                    0.01-                                            .01-
+
+
+E1E0025290 MONSERRATTE, ANDREINA          (786) 985-7995
+                  12/30/81  Prior Balance                                     0.00
+
+                   8/07/19  Credit Inv 325044-91  Order Cancel  9/06/19                                                        .01-
+                   8/19/19  Invoice    325044-92  ENTREGAGO BY  9/18/19                                                      43.50
+                   8/26/19  Invoice    325044-93  ENTREGAGO BY  9/25/19     115.11                                           71.62
+
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                  115.11                                          115.11
+
+
+E1E0025372 BLAKE, JMEEKA                  (912) 323-3174
+                  12/30/81  Prior Balance                                     0.00
+
+                   7/29/19  Deposit    325355-81                             26.70                                           26.70
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                   26.70                                           26.70
+
+
+E1E0025603 ZHENG, MEI                     (917) 907-3440
+                  12/30/81  Prior Balance                                     0.00
+
+                   8/12/19  Deposit    326162-91                             16.32                                           16.32
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                   16.32                                           16.32
+Run Date 12/15/20                               A / R   T R I A L   B A L A N C E                                       Page   18
+Run Time  1:07 PM                                     IBILEY SCHOOL UNIFORMS                                            User  JOSHUA
+
+
+
+                    Tran    Tran         Invoice    Reference    Due
+                    Date    Descr        Number     Number       Date      Balance     Current     Over 30     Over 60     Over 90
+                    ----    -----        -------    ---------    ----      -------     -------     -  ------   -------     -------
+
+E1E0025810 MATHEW JOSEPH, NITHA           (832) 603-7590
+                  12/30/81  Prior Balance                                     0.00
+
+                   9/17/19  Deposit    326970-81                             12.99                                           12.99
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                   12.99                                           12.99
+
+
+E1E0026507 TORRES, MARILYN                (407) 953-7477
+                  12/30/81  Prior Balance                                     0.00
+
+                   8/05/19  Deposit    329387-81                             69.18                                           69.18
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                   69.18                                           69.18
+
+
+E1E0027588 SALAZAR, SANDRA                (786) 385-1474
+                  12/30/81  Prior Balance                                     0.00
+
+                   8/21/19  Deposit    332602-81                                                                             41.90
+                   8/30/19  Deposit    332602-91                             83.80                                           41.90
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                   83.80                                           83.80
+
+
+E1E0028845 QUEREAU, KRISTY                (305) 458-2252
+                  12/30/81  Prior Balance                                     0.00
+
+                   8/30/19  Credit Inv 337139-02  order cancel  9/29/19       0.01-                                            .01-
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                    0.01-                                            .01-
+
+
+E1E0029412 BURSTEIN, JEFFREY              (305) 934-9418
+                  12/30/81  Prior Balance                                     0.00
+
+                  11/27/19  Deposit    339443-81                             69.18                                           69.18
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                   69.18                                           69.18
+
+
+E1E0030832 TORRES, JENIFFER               (321) 948-3644
+                  12/30/81  Prior Balance                                     0.00
+
+                   9/12/20  Deposit    344146-81                            106.68                                          106.68
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                  106.68                                          106.68
+Run Date 12/15/20                               A / R   T R I A L   B A L A N C E                                       Page   19
+Run Time  1:07 PM                                     IBILEY SCHOOL UNIFORMS                                            User  JOSHUA
+
+
+
+                    Tran    Tran         Invoice    Reference    Due
+                    Date    Descr        Number     Number       Date      Balance     Current     Over 30     Over 60     Over 90
+                    ----    -----        -------    ---------    ----      -------     -------     -  ------   -------     -------
+
+E1E0031162 OHARRIZ, OSMAY                 (786) 270-8817
+                  12/30/81  Prior Balance                                     0.00
+
+                   8/15/20  Deposit    344782-81                             23.53                                           23.53
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                   23.53                                           23.53
+
+
+E1E0031192 COLUCCI, SILVIA                (305) 710-3099
+                  12/30/81  Prior Balance                                     0.00
+
+                  10/07/20  Deposit    344824-91                             11.50                               11.50
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                   11.50                               11.50
+
+
+E1E0031949 SMITH, AILEEN                  (787) 646- 944
+                  12/30/81  Prior Balance                                     0.00
+
+                   9/16/20  Deposit    346065-81                             99.30                               99.30
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                   99.30                               99.30
+
+
+E1E0032407 PITEIRA, MILDRED               (305) 608-1145
+                  12/30/81  Prior Balance                                     0.00
+
+                   9/23/20  Deposit    346834-81                            104.29                              104.29
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                  104.29                              104.29
+
+
+E1E0033455 GARICA, JUAN                   (786) 287-9389
+                  12/30/81  Prior Balance                                     0.00
+
+                   9/29/20  Deposit    348560-81                            106.47                              106.47
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                  106.47                              106.47
+
+
+E1E0033904 LOPEZ, LISA                    (813) 361-3087
+                  12/30/81  Prior Balance                                     0.00
+
+                   9/14/20  Invoice    349362-91  Ship by AM    9/14/20      21.35                                           21.35
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                   21.35                                           21.35
+Run Date 12/15/20                               A / R   T R I A L   B A L A N C E                                       Page   20
+Run Time  1:07 PM                                     IBILEY SCHOOL UNIFORMS                                            User  JOSHUA
+
+
+
+                    Tran    Tran         Invoice    Reference    Due
+                    Date    Descr        Number     Number       Date      Balance     Current     Over 30     Over 60     Over 90
+                    ----    -----        -------    ---------    ----      -------     -------     -  ------   -------     -------
+
+GB-VOLUSIA VOLUSIA COUNTY SCHOOL          (386) 734-7190
+                  12/30/81  Prior Balance                                     0.00
+
+                   7/07/17  Payment      On Acct       358891                                                               316.80-
+                   6/11/19  Payment      On Acct       320138                                                               456.38
+                   6/11/19  Payment      On Acct       320139                                                               456.38-
+                   9/05/20  Payment      On Acct       351774               664.80-                                         348.00-
+
+                   9/07/20  Invoice    351774     VOLUSIA-DROP 10/07/20     348.00                                          348.00
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                  316.80-                                         316.80-
+
+
+INT-MAINLA MAINLAND PREPARATORY CLASSICAL (409) 934-9100
+                  12/30/81  Prior Balance                                     0.00
+
+                   4/27/20  Payment      On Acct      8032018                 0.09-                                            .09-
+
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                    0.09-                                            .09-
+
+
+MDCPS-FASC FASCO                          (305) 884-2044
+                  12/30/81  Prior Balance                                     0.00
+
+                   6/20/19  Invoice    321973                   7/20/19      10.00                                           10.00
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                   10.00                                           10.00
+
+
+PTA-1041   CORAL REEF ES                  (305) 235-1464
+                  12/30/81  Prior Balance                                     0.00
+
+                   3/09/20  Invoice    342039                   4/08/20      70.41                                           70.41
+
+                   3/09/20  Invoice    342040                   4/08/20      17.07                                           17.07
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                   87.48                                           87.48
+
+
+PTA-4921   SEMINOLE ELEMENTARY            (305) 261-7071
+                  12/30/81  Prior Balance                                     0.00
+
+                   5/10/18  Payment      On Acct         1772                 1.09-                                           1.09-
+
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                    1.09-                                           1.09-
+Run Date 12/15/20                               A / R   T R I A L   B A L A N C E                                       Page   21
+Run Time  1:07 PM                                     IBILEY SCHOOL UNIFORMS                                            User  JOSHUA
+
+
+
+                    Tran    Tran         Invoice    Reference    Due
+                    Date    Descr        Number     Number       Date      Balance     Current     Over 30     Over 60     Over 90
+                    ----    -----        -------    ---------    ----      -------     -------     -  ------   -------     -------
+
+PTA-7101   CORAL REEF SHS - PTSA          (305) 333- 164
+                  12/30/81  Prior Balance                                     0.00
+
+                   6/08/17  Payment      On Acct                                                                           5000.00-
+                   6/30/17  Payment      On Acct            1                                                              5000.00-
+                   6/30/17  Payment      On Acct            2             12185.85-                                        2185.85-
+
+                   5/04/17  Invoice    275237     consignment  10/31/17    4875.00                                         4875.00
+
+                   5/15/17  Invoice    275325                  11/11/17    3137.50                                         3137.50
+
+                   5/16/17  Invoice    275332                  11/12/17                                                    3885.00
+                   7/03/17  Credit Inv 275332-80                8/02/17     500.90-                                        4385.90-
+
+                   5/17/17  Invoice    275339                  11/13/17                                                    5660.00
+                   7/03/17  Credit Inv 275339-80                8/02/17    4662.31                                          997.69-
+
+                   8/31/17  Invoice    290797                   9/30/17                                                    7392.10
+                   3/14/18  Payment    290797            1002                                                              6890.27-
+                   3/22/18  Credit Mem 290797           13572                11.94                                          489.89-
+
+                   2/14/19  Invoice    318799     Consignment   8/13/19    1045.00                                         1045.00
+
+                   5/08/19  Invoice    320684     Cons.order 2 11/04/19    8185.00                                         8185.00
+
+                   5/20/19  Invoice    321021     CONSIGNMENT#  6/19/19    8605.00                                         8605.00
+
+                   8/10/19  Invoice    333889     CONSIGNMENT#  2/06/20    2470.00                                         2470.00
+
+                   8/13/19  Invoice    334913     CONSIGNMENT#  2/09/20                                                    1750.00
+                   9/10/19  Credit Inv 334913-80  RETURN 9/9    3/08/20    1140.00                                          610.00-
+
+                   8/14/19  Invoice    335402     PATCHES       2/10/20      50.00                                           50.00
+
+                   8/15/19  Invoice    335683     CONSIGNMENT   2/11/20     780.00                                          780.00
+
+                   9/09/19  Invoice    338084     CONSIGNMENT   3/07/20     142.00                                          142.00
+
+                   9/20/19  Credit Inv 338587     318799 CONSG  3/18/20    1045.00-                                        1045.00-
+
+                   9/20/19  Credit Inv 338588     320684 CONSG  3/18/20    8185.00-                                        8185.00-
+
+                   9/20/19  Credit Inv 338589     321021 CONSG  3/18/20    8605.00-                                        8605.00-
+
+                   9/20/19  Credit Inv 338590     338889 CONSG  3/18/20    2470.00-                                        2470.00-Run Date 12/15/20                               A / R   T R I A L   B A L A N C E                                       Page   22
+Run Time  1:07 PM                                     IBILEY SCHOOL UNIFORMS                                            User  JOSHUA
+
+
+
+                    Tran    Tran         Invoice    Reference    Due
+                    Date    Descr        Number     Number       Date      Balance     Current     Over 30     Over 60     Over 90
+                    ----    -----        -------    ---------    ----      -------     -------     -  ------   -------     -------
+
+PTA-7101   CORAL REEF SHS - PTSA          (305) 333- 164
+
+                   9/20/19  Credit Inv 338591     334913 CONSG  3/18/20    1750.00-                                        1750.00-
+
+                   9/20/19  Credit Inv 338592     335402 CONSG  3/18/20      50.00-                                          50.00-
+
+                   9/20/19  Credit Inv 338593     335683 CONSG  3/18/20     780.00-                                         780.00-
+
+                   9/20/19  Credit Inv 338594     338084 CONSG  3/18/20     142.00-                                         142.00-
+
+                   9/20/19  Invoice    338595     334913-80 RE  3/18/20     610.00                                          610.00
+
+                   9/20/19  Invoice    338602     335683 CONSG  3/18/20                                                     834.60
+                   9/24/19  Payment    338602            1099               500.76                                          333.84-
+
+                   9/20/19  Invoice    338603     338084 CONSG  3/18/20     151.94                                          151.94
+
+                   9/20/19  Credit Inv 338604     334913-80 RE  3/18/20     652.70-                                         652.70-
+
+                   8/17/20  Invoice    341684                   2/13/21    7245.00                                         7245.00
+
+                   8/17/20  Invoice    348159     CONSIGN-PATC  2/13/21     500.00                                          500.00
+
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                 7745.00                                         7745.00
+
+
+RMAEC-8911 ROBERT MORGAN EDUC.CENTER-STAF (305) 253-9920
+                  12/30/81  Prior Balance                                     0.00
+
+                   7/05/18  Payment      On Acct     18911350                                                                 7.00-
+                   7/13/20  Payment      On Acct   1737101876               175.92-                                         168.92-
+
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                  175.92-                                         175.92-
+
+
+S20000     ADA MERRIT SCHOOL-STAFF        (305) 326- 791
+                  12/30/81  Prior Balance                                     0.00
+
+                   7/30/18  Payment      On Acct       303023              2191.70-                                        2191.70-
+
+                   8/16/18  Invoice    303023     PO SM-DM 7/2  9/15/18    2190.50                                         2190.50
+
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                    1.20-                                           1.20-
+Run Date 12/15/20                               A / R   T R I A L   B A L A N C E                                       Page   23
+Run Time  1:07 PM                                     IBILEY SCHOOL UNIFORMS                                            User  JOSHUA
+
+
+
+                    Tran    Tran         Invoice    Reference    Due
+                    Date    Descr        Number     Number       Date      Balance     Current     Over 30     Over 60     Over 90
+                    ----    -----        -------    ---------    ----      -------     -------     -  ------   -------     -------
+
+S20008     COCONUT GROVE ELEM-STAFF       (305) 445-7876
+                  12/30/81  Prior Balance                                     0.00
+
+                   8/20/20  Payment      On Acct       347836               580.50-                                         580.50-
+
+                   9/01/20  Invoice    347836     Pick up in s 10/01/20     580.50                                          580.50
+
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                    0.00
+
+
+S20029     LORAH PARK ELEMENTARY-STAFF    (305) 633-1424
+                  12/30/81  Prior Balance                                     0.00
+
+                  10/15/20  Invoice    355386     2-Pick up in 11/14/20      45.90                               45.90
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                   45.90                               45.90
+
+
+S20033     MIAMI CHILDRENS MUSEUM-STAFF   (305) 323-4667
+                  12/30/81  Prior Balance                                     0.00
+
+                  10/19/18  Payment      On Acct         7177               419.81-                                         419.81-
+
+                  12/21/18  Invoice    317391     BO-MIAMI CHI  1/20/19     281.40                                          281.40
+
+                   1/23/19  Invoice    317827     BO-MCMC DTG   2/22/19     443.50                                          443.50
+
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                  305.09                                          305.09
+
+
+S300071    SPANISH LAKE ELEMENTARY STAFF  (305) 816- 300
+                  12/30/81  Prior Balance                                     0.00
+
+                  12/16/16  Payment      On Acct        12191               499.55-                                         499.55-
+
+                   8/24/16  Invoice    269127                   9/23/16                                                    1004.29
+                   2/23/18  Credit Mem 269127           13554               499.55                                          504.74-
+
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                    0.00
+Run Date 12/15/20                               A / R   T R I A L   B A L A N C E                                       Page   24
+Run Time  1:07 PM                                     IBILEY SCHOOL UNIFORMS                                            User  JOSHUA
+
+
+
+                    Tran    Tran         Invoice    Reference    Due
+                    Date    Descr        Number     Number       Date      Balance     Current     Over 30     Over 60     Over 90
+                    ----    -----        -------    ---------    ----      -------     -------     -  ------   -------     -------
+
+S40013     CLAUDE PEPPER ELEM-STAFF       (305) 386-5244
+                  12/30/81  Prior Balance                                     0.00
+
+                  12/20/18  Invoice    317338     BO-CLAUDE P   1/19/19                                                    1234.09
+                   5/20/19  Payment    317338             898               248.40-                                        1482.49-
+
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                  248.40-                                         248.40-
+
+
+S40029     JACK D.GORDON ELEM-STAFF       (305) 234-4805
+                  12/30/81  Prior Balance                                     0.00
+
+                   8/23/19  Payment      On Acct         1094                                                                93.04-
+                   8/23/19  Payment      On Acct          123                                                                26.26-
+                   8/23/19  Payment      On Acct         1352                                                                55.60-
+                   8/23/19  Payment      On Acct          321                                                                 4.00-
+                   8/23/19  Payment      On Acct         5914                                                                49.11-
+                   8/23/19  Payment      On Acct       336966                                                                40.81-
+                   8/23/19  Payment      On Acct       336967               355.42-                                          86.60-
+
+                  10/09/19  Invoice    336965     JACK.D.G.-CS 11/08/19      93.04                                           93.04
+
+                   8/29/19  Invoice    336966     JACK.D.G.-KL  9/28/19      40.81                                           40.81
+
+                  10/08/19  Invoice    336967     JACK.D.G.-AP 11/07/19      86.60                                           86.60
+
+                   9/03/19  Invoice    336968      JACK.D.G.-L 10/03/19      26.26                                           26.26
+
+                   9/09/19  Invoice    337123     JACK.D.G.-LL 10/09/19      49.11                                           49.11
+
+                   8/30/19  Invoice    337126     JACK.D.G-MA-  9/29/19      55.60                                           55.60
+
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                    4.00-                                           4.00-
+
+
+S40033     KENWOOD K-8 CENTER-STAFF       (305) 271-5061
+                  12/30/81  Prior Balance                                     0.00
+
+                  10/03/18  Invoice    309694-01  SENT DRIVER  11/02/18                                                      11.98
+                  10/03/18  Credit Inv 309694-80  Returned     11/02/18                                                      35.94-
+                  10/04/18  Invoice    309694-90  Sent with Dr 11/03/18      11.98                                           35.94
+
+                  10/15/18  Invoice    314848     BO/KENWOOD E 11/14/18      33.94                                           33.94Run Date 12/15/20                               A / R   T R I A L   B A L A N C E                                       Page   25
+Run Time  1:07 PM                                     IBILEY SCHOOL UNIFORMS                                            User  JOSHUA
+
+
+
+                    Tran    Tran         Invoice    Reference    Due
+                    Date    Descr        Number     Number       Date      Balance     Current     Over 30     Over 60     Over 90
+                    ----    -----        -------    ---------    ----      -------     -------     -  ------   -------     -------
+
+S40033     KENWOOD K-8 CENTER-STAFF       (305) 271-5061
+
+                  10/01/19  Invoice    338177-01  KENWOOD POLO 10/31/19      16.00                                           16.00
+
+                   2/14/20  Invoice    341542     REP- 341266   3/15/20      21.98                                           21.98
+
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                   83.90                                           83.90
+
+
+S40049     PINE VILLA ELEMENTARY-STAFF    (305) 258-5366
+                  12/30/81  Prior Balance                                     0.00
+
+                   9/01/20  Invoice    349715     Pick up at s 10/01/20     154.74                                          154.74
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                  154.74                                          154.74
+
+
+STAF-4441  HOWARD D. MCMILLAN      STAFF
+                  12/30/81  Prior Balance                                     0.00
+
+                   1/24/20  Payment      On Acct     44100980                 8.05-                                           8.05-
+
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                    8.05-                                           8.05-
+
+
+STAF-BRIVI BRIDGEPREP AC-VILLAGE GREEN    (305) 643-4833
+                  12/30/81  Prior Balance                                     0.00
+
+                   7/29/20  Payment      On Acct        11803              5293.30-                                        5293.30-
+
+                   1/16/20  Invoice    341048     BPA VG- 3393  2/15/20      57.98                                           57.98
+
+                   8/17/20  Invoice    345184     BPVG-REU+BFE  9/16/20    5293.30                                         5293.30
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                   57.98                                           57.98
+
+
+STAF-COUNT COUNTRYSIDE MONTESSORI STAFF   (813) 996- 991
+                  12/30/81  Prior Balance                                     0.00
+
+                  10/02/19  Payment      On Acct          123                 2.61-                                           2.61-
+
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                    2.61-                                           2.61-
+Run Date 12/15/20                               A / R   T R I A L   B A L A N C E                                       Page   26
+Run Time  1:07 PM                                     IBILEY SCHOOL UNIFORMS                                            User  JOSHUA
+
+
+
+                    Tran    Tran         Invoice    Reference    Due
+                    Date    Descr        Number     Number       Date      Balance     Current     Over 30     Over 60     Over 90
+                    ----    -----        -------    ---------    ----      -------     -------     -  ------   -------     -------
+
+STAF-DOWNT DOWNTOWN DORAL CHARTER ES  STA (305) 569-2223
+                  12/30/81  Prior Balance                                     0.00
+
+                   2/21/19  Payment      On Acct     20647070                                                                 3.61-
+                   5/22/19  Payment      On Acct     32402985                                                                10.87-
+                   8/20/19  Payment      On Acct     42302027                                                                62.95-
+                   9/09/19  Payment      On Acct     45207068                                                                25.00-
+                   7/03/20  Payment      On Acct   2596075975                                                              1685.00-
+                   8/25/20  Debit Memo   On Acct        13854               102.43-                                        1685.00
+
+                   1/21/19  Invoice    317833     BO-DDCS ELEM  2/20/19                                                      89.17
+                   2/11/19  Payment    317833        19654833                 4.20                                           84.97-
+
+                   2/13/19  Invoice    318536     BO-DDCS UPPE  3/15/19     174.73                                          174.73
+
+                   4/04/19  Invoice    320124     319835        5/04/19      17.98                                           17.98
+
+                   8/20/19  Invoice    335081     EMB-8/14DDCE  9/19/19      81.85                                           81.85
+
+                   8/17/20  Credit Inv 344245                   9/16/20       6.00-                                           6.00-
+
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                  170.33                                          170.33
+
+
+STAFF-3100 MATER ACADEMY EAST ES    STAFF (305) 324-4667
+                  12/30/81  Prior Balance                                     0.00
+
+                   2/10/20  Payment      On Acct         1592                 0.24-                                            .24-
+
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                    0.24-                                            .24-
+
+
+STAFF-ALPH ALPHA CHARTER OF EXCELLE STAFF (954) 809-4790
+                  12/30/81  Prior Balance                                     0.00
+
+                   7/13/20  Payment      On Acct     44553730                 8.33-                                           8.33-
+
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                    8.33-                                           8.33-
+
+
+STAFF-ATLA ATLANTIC MONTESSORI      STAFF (954) 815-4739
+                  12/30/81  Prior Balance                                     0.00
+Run Date 12/15/20                               A / R   T R I A L   B A L A N C E                                       Page   27
+Run Time  1:07 PM                                     IBILEY SCHOOL UNIFORMS                                            User  JOSHUA
+
+
+
+                    Tran    Tran         Invoice    Reference    Due
+                    Date    Descr        Number     Number       Date      Balance     Current     Over 30     Over 60     Over 90
+                    ----    -----        -------    ---------    ----      -------     -------     -  ------   -------     -------
+
+STAFF-ATLA ATLANTIC MONTESSORI      STAFF (954) 815-4739
+                  10/02/18  Payment      On Acct     61968688                                                              1810.00-
+                   4/30/19  Payment      On Acct         6309              1846.00-                                          36.00-
+
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                 1846.00-                                        1846.00-
+
+
+STAFF-BPAR BRIDGEPREP ACADEMY RIVERVIEW S (813) 370-1910
+                  12/30/81  Prior Balance                                     0.00
+
+                   7/29/20  Payment      On Acct        10857              2452.80-                                        2452.80-
+
+                   7/29/20  Invoice    345205     BPRIVER-BFE9  8/28/20                                                     462.00
+                   7/31/20  Invoice    345205-02  BPRIVER-BFE9  8/30/20    2452.80                                         1990.80
+
+                   9/22/20  Invoice    351275     Ship by AM   10/22/20     108.85                              108.85
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                  108.85                              108.85
+
+
+STAFF-BPAT BRIDGEPREP SOUTH TAMPA   STAFF (813) 258-2652
+                  12/30/81  Prior Balance                                     0.00
+
+                  12/18/18  Invoice    317339     STAFFORDER    1/17/19      77.18                                           77.18
+
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                   77.18                                           77.18
+
+
+STAFF-BPBR BRIDGEPREP AC. OF BROWARD K-8
+                  12/30/81  Prior Balance                                     0.00
+
+                   9/21/20  Payment      On Acct        10759               436.20-                             436.20-
+
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                  436.20-                             436.20-
+
+
+STAFF-BTAM BRIDGEPREP OF TAMARAC    STAFF (954) 309-9365
+                  12/30/81  Prior Balance                                     0.00
+
+                   2/06/19  Invoice    318490     BO-BPA TAMAR  3/08/19      77.97                                           77.97
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                   77.97                                           77.97
+Run Date 12/15/20                               A / R   T R I A L   B A L A N C E                                       Page   28
+Run Time  1:07 PM                                     IBILEY SCHOOL UNIFORMS                                            User  JOSHUA
+
+
+
+                    Tran    Tran         Invoice    Reference    Due
+                    Date    Descr        Number     Number       Date      Balance     Current     Over 30     Over 60     Over 90
+                    ----    -----        -------    ---------    ----      -------     -------     -  ------   -------     -------
+
+STAFF-CENT CENTRAL BAPTIST CHRISTIAN      (813) 689-6133
+                  12/30/81  Prior Balance                                     0.00
+
+                   4/02/18  Payment      On Acct        35892                                                                23.47-
+                  10/13/20  Payment      On Acct       355581                27.29-                               3.82-
+
+                   4/25/18  Invoice    295957                   5/25/18                                                     248.10
+                   5/25/18  Payment    295957           36005                                                               133.92-
+                   6/28/18  Payment    295957           36090                16.23                                           97.95-
+
+                   9/10/20  Invoice    351320     Ship by AM   10/10/20     129.70                                          129.70
+
+                  10/13/20  Payment    355580          355580               105.00-                             105.00-
+
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                   13.64                              108.82-     122.46
+
+
+STAFF-COVE COVENANT CHRISTIAN ACADEMY STA (956) 686-7866
+                  12/30/81  Prior Balance                                     0.00
+
+                   8/01/18  Invoice    305185     Sent 08/03/1  8/31/18                                                    3870.00
+                   8/23/18  Credit Inv 305185-80  NapmatInclui  9/22/18                                                    3870.00-
+                   8/16/18  Invoice    305185-90  NAPMAT SENT   9/15/18                                                    3393.20
+                   8/23/18  Payment    305185-90       305185               256.80-                                        3650.00-
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                  256.80-                                         256.80-
+
+
+STAFF-FALB FALLBROOK ACADEMY    STAFF     (281) 880-1360
+                  12/30/81  Prior Balance                                     0.00
+
+                  10/25/18  Invoice    315720     TX/FALL PACK 11/24/18      67.97                                           67.97
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                   67.97                                           67.97
+
+
+STAFF-HIMI HIALEAH-MIAMI LAKES SHS  STAFF
+                  12/30/81  Prior Balance                                     0.00
+
+                  10/09/20  Invoice    355411     ZX-171310158 11/08/20     114.95                              114.95
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                  114.95                              114.95
+Run Date 12/15/20                               A / R   T R I A L   B A L A N C E                                       Page   29
+Run Time  1:07 PM                                     IBILEY SCHOOL UNIFORMS                                            User  JOSHUA
+
+
+
+                    Tran    Tran         Invoice    Reference    Due
+                    Date    Descr        Number     Number       Date      Balance     Current     Over 30     Over 60     Over 90
+                    ----    -----        -------    ---------    ----      -------     -------     -  ------   -------     -------
+
+STAFF-HOLY HOLY CROSS LUTHERAN SCHOOL STA (305) 625-8050
+                  12/30/81  Prior Balance                                     0.00
+
+                  10/15/18  Payment      On Acct         8637               281.42-                                         281.42-
+
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                  281.42-                                         281.42-
+
+
+STAFF-IMAT IMATER ELEMENTARY        STAFF (305) 884-6320
+                  12/30/81  Prior Balance                                     0.00
+
+                  10/19/18  Payment      On Acct       307708                                                                  .02-
+                  10/19/18  Payment      On Acct       307716                                                                  .04-
+                  10/19/18  Payment      On Acct       307773                                                                  .04-
+                  10/19/18  Payment      On Acct       314264                                                                  .02-
+                   1/16/20  Payment      On Acct            9                                                                  .04-
+                   2/12/20  Payment      On Acct       341431                 0.20-                                            .04-
+
+                  10/01/18  Invoice    314339     SEND WITH DR 10/31/18      33.99                                           33.99
+
+                   2/11/20  Credit Inv 341431-80  Wrong style   3/12/20      50.97-                                          50.97-
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                   17.18-                                          17.18-
+
+
+STAFF-JANM JAN MANN EDUCATIONAL CENTER ST (305) 625- 855
+                  12/30/81  Prior Balance                                     0.00
+
+                   2/28/20  Invoice    341711     JAN MANN.-SE  3/29/20                                                      68.97
+                   3/04/20  Invoice    341711-80  change of si  4/03/20                                                      68.97
+                   3/30/20  Credit Inv 341711-81                4/29/20      68.97                                           68.97-
+
+                   3/10/20  Invoice    341953     JAN MANN-S50  4/09/20      80.97                                           80.97
+
+                   3/10/20  Invoice    341955     JAN MANN-SP2  4/09/20      68.97                                           68.97
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                  218.91                                          218.91
+
+
+STAFF-LAKE MIAMI LAKES EDUCATIONAL C.STAF (305) 557-1100
+                  12/30/81  Prior Balance                                     0.00
+
+                   5/05/20  Invoice    342168                   6/04/20      90.94                                           90.94
+
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                   90.94                                           90.94
+Run Date 12/15/20                               A / R   T R I A L   B A L A N C E                                       Page   30
+Run Time  1:07 PM                                     IBILEY SCHOOL UNIFORMS                                            User  JOSHUA
+
+
+
+                    Tran    Tran         Invoice    Reference    Due
+                    Date    Descr        Number     Number       Date      Balance     Current     Over 30     Over 60     Over 90
+                    ----    -----        -------    ---------    ----      -------     -------     -  ------   -------     -------
+
+STAFF-NAUT NAUTILUS MIDDLE SCHOOL   STAFF (305) 532-3481
+                  12/30/81  Prior Balance                                     0.00
+
+                   9/12/19  Payment      On Acct     54100917                 3.22-                                           3.22-
+
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                    3.22-                                           3.22-
+
+
+STAFF-NEWH NEW HOPE PRESCHOOL       STAFF
+                  12/30/81  Prior Balance                                     0.00
+
+                   9/25/19  Invoice    337393     5 BIN JEN    10/25/19      45.98                                           45.98
+
+                   9/24/19  Invoice    338450     NEW HOPE-POL 10/24/19      81.96                                           81.96
+
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                  127.94                                          127.94
+
+
+STAFF-NOAH NOAH'S ARK ACADEMY PRESCHOOL S (561) 641-2890
+                  12/30/81  Prior Balance                                     0.00
+
+                   8/24/20  Invoice    347723     SILKSCREEN -  9/23/20     960.00                                          960.00
+
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                  960.00                                          960.00
+
+
+STAFF-OLOS OUR LADY OF SORROWS SCHOOL STA (956) 686-3651
+                  12/30/81  Prior Balance                                     0.00
+
+                   5/21/20  Invoice    342163                   6/20/20    2556.20                                         2556.20
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                 2556.20                                         2556.20
+
+
+STAFF-POIN CENTRAL POINTE CHRISTIAN ACAD
+                  12/30/81  Prior Balance                                     0.00
+
+                   7/15/20  Invoice    344251     CENTRAL P.-L  8/14/20    1085.60                                         1085.60
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                 1085.60                                         1085.60
+Run Date 12/15/20                               A / R   T R I A L   B A L A N C E                                       Page   31
+Run Time  1:07 PM                                     IBILEY SCHOOL UNIFORMS                                            User  JOSHUA
+
+
+
+                    Tran    Tran         Invoice    Reference    Due
+                    Date    Descr        Number     Number       Date      Balance     Current     Over 30     Over 60     Over 90
+                    ----    -----        -------    ---------    ----      -------     -------     -  ------   -------     -------
+
+STAFF-RAIN RAINBOW CHRISTIAN        STAFF (305) 338- 657
+                  12/30/81  Prior Balance                                     0.00
+
+                  12/28/18  Payment      On Acct        35230                                                                 6.05-
+                  10/31/19  Debit Memo   On Acct        13819                 0.00                                            6.05
+
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                    0.00
+
+
+STAFF-RICH RICHARDSON CLASSICAL ACADEMY S (972) 479-9584
+                  12/30/81  Prior Balance                                     0.00
+
+                   7/24/19  Payment      On Acct       137971               120.94-                                         120.94-
+
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                  120.94-                                         120.94-
+
+
+STAFF-SLAM SLAM SCHOOL               STAF (786) 853-5650
+                  12/30/81  Prior Balance                                     0.00
+
+                   9/06/18  Invoice    312627     sent with Ju 10/06/18                                                   14787.50
+                  11/30/18  Payment    312627            1030                                                              6460.95-
+                   2/22/19  Payment    312627            1069                                                              7028.55-
+                   9/24/18  Credit Inv 312627-80  Credit Line  10/24/18                                                     730.40-
+                  10/22/18  Credit Inv 312627-81  Credit-Line# 11/21/18     275.44                                          292.16-
+
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                  275.44                                          275.44
+
+
+STAFF-SLPB SLAM PALM BEACH          STAFF (561) 641-4449
+                  12/30/81  Prior Balance                                     0.00
+
+                   8/29/19  Invoice    336296     PO# 996296 E  9/28/19                                                    1536.07
+                  10/21/19  Credit Inv 336296-80  RETURN       11/20/19    1348.47                                          187.60-
+
+                  11/04/19  Invoice    339512     SLAM PAL BEA 12/04/19     260.94                                          260.94
+
+                  12/27/19  Invoice    340624     SLAM PALM BE  1/26/20                                                     103.83
+                   2/10/20  Credit Inv 340624-80  RETURN-WRONG  3/11/20                                                      15.97-
+                   3/11/20  Invoice    340624-90  REP-SLAM PAL  4/10/20     103.83                                           15.97
+
+                   7/14/20  Invoice    343328                   1/10/21    2747.50                                         2747.50Run Date 12/15/20                               A / R   T R I A L   B A L A N C E                                       Page   32
+Run Time  1:07 PM                                     IBILEY SCHOOL UNIFORMS                                            User  JOSHUA
+
+
+
+                    Tran    Tran         Invoice    Reference    Due
+                    Date    Descr        Number     Number       Date      Balance     Current     Over 30     Over 60     Over 90
+                    ----    -----        -------    ---------    ----      -------     -------     -  ------   -------     -------
+
+STAFF-SLPB SLAM PALM BEACH          STAFF (561) 641-4449
+
+                   9/29/20  Invoice    352017     Pick up in s 10/29/20    3019.50                             3019.50
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                 7480.24                             3019.50     4460.74
+
+
+STAFF-SOLA SOMERSET ACADEMY LAKES   STAFF (561) 641-4449
+                  12/30/81  Prior Balance                                     0.00
+
+                  10/29/19  Invoice    339513     SOMERSET AC. 11/28/19      76.38                                           76.38
+
+                  12/27/19  Invoice    340623     SOMERSET L.   1/26/20     204.63                                          204.63
+
+                   9/29/20  Invoice    352014     Pick up in s 10/29/20     472.00                              472.00
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                  753.01                              472.00      281.01
+
+
+STAFF-SOME SOMERSET ACADEMY SOUTH HOME    (305) 245-6108
+                  12/30/81  Prior Balance                                     0.00
+
+                  11/06/18  Payment      On Acct         2903               438.24-                                         438.24-
+
+                   7/01/20  Invoice    330817     SOHO POLOS G  7/31/20     100.45                                          100.45
+
+                   9/07/19  Invoice    338006                  10/07/19     147.40                                          147.40
+
+                   3/11/20  Invoice    342063     SOHO-CONSIGN  9/07/20                                                    2408.00
+                   9/01/20  Credit Inv 342063-80               10/01/20    2240.00                                          168.00-
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                 2049.61                                         2049.61
+
+
+STAFF-TPAB TAMPA BAY ACADEMY
+                  12/30/81  Prior Balance                                     0.00
+
+                   8/20/20  Payment    345161          345161                                                              1427.50-
+                   8/22/20  Invoice    345161     8/20 EMB TAM  9/21/20                                                    2870.03
+                   9/05/20  Payment    345161                                15.03                                         1427.50-
+
+                   9/22/20  Invoice    351312     Ibiley deliv 10/22/20    1760.00                             1760.00
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                 1775.03                             1760.00       15.03
+Run Date 12/15/20                               A / R   T R I A L   B A L A N C E                                       Page   33
+Run Time  1:07 PM                                     IBILEY SCHOOL UNIFORMS                                            User  JOSHUA
+
+
+
+                    Tran    Tran         Invoice    Reference    Due
+                    Date    Descr        Number     Number       Date      Balance     Current     Over 30     Over 60     Over 90
+                    ----    -----        -------    ---------    ----      -------     -------     -  ------   -------     -------
+
+SWEET-STAF CITY OF SWEETWATER - STAFF     (305) 485-4526
+                  12/30/81  Prior Balance                                     0.00
+
+                   2/25/20  Payment      On Acct     56035838                                                                24.95-
+                   6/19/20  Payment      On Acct         6806                                                                 2.00-
+                   7/14/20  Payment      On Acct     70337066                                                                 8.00-
+                  10/13/20  Payment      On Acct         7747               190.53-                             155.58-
+
+                  10/15/20  Invoice    354097     5-Pick up in 11/14/20     155.88                              155.88
+
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                   34.65-                                .30       34.95-
+
+
+TRPR4      KENDALL - QUOTE                (305) 625-8050
+                  12/30/81  Prior Balance                                     0.00
+
+                   2/17/20  Invoice    341650                   3/18/20     106.73                                          106.73
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                  106.73                                          106.73
+
+
+WS-MATER   MATER ACADEMY      (WHOLESALE) (305) 828-1886
+                  12/30/81  Prior Balance                                     0.00
+
+                   2/25/19  Payment    318550-01         2610                                                              2425.17-
+                  11/12/19  Invoice    318550-01  BO-MATER AC- 12/12/19    8565.87                                        10991.04
+                                                                          ---------   ---------   ---------   ---------   ---------
+                                           TOTAL Customer:                 8565.87                                         8565.87
+
+                                                                          =========   =========   =========   =========   =========
+                                           TOTAL A/R:                     31395.27                             5253.40    26141.87
+
+
+*** End of Report ***
+E

@@ -182,7 +182,7 @@ namespace FileProcessingLibrary
             var invoiceBalances = new InvoiceBalance();
             var vs = new List<string>();
 
-            ParseInvoiceNumber.Parse(line.Substring(74, line.Length - 74),vs);
+            ParseInvoiceNumber.Parse(line.Substring(73, line.Length - 73),vs);
             PropertyInfo[] properties = invoiceBalances.GetType().GetProperties();
 
             for (int i = 0; i < vs.Count; i++)
