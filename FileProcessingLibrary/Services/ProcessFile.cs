@@ -104,33 +104,27 @@ namespace FileProcessingLibrary
         {
             var accountHeader = new AccountHeader();
             var accountN = string.Empty;
+            var accountName = new StringBuilder();
+            
+            if(!header.Contains("E"))
+            {
+                accountHeader.ArCode = (header.Substring(0, header.IndexOf(' ')));
+                accountN = header.Contains('(') ? header.Substring(header.IndexOf(' '),(header.IndexOf('(') - header.IndexOf(' '))) : header.Substring(header.IndexOf(' '));
+                accountHeader.AccountPhoneNumber = header.Contains('(') ? header.Substring(header.IndexOf('(')) : string.Empty;
+                string[] strArr = accountN.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
+                for (int i = 0; i < strArr.Length; i++)
+                {
+                    accountName.Append(strArr[i]);
+                    accountName.Append(' ');
+                    
+                }
+                accountHeader.AccountName = accountName.ToString();
 
-            for (int i = 0; i < header.Length; i++)
-            {
-                //ARcode will allways be the first word on the account header
-                if(i <  header.IndexOf(' '))
-                {
-                    accountHeader.ArCode += string.Concat(header[i]);
-                    continue;
-                }
-                else
-                {
-                    //a header line may have an opening parenthesis with a word or may not contain an opening parenthesis at all which would mean that line doesn't have a phone number
-                    if (i < header.LastIndexOf('(') || !header.Contains('('))
-                    {
-                        accountN += string.Concat(header[i]);
-                        continue;
-                    }
-                    accountHeader.AccountPhoneNumber += string.Concat(header[i]);
-                }
-            }
-            //clean the account name before setting the object since it may have extra spaces
-            string[] strArr = accountN.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
-            for (int i = 0; i < strArr.Length; i++)
-            {
-                accountHeader.AccountName += string.Concat(strArr[i], ' ');
             }
             return accountHeader;
+
+           
+
         }
 
         public static AccountInfo SetAccountInfo(string line)
