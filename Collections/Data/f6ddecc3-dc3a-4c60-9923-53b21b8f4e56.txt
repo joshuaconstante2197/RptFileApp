@@ -1,0 +1,98 @@
+S100010    BISCAYNE GARDENS ELEM-STAFF    (305) 691-5721
+                  12/30/81  Prior Balance                                     0.00
+                  11/06/20  Invoice    356912     BISCAYNE G.M 12/06/20     380.00                              380.00
+                                           TOTAL Customer:                  380.00                              380.00
+S100020    CRESTVIEW ELEMENTARY-STAFF     (305) 624-1495
+                  12/30/81  Prior Balance                                     0.00
+                  11/03/20  Invoice    356703     MASKS DROP S 12/03/20     325.00                              325.00
+                                           TOTAL Customer:                  325.00                              325.00
+S100072    NORWOOD ELEMENTARY-STAFF       (305) 653-  68
+                  12/30/81  Prior Balance                                     0.00
+                  11/09/20  Invoice    357067     NORWOOD MASK 12/09/20     325.00                              325.00
+                                           TOTAL Customer:                  325.00                              325.00
+S100083    RAINBOW PARK ELEM-STAFF        (305) 688-4631
+                  12/30/81  Prior Balance                                     0.00
+                  11/06/20  Invoice    357084     RAINBOW P. M 12/06/20     285.00                              285.00
+                                           TOTAL Customer:                  285.00                              285.00
+S100114    ARCH CREEK ELEMENTARY   STAFF  (305) 624-8802
+                  12/30/81  Prior Balance                                     0.00
+                  11/06/20  Invoice    356914     ARCH CREEK M 12/06/20     325.00                              325.00
+                                           TOTAL Customer:                  325.00                              325.00
+S20015     F.S.TUCKER ELEMENTARY-STAFF    (786) 356-4776
+                  12/30/81  Prior Balance                                     0.00
+                  11/06/20  Invoice    356973     Frances S. M 12/06/20     475.00                              475.00
+                                           TOTAL Customer:                  475.00                              475.00
+S20031     MAYA ANGELOU ELEMENTARY-STAFF  (305) 636-3480
+                  12/30/81  Prior Balance                                     0.00
+                  11/09/20  Invoice    357068     MAYA A. MASK 12/09/20     535.00                              535.00
+                                           TOTAL Customer:                  535.00                              535.00
+S20041     SHENANDOAH ELEMENTARY-STAFF    (305) 643-4433
+                  12/30/81  Prior Balance                                     0.00
+                  11/06/20  Invoice    356913     SHENANDOAH M 12/06/20     590.00                              590.00
+                                           TOTAL Customer:                  590.00                              590.00
+S300001    AMELIA EARHART ELEM-STAFF      (305) 688-9619
+                  12/30/81  Prior Balance                                     0.00
+                  11/06/20  Invoice    356963     AMELIA E. MA 12/06/20     382.00                              382.00
+                                           TOTAL Customer:                  382.00                              382.00
+S300009    ERNEST R. GRAHAM K8 CENTER STA (305) 825-2122
+                  12/30/81  Prior Balance                                     0.00
+                  11/09/20  Invoice    357053     ERNEST G. MA 12/09/20     740.00                              740.00
+                                           TOTAL Customer:                  740.00                              740.00
+S300035    MEADOWLANE ELEM-STAFF          (305) 822- 660
+                  12/30/81  Prior Balance                                     0.00
+                  11/03/20  Invoice    356738     110220MEA-CU 12/03/20     325.00                              325.00
+                                           TOTAL Customer:                  325.00                              325.00
+S300070    PALM LAKES ELEMENTARY STAFF    (305) 823-6970
+                  12/30/81  Prior Balance                                     0.00
+                  11/19/20  Invoice    357419     PALM L. MASK 12/19/20     424.00                              424.00
+                                           TOTAL Customer:                  424.00                              424.00
+S40012     CHRISTINA M. EVE ELEM-STAFF    (305) 383-9392
+                  12/30/81  Prior Balance                                     0.00
+                  11/03/20  Invoice    356742     110220CME-CU 12/03/20     625.00                              625.00
+                                           TOTAL Customer:                  625.00                              625.00
+S40013     CLAUDE PEPPER ELEM-STAFF       (305) 386-5244
+                  11/04/20  Invoice    356771     CLAUDE PEPPE 12/04/20     475.00                              475.00
+                                           TOTAL Customer:                  226.60                              475.00      248.40-
+S40014     COLONIAL DRIVE ELEM-STAFF      (305) 283-9342
+                  12/30/81  Prior Balance                                     0.00
+                  11/06/20  Invoice    356974     COLONIAL D.  12/06/20     675.00                              675.00
+                                           TOTAL Customer:                  675.00                              675.00
+S40020     ETHEL KOGER BECKHAM ELEM-STAFF (305) 222-8161
+                  12/30/81  Prior Balance                                     0.00
+                  11/06/20  Invoice    356958     217116EKB-MA 12/06/20     935.00                              935.00
+                                           TOTAL Customer:                  935.00                              935.00
+S40040     MIAMI HEIGHTS ELEM-STAFF       (305) 238-3602
+                  12/30/81  Prior Balance                                     0.00
+                  11/05/20  Invoice    356881     MIAMI H. MAS 12/05/20     750.00                              750.00
+                                           TOTAL Customer:                  750.00                              750.00
+S40072     ZORA NEALE HURSTON ELEM-STAFF  (305) 222-8152
+                  12/30/81  Prior Balance                                     0.00
+                  11/05/20  Invoice    356833     ZORA NEALE M 12/05/20     475.00                              475.00
+                                           TOTAL Customer:                  475.00                              475.00
+S500021    KINLOCH PARK ELEM-STAFF        (305) 445-1351
+                  12/30/81  Prior Balance                                     0.00
+                  11/09/20  Invoice    357060     KINLOCH MASK 12/09/20     505.00                              505.00
+                                           TOTAL Customer:                  505.00                              505.00
+S500032    SEMINOLE ELEMENTARY-STAFF      (305) 261-7071
+                  12/30/81  Prior Balance                                     0.00
+                  11/16/20  Invoice    357292     SEMINOLE ES  12/16/20     475.00                              475.00
+                                           TOTAL Customer:                  475.00                              475.00
+S500034    SWEETWATER ELEMENTARY-STAFF    (305) 559-1101
+                  12/30/81  Prior Balance                                     0.00
+                  11/06/20  Invoice    356918     SWETTWATER M 12/06/20     961.00                              961.00
+                                           TOTAL Customer:                  961.00                              961.00
+STAF-0671  CALUSA ELEMENTARY     STAFF    (305) 385- 589
+                  12/30/81  Prior Balance                                     0.00
+                  11/05/20  Invoice    356866     CALUSA MASKS 12/05/20     595.00                              595.00
+                                           TOTAL Customer:                  595.00                              595.00
+STAFF-ALPH ALPHA CHARTER OF EXCELLE STAFF (954) 809-4790
+                                           TOTAL Customer:                  613.80-                             605.47-       8.33-
+STAFF-GOLD GOLDEN GLADES ELEMENTARY  STAF (305) 624-9641
+                  12/30/81  Prior Balance                                     0.00
+                  11/06/20  Invoice    356975     9000328955/1 12/06/20     277.00                              277.00
+                                           TOTAL Customer:                  277.00                              277.00
+STAFF-JOHN JOHN I. SMITH            STAF  (305) 406- 220
+                  12/30/81  Prior Balance                                     0.00
+                  11/12/20  Invoice    357147     1000902433-J 12/12/20     805.00                              805.00
+                                           TOTAL Customer:                  805.00                              805.00
+E
