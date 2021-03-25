@@ -105,10 +105,17 @@ namespace FileProcessingLibrary
             var accountHeader = new AccountHeader();
             var accountN = string.Empty;
             var accountName = new StringBuilder();
-            
+            var headerAsSpan = header.AsSpan();
+            var firstSpace = header.IndexOf(' ');
             if(!header.Contains("E"))
             {
                 accountHeader.ArCode = (header.Substring(0, header.IndexOf(' ')));
+                if(header.Contains('('))
+                {
+                    int firstParenthesis = header.IndexOf('(');
+                    accountN = headerAsSpan[firstSpace..firstParenthesis].ToString();
+
+                }
                 accountN = header.Contains('(') ? header.Substring(header.IndexOf(' '),(header.IndexOf('(') - header.IndexOf(' '))) : header.Substring(header.IndexOf(' '));
                 accountHeader.AccountPhoneNumber = header.Contains('(') ? header.Substring(header.IndexOf('(')) : string.Empty;
                 string[] strArr = accountN.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
