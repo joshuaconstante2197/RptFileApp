@@ -114,10 +114,14 @@ namespace FileProcessingLibrary
                 {
                     int firstParenthesis = header.IndexOf('(');
                     accountN = headerAsSpan[firstSpace..firstParenthesis].ToString();
+                    accountHeader.AccountPhoneNumber = header[firstParenthesis..].ToString();
 
                 }
-                accountN = header.Contains('(') ? header.Substring(header.IndexOf(' '),(header.IndexOf('(') - header.IndexOf(' '))) : header.Substring(header.IndexOf(' '));
-                accountHeader.AccountPhoneNumber = header.Contains('(') ? header.Substring(header.IndexOf('(')) : string.Empty;
+                else
+                {
+                    accountN = headerAsSpan[firstSpace..].ToString();
+                    accountHeader.AccountPhoneNumber = string.Empty;
+                }
                 string[] strArr = accountN.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
                 for (int i = 0; i < strArr.Length; i++)
                 {

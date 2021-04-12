@@ -1,2 +1,0 @@
-1/14/2021 4:28:20 PM ==> Error curating DBCould not find stored procedure 'dbo.spGetNegativeAndZeroAccounts'.
-1/14/2021 5:23:52 PM ==> Error curating DBThe connection was not closed. The connection's current state is open.
