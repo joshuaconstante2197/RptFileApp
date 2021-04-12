@@ -7,7 +7,8 @@ This app parses an RPT file into a SQL server database in order to manage pendin
 2. [Technologies](#technologies)
 3. [Features](#features)
 4. [How to Use](#how-to-use)
-5. [Status](#status)
+5. [Images](#images)
+6. [Status](#status)
 ## General Info:
 
 This app was created for a company I was working with. They used a system called PRISM as their CRM which printed out RPT formatted files in order to manage collections.
@@ -55,6 +56,12 @@ Project is created with:
 5. On the **Collections Files** tab you will find all previous files that have been uploaded and also the ones created to show the information that has been deleted after an  update. They are named with a GUID to avoid name collisions.
 6. On the **Metrics** tab you will find a graph displaying the 10 biggest accounts in relationship to the total amount outstanding.
 7. In the home screen you can select any individual account, quickly add comments to it since it will show only the latest comment, or go to **Details** wich will show you more information about that account, will allow you to edit information about the account and will let you see any previous comments.
+
+## Images:
+1. Home Page ![alt text](https://github.com/joshuaconstante2197/RptFileApp/blob/master/FileProcessingLibrary/Data/img/all-accounts.PNG)
+2. Account Details ![alt text](https://github.com/joshuaconstante2197/RptFileApp/blob/master/FileProcessingLibrary/Data/img/account-details.PNG)
+3. Previous Files ![alt text](https://github.com/joshuaconstante2197/RptFileApp/blob/master/FileProcessingLibrary/Data/img/collections-files.PNG)
+4. Metrics Page ![alt text](https://github.com/joshuaconstante2197/RptFileApp/blob/master/FileProcessingLibrary/Data/img/collections-app%20project.png)
 
 ## Status:
 
