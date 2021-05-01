@@ -34,11 +34,11 @@ Project is created with:
 * jQuery
 
 ## Features:
-* Upload a RPT file, parse it and save all the information into a SQL server database.
+* Upload a RPT formatted file, parse it and save all the information into a SQL server database.
 * When being updated, compares the new file with the information already in the database to only upload new data.
 * Removes all the information that is no longer present in the new file.
 * Creates a new file with all the information that has been removed in the update.
-* Creates a database row per each account which allows the user to inspect, edit and comment into each individual account.
+* Creates a database row per each account which allows the user to inspect, edit and comment into each individual account or transaction.
 * Has a metrics page that allows user to visualize the percentage owed by the biggest accounts in relationship with the total amount outstanding.
 
 
